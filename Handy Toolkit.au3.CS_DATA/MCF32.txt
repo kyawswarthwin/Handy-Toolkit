@@ -1,0 +1,8 @@
+Func {funcU480} ({var263} = {macro22}, {var410} = {macro25}) ; {file:32}{line:20}
+Local {var228} = {funcA122} ( {string8581} , {string8582} , {string8583} )  ; {file:32}{line:21}
+Return {funcA374} ( {var263} , {var410} , {var228} [ 0 ] )  ; {file:32}{line:22}
+EndFunc  ; {file:32}{line:23}
+Func {funcU643} ({var1934}, {var263} = {macro22}, {var410} = {macro25}) ; {file:32}{line:29}
+{funcA122} ( {string8584} , {string8585} , {string8586} , {string8587} , {var1934} )  ; {file:32}{line:30}
+Return {funcA374} ( {var263} , {var410} , Null )  ; {file:32}{line:31}
+EndFunc  ; {file:32}{line:32}

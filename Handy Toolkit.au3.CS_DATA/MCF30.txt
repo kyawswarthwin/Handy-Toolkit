@@ -1,0 +1,2637 @@
+#include {incl49} ; {file:30}{line:3}
+#include {incl11} ; {file:30}{line:4}
+#include {incl50} ; {file:30}{line:5}
+#include {incl39} ; {file:30}{line:6}
+Global Const $* ; {file:30}{line:20}{ref9507}
+Global Const $* ; {file:30}{line:21}{ref9508}
+Global Const $* ; {file:30}{line:22}{ref9509}
+Global Const $* ; {file:30}{line:23}{ref9510}
+Global Const $* ; {file:30}{line:24}{ref9511}
+Global Const $* ; {file:30}{line:25}{ref9512}
+Global Const $* ; {file:30}{line:26}{ref9513}
+Global Const $* ; {file:30}{line:27}{ref9514}
+Global Const $* ; {file:30}{line:28}{ref9515}
+Global Const $* ; {file:30}{line:29}{ref9516}
+Global Const $* ; {file:30}{line:30}{ref9517}
+Global Const $* ; {file:30}{line:31}{ref9518}
+Global Const $* ; {file:30}{line:32}{ref9519}
+Global Const $* ; {file:30}{line:33}{ref9520}
+Global Const $* ; {file:30}{line:34}{ref9521}
+Global Const $* ; {file:30}{line:35}{ref9522}
+Global Const $* ; {file:30}{line:36}{ref9523}
+Global Const $* ; {file:30}{line:37}{ref9524}
+Global Const $* ; {file:30}{line:38}{ref9525}
+Global Const $* ; {file:30}{line:39}{ref9526}
+Global Const $* ; {file:30}{line:41}{ref9527}
+Func {funcU1045} ({var447}) ; {file:30}{line:285}
+Local {var733} = {funcA122} ( {string6785} , {string6786} , {string6787} , {string6788} , {var447} )  ; {file:30}{line:286}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:287}
+Return {var733}[0] ; {file:30}{line:290}
+EndFunc  ; {file:30}{line:291}
+Func {funcU114} ({var340}, {var483}) ; {file:30}{line:297}
+Local {var733} = {funcA122} ( {string6789} , {string6790} , {string6791} , {string6792} , {var340} , {string6793} , {var483} , {string6794} , 0 , {string6795} , 0 )  ; {file:30}{line:298}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:299}
+Return {funcA375} ( {var733} [ 4 ] , {var733} [ 0 ] )  ; {file:30}{line:302}
+EndFunc  ; {file:30}{line:303}
+Func {funcU1046} ({var247}, {var719} = 0, {var1728} = False) ; {file:30}{line:309}
+Local {var733} = {funcA122} ( {string6796} , {string6797} , {string6798} , {string6799} , {var247} , {string6800} , {var719} , {string6801} , 0 )  ; {file:30}{line:310}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:311}
+If {var1728} Then ; {file:30}{line:314}
+Local Const {var1729} = 0x001D ; {file:30}{line:315}
+Local Const {var1730} = 0xFFFF ; {file:30}{line:316}
+{funcA122} ( {string6802} , {string6803} , {string6804} , {string6805} , {var1730} , {string6806} , {var1729} , {string6807} , 0 , {string6808} , 0 )  ; {file:30}{line:317}
+EndIf ; {file:30}{line:319}
+Return {var733}[0] ; {file:30}{line:321}
+EndFunc  ; {file:30}{line:322}
+Func {funcU1047} ({var272}, {var1731}) ; {file:30}{line:328}
+Local {var733}, {var1673} = 0, {var263} = 0 ; {file:30}{line:329}
+Local {var1732}[2] = [0, 0] ; {file:30}{line:330}
+Local {var445} = {funcU177} ( {var272} )  ; {file:30}{line:332}
+Local {var1733} = {funcA122} ( {string6809} , {string6810} , {string6811} , {string6812} , {funcA130} ( {var445} , 1 ) , {string6813} , {funcA130} ( {var445} , 2 ) , {string6814} , 0x0021 , {string6815} , 2 , {string6816} , 2 )  ; {file:30}{line:333}
+If {macro22} Or Not {var1733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:335}
+Do ; {file:30}{line:337}
+{var1732} [ 0 ] = {funcU1048} ( {var272} )  ; {file:30}{line:338}
+If {macro22} Then ; {file:30}{line:339}
+{var263} = {macro22} + 100 ; {file:30}{line:340}
+ExitLoop ; {file:30}{line:341}
+EndIf ; {file:30}{line:342}
+{var733} = {funcA122} ( {string6817} , {string6818} , {string6819} , {string6820} , {var1733} [ 0 ] , {string6821} , - 1 , {string6822} , {var1732} [ 0 ] )  ; {file:30}{line:343}
+If {macro22} Or ( {var733} [ 0 ] = - 1 ) Then  ; {file:30}{line:344}
+{var263} = {macro22} + 200 ; {file:30}{line:345}
+ExitLoop ; {file:30}{line:346}
+EndIf ; {file:30}{line:347}
+{var1732} [ 1 ] = {funcU1048} ( {var1731} )  ; {file:30}{line:348}
+If {macro22} Then ; {file:30}{line:349}
+{var263} = {macro22} + 300 ; {file:30}{line:350}
+ExitLoop ; {file:30}{line:351}
+EndIf ; {file:30}{line:352}
+{var733} = {funcA122} ( {string6823} , {string6824} , {string6825} , {string6826} , {var1733} [ 0 ] , {string6827} , - 1 , {string6828} , {var1732} [ 1 ] )  ; {file:30}{line:353}
+If {macro22} Or ( {var733} [ 0 ] = - 1 ) Then  ; {file:30}{line:354}
+{var263} = {macro22} + 400 ; {file:30}{line:355}
+ExitLoop ; {file:30}{line:356}
+EndIf ; {file:30}{line:357}
+{var733} = {funcA122} ( {string6829} , {string6830} , {string6831} , {string6832} , {var1733} [ 0 ] , {string6833} , 1 , {string6834} , 1 )  ; {file:30}{line:358}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:359}
+{var263} = {macro22} + 500 ; {file:30}{line:360}
+ExitLoop ; {file:30}{line:361}
+EndIf ; {file:30}{line:362}
+{var733} = {funcA122} ( {string6835} , {string6836} , {string6837} , {string6838} , {var1733} [ 0 ] , {string6839} , 0 , {string6840} , 0x00000100 )  ; {file:30}{line:363}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:364}
+{var263} = {macro22} + 600 ; {file:30}{line:365}
+ExitLoop ; {file:30}{line:366}
+EndIf ; {file:30}{line:367}
+{var1673} = {var733}[0] ; {file:30}{line:368}
+Until 1 ; {file:30}{line:369}
+{funcA122} ( {string6841} , {string6842} , {string6843} , {string6844} , {var1733} [ 0 ] )  ; {file:30}{line:370}
+For {var79} = 0 To 1 ; {file:30}{line:371}
+If {var1732}[{var79}] Then ; {file:30}{line:372}
+{funcU136} ( {var1732} [ {var79} ] )  ; {file:30}{line:373}
+EndIf ; {file:30}{line:375}
+Next ; {file:30}{line:376}
+If Not {var1673} Then Return {funcA374} ( {var263} , 0 , 0 )  ; {file:30}{line:377}
+Return {var1673} ; {file:30}{line:379}
+EndFunc  ; {file:30}{line:380}
+Func {funcU1049} ({var10}, {var194}, {var193}, {var134} = 3, {var1734} = 0) ; {file:30}{line:386}
+Local {var1735} = {funcA129} ( {var1676} )  ; {file:30}{line:387}
+Local {var733} = {funcA122} ( {string6845} , {string6846} , {string6847} , {string6848} , {var10} , {string6849} , {funcA132} ( {var1735} ) , {string6850} , {var1735} )  ; {file:30}{line:388}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:389}
+If {var194} = -1 Then ; {file:30}{line:392}
+{var194} = {funcA130} ( {var1735} , {string6851} )  ; {file:30}{line:393}
+EndIf ; {file:30}{line:394}
+If {var193} = -1 Then ; {file:30}{line:395}
+{var193} = {funcA130} ( {var1735} , {string6852} )  ; {file:30}{line:396}
+EndIf ; {file:30}{line:397}
+{var733} = {funcA122} ( {string6853} , {string6854} , {string6855} , {string6856} , 0 )  ; {file:30}{line:398}
+Local {var447} = {var733}[0] ; {file:30}{line:399}
+{var733} = {funcA122} ( {string6857} , {string6858} , {string6859} , {string6860} , {var447} )  ; {file:30}{line:400}
+Local {var884} = {var733}[0] ; {file:30}{line:401}
+{var733} = {funcA122} ( {string6861} , {string6862} , {string6863} , {string6864} , {var447} , {string6865} , {var194} , {string6866} , {var193} )  ; {file:30}{line:402}
+Local {var421} = {var733}[0] ; {file:30}{line:403}
+{var733} = {funcA122} ( {string6867} , {string6868} , {string6869} , {string6870} , {var884} , {string6871} , {var421} )  ; {file:30}{line:404}
+Local {var1340} = {var733}[0] ; {file:30}{line:405}
+{var733} = {funcA122} ( {string6872} , {string6873} , {string6874} , {string6875} , {var447} )  ; {file:30}{line:406}
+Local {var887} = {var733}[0] ; {file:30}{line:407}
+{var733} = {funcA122} ( {string6876} , {string6877} , {string6878} , {string6879} , {var887} , {string6880} , {var10} )  ; {file:30}{line:408}
+Local {var1736} = {var733}[0] ; {file:30}{line:409}
+If {funcU1050} ( {var884} , {var134} ) Then  ; {file:30}{line:410}
+Switch {var134} ; {file:30}{line:411}
+Case 4  ; {file:30}{line:412}
+If {funcA285} ( {var1734} ) Then  ; {file:30}{line:413}
+If Not {funcU1051} ( {var884} , {var1734} ) Then  ; {file:30}{line:414}
+EndIf ; {file:30}{line:416}
+EndIf ; {file:30}{line:417}
+Case Else ; {file:30}{line:418}
+EndSwitch ; {file:30}{line:420}
+EndIf ; {file:30}{line:421}
+{var733} = {funcU1052} ( {var884} , 0 , 0 , {var194} , {var193} , {var887} , 0 , 0 , {funcA130} ( {var1735} , {string6881} ) , {funcA130} ( {var1735} , {string6882} ) , 0x00CC0020 )  ; {file:30}{line:422}
+{funcA122} ( {string6883} , {string6884} , {string6885} , {string6886} , 0 , {string6887} , {var447} )  ; {file:30}{line:423}
+{funcA122} ( {string6888} , {string6889} , {string6890} , {string6891} , {var884} , {string6892} , {var1340} )  ; {file:30}{line:424}
+{funcA122} ( {string6893} , {string6894} , {string6895} , {string6896} , {var887} , {string6897} , {var1736} )  ; {file:30}{line:425}
+{funcA122} ( {string6898} , {string6899} , {string6900} , {string6901} , {var884} )  ; {file:30}{line:426}
+{funcA122} ( {string6902} , {string6903} , {string6904} , {string6905} , {var887} )  ; {file:30}{line:427}
+If Not {var733} Then Return {funcA374} ( 10 , 0 , 0 )  ; {file:30}{line:428}
+Return {var421} ; {file:30}{line:430}
+EndFunc  ; {file:30}{line:431}
+Func {funcU1053} ({var884}, {var885}, {var886}, {var1737}, {var1738}, {var887}, {var888}, {var889}, {var1739}, {var1740}, {var1741}, {var1742} = False) ; {file:30}{line:437}
+Local {var1743} = {funcA49} ( {funcA51} ( Not ( {var1742} = False ) , - 24 ) , {funcA51} ( {funcA47} ( {var1741} , 0xFF ) , - 16 ) )  ; {file:30}{line:438}
+Local {var733} = {funcA122} ( {string6906} , {string6907} , {string6908} , {string6909} , {var884} , {string6910} , {var885} , {string6911} , {var886} , {string6912} , {var1737} , {string6913} , {var1738} , {string6914} , {var887} , {string6915} , {var888} , {string6916} , {var889} , {string6917} , {var1739} , {string6918} , {var1740} , {string6919} , {var1743} )  ; {file:30}{line:439}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:442}
+Return {var733}[0] ; {file:30}{line:445}
+EndFunc  ; {file:30}{line:446}
+Func {funcU1054} ({var447}, {var207}, {var208}, {var1744}, {var1745}, {var1746}) ; {file:30}{line:452}
+Local {var733} = {funcA122} ( {string6920} , {string6921} , {string6922} , {string6923} , {var447} , {string6924} , {var207} , {string6925} , {var208} , {string6926} , {var1744} , {string6927} , {var1745} , {string6928} , {var1746} )  ; {file:30}{line:453}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:455}
+Return {var733}[0] ; {file:30}{line:457}
+EndFunc  ; {file:30}{line:458}
+Func {funcU1055} ({var447}, {var195}, {var1747}, {var1748}, {var1749}, {var1750}) ; {file:30}{line:464}
+Local {var733} = {funcA122} ( {string6929} , {string6930} , {string6931} , {string6932} , {var447} , {string6933} , {funcA130} ( {var195} , 1 ) , {string6934} , {funcA130} ( {var195} , 2 ) , {string6935} , {funcA130} ( {var195} , 3 ) , {string6936} , {funcA130} ( {var195} , 4 ) , {string6937} , {var1747} , {string6938} , {var1748} , {string6939} , {var1749} , {string6940} , {var1750} )  ; {file:30}{line:465}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:468}
+Return {var733}[0] ; {file:30}{line:471}
+EndFunc  ; {file:30}{line:472}
+Func {funcU1056} ({var447}, {var195}, {var1751}, {var1752}, {var1753}, {var1754}) ; {file:30}{line:478}
+Local {var733} = {funcA122} ( {string6941} , {string6942} , {string6943} , {string6944} , {var447} , {string6945} , {funcA130} ( {var195} , 1 ) , {string6946} , {funcA130} ( {var195} , 2 ) , {string6947} , {funcA130} ( {var195} , 3 ) , {string6948} , {funcA130} ( {var195} , 4 ) , {string6949} , {var1751} , {string6950} , {var1752} , {string6951} , {var1753} , {string6952} , {var1754} )  ; {file:30}{line:479}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:482}
+Return {var733}[0] ; {file:30}{line:485}
+EndFunc  ; {file:30}{line:486}
+Func {funcU1057} ({var52}, ByRef {var1755}) ; {file:30}{line:492}
+{var1755} = {funcA129} ( {var1756} )  ; {file:30}{line:493}
+Local {var733} = {funcA122} ( {string6953} , {string6954} , {string6955} , {string6956} , {var52} , {string6957} , {var1755} )  ; {file:30}{line:494}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:495}
+Return {var733}[0] ; {file:30}{line:498}
+EndFunc  ; {file:30}{line:499}
+Func {funcU1058} ({var447}) ; {file:30}{line:505}
+Local {var733} = {funcA122} ( {string6958} , {string6959} , {string6960} , {string6961} , {var447} )  ; {file:30}{line:506}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:507}
+Return {var733}[0] ; {file:30}{line:510}
+EndFunc  ; {file:30}{line:511}
+Func {funcU1059} ({var447}) ; {file:30}{line:517}
+Local {var733} = {funcA122} ( {string6962} , {string6963} , {string6964} , {string6965} , {var447} )  ; {file:30}{line:518}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:519}
+Return {var733}[0] ; {file:30}{line:522}
+EndFunc  ; {file:30}{line:523}
+Func {funcU1060} ({var447}) ; {file:30}{line:529}
+Local {var733} = {funcA122} ( {string6966} , {string6967} , {string6968} , {string6969} , {var447} )  ; {file:30}{line:530}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:531}
+Return {var733}[0] ; {file:30}{line:534}
+EndFunc  ; {file:30}{line:535}
+Func {funcU1061} ({var1213}, {var1670}, {var1757} = True) ; {file:30}{line:541}
+If {var1213} = - 1 Then Return {funcA374} ( 10 , 0 , - 1 )  ; {file:30}{line:542}
+If {var1757} Then ; {file:30}{line:544}
+{var1670} = {funcA187} ( {var1670} * 10 )  ; {file:30}{line:545}
+EndIf ; {file:30}{line:546}
+Local {var733} = {funcA122} ( {string6970} , {string6971} , {string6972} , {string6973} , {funcU1062} ( {var1213} ) , {string6974} , {var1670} , {string6975} , {var1757} )  ; {file:30}{line:548}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:549}
+Return {funcU1062} ( {var733} [ 0 ] )  ; {file:30}{line:551}
+EndFunc  ; {file:30}{line:552}
+Func {funcU1063} ({var804}, {var1758}, {var1759}) ; {file:30}{line:558}
+If Not {var1759} Then {var804} = 160 ; {file:30}{line:559}
+Local {var733} = {funcA122} ( {string6976} , {string6977} , {string6978} , {string6979} , {var804} , {string6980} , {var1758} , {string6981} , {var1759} )  ; {file:30}{line:561}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:562}
+Return {funcU1062} ( {var733} [ 0 ] )  ; {file:30}{line:564}
+EndFunc  ; {file:30}{line:565}
+Func {funcU1064} ({var1213}, ByRef {var804}, ByRef {var1758}, ByRef {var1759}) ; {file:30}{line:571}
+Local {var733} = {funcA122} ( {string6982} , {string6983} , {string6984} , {string6985} , {funcU1062} ( {var1213} ) , {string6986} , 0 , {string6987} , 0 , {string6988} , 0 )  ; {file:30}{line:572}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:573}
+{var804} = {var733}[2] ; {file:30}{line:575}
+{var1758} = {var733}[3] ; {file:30}{line:576}
+{var1759} = {var733}[4] ; {file:30}{line:577}
+Return 1 ; {file:30}{line:578}
+EndFunc  ; {file:30}{line:579}
+Func {funcU1065} ({var1760}, {var1761}) ; {file:30}{line:585}
+Local {var1762} = {funcA129} ( {var1763} )  ; {file:30}{line:586}
+Local {var733} = {funcA122} ( {string6989} , {string6990} , {string6991} , {string6992} , {var1762} , {string6993} , {var1760} , {string6994} , {var1761} )  ; {file:30}{line:587}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:588}
+Return {var1762} ; {file:30}{line:590}
+EndFunc  ; {file:30}{line:591}
+Func {funcU1066} ({var10}, ByRef {var484}, {var1764} = 0, {var954} = 100) ; {file:30}{line:597}
+If Not {funcU753} ( {string6995} ) Then Return {funcA374} ( 103 , 0 , 0 )  ; {file:30}{line:598}
+Local {var1668}[2], {var482}, {var426}, {var264}, {var1765}, {var733}, {var447}, {var1766}, {var1125}, {var1767}, {var1052}, {var454}, {var340}, {var263} = 1  ; {file:30}{line:600}
+Local {var1768} = 0, {var6} = 0, {var1150} = 0, {var629} = 0, {var341} = 0, {var677} = 0 ; {file:30}{line:601}
+Local {var1769} = {funcA129} ( {var1770} )  ; {file:30}{line:602}
+Do ; {file:30}{line:604}
+Switch {var1764} ; {file:30}{line:605}
+Case 0 ; {file:30}{line:606}
+{var1765} = {string6996} ; {file:30}{line:607}
+Case 1 ; {file:30}{line:608}
+{var1765} = {string6997} ; {file:30}{line:609}
+Case Else ; {file:30}{line:610}
+{var263} = 10 ; {file:30}{line:611}
+ExitLoop ; {file:30}{line:612}
+EndSwitch ; {file:30}{line:613}
+While {var10} ; {file:30}{line:614}
+If Not {funcU567} ( {var10} , {funcA132} ( {var1769} ) , {funcA131} ( {var1769} ) ) Then  ; {file:30}{line:615}
+{var263} = 11 ; {file:30}{line:616}
+ExitLoop 2 ; {file:30}{line:617}
+EndIf ; {file:30}{line:618}
+If ( {funcA130} ( {var1769} , {string6998} ) = 32 ) And ( Not {funcA130} ( {var1769} , {string6999} ) ) Then  ; {file:30}{line:619}
+{var263} = 12 ; {file:30}{line:620}
+ExitLoop ; {file:30}{line:621}
+EndIf ; {file:30}{line:622}
+If {var1768} Then ; {file:30}{line:623}
+{var263} = 13 ; {file:30}{line:624}
+ExitLoop 2 ; {file:30}{line:625}
+EndIf ; {file:30}{line:626}
+{var1768} = {funcU1067} ( {funcA130} ( {var1769} , {string7000} ) , {funcA130} ( {var1769} , {string7001} ) )  ; {file:30}{line:627}
+If Not {var1768} Then ; {file:30}{line:628}
+{var263} = {macro22} + 100 ; {file:30}{line:629}
+ExitLoop 2 ; {file:30}{line:630}
+EndIf ; {file:30}{line:631}
+{var447} = {funcU178} ( 0 )  ; {file:30}{line:632}
+{var1766} = {funcU180} ( {var447} , {var1768} )  ; {file:30}{line:633}
+If {funcU1068} ( {var447} , 0 , 0 , {var10} ) Then  ; {file:30}{line:634}
+{var10} = {var1768} ; {file:30}{line:635}
+Else ; {file:30}{line:636}
+{var263} = {macro22} + 200 ; {file:30}{line:637}
+{var10} = 0 ; {file:30}{line:638}
+EndIf ; {file:30}{line:639}
+{funcU180} ( {var447} , {var1766} )  ; {file:30}{line:640}
+{funcU185} ( {var447} )  ; {file:30}{line:641}
+WEnd ; {file:30}{line:642}
+If Not {var10} Then ; {file:30}{line:643}
+ExitLoop ; {file:30}{line:644}
+EndIf ; {file:30}{line:645}
+For {var79} = 0 To 1 ; {file:30}{line:646}
+{var1668} [ {var79} ] = {funcA130} ( {var1769} , {var79} + 2 )  ; {file:30}{line:647}
+Next ; {file:30}{line:648}
+{var1767} = {funcA129} ( {string7002} & ( {var1668} [ 0 ] * {var1668} [ 1 ] * 4 ) & {string7003} )  ; {file:30}{line:649}
+If Not {funcU1069} ( {var10} , {funcA132} ( {var1767} ) , {funcA131} ( {var1767} ) ) Then  ; {file:30}{line:650}
+{var263} = {macro22} + 300 ; {file:30}{line:651}
+ExitLoop ; {file:30}{line:652}
+EndIf ; {file:30}{line:653}
+{var454} = {funcA129} ( {var716} )  ; {file:30}{line:654}
+{funcA133} ( {var454} , {string7004} , 1 )  ; {file:30}{line:655}
+{var733} = {funcA122} ( {string7005} , {string7006} , {string7007} , {string7008} , 0 , {string7009} , {var454} , {string7010} , 0 )  ; {file:30}{line:656}
+If {macro22} Or {var733}[0] Then ; {file:30}{line:657}
+{var263} = {macro22} + 400 ; {file:30}{line:658}
+ExitLoop ; {file:30}{line:659}
+EndIf ; {file:30}{line:660}
+If {funcU1070} ( {var10} ) Then  ; {file:30}{line:661}
+{var426} = 0x0026200A ; {file:30}{line:662}
+Else ; {file:30}{line:663}
+{var426} = 0x00022009 ; {file:30}{line:664}
+EndIf ; {file:30}{line:665}
+{var1150} = {var733}[1] ; {file:30}{line:666}
+{var733} = {funcA122} ( {string7011} , {string7012} , {string7013} , {string7014} , {var1668} [ 0 ] , {string7015} , {var1668} [ 1 ] , {string7016} , {var1668} [ 0 ] * 4 , {string7017} , {var426} , {string7018} , {var1767} , {string7019} , 0 )  ; {file:30}{line:667}
+If {macro22} Or {var733}[0] Then ; {file:30}{line:669}
+{var263} = {macro22} + 500 ; {file:30}{line:670}
+ExitLoop ; {file:30}{line:671}
+EndIf ; {file:30}{line:672}
+{var6} = {var733}[6] ; {file:30}{line:673}
+{var733} = {funcA122} ( {string7020} , {string7021} , {string7022} , {string7023} , 0 , {string7024} , 0 )  ; {file:30}{line:674}
+If {macro22} Or {var733}[0] Then ; {file:30}{line:675}
+{var263} = {macro22} + 600 ; {file:30}{line:676}
+ExitLoop ; {file:30}{line:677}
+EndIf ; {file:30}{line:678}
+{var482} = {var733}[1] ; {file:30}{line:679}
+{var454} = {funcA129} ( {string7025} & {var733} [ 2 ] & {string7026} )  ; {file:30}{line:680}
+If {macro22} Then ; {file:30}{line:681}
+{var263} = {macro22} + 700 ; {file:30}{line:682}
+ExitLoop ; {file:30}{line:683}
+EndIf ; {file:30}{line:684}
+{var340} = {funcA131} ( {var454} )  ; {file:30}{line:685}
+{var733} = {funcA122} ( {string7027} , {string7028} , {string7029} , {string7030} , {var482} , {string7031} , {var733} [ 2 ] , {string7032} , {var340} )  ; {file:30}{line:686}
+If {macro22} Or {var733}[0] Then ; {file:30}{line:687}
+{var263} = {macro22} + 800 ; {file:30}{line:688}
+ExitLoop ; {file:30}{line:689}
+EndIf ; {file:30}{line:690}
+Local Const {var1771} = {string7033} ; {file:30}{line:691}
+For {var79} = 1 To {var482} ; {file:30}{line:692}
+{var1052} = {funcA129} ( {var1771} , {var340} )  ; {file:30}{line:693}
+If Not {funcA398} ( {funcU211} ( {funcA130} ( {var1052} , {string7034} ) ) , {var1765} ) Then  ; {file:30}{line:694}
+{var340} + = {funcA132} ( {var1052} )  ; {file:30}{line:695}
+Else ; {file:30}{line:696}
+{var629} = {var340} ; {file:30}{line:697}
+{var263} = 14 ; {file:30}{line:698}
+ExitLoop ; {file:30}{line:699}
+EndIf ; {file:30}{line:700}
+Next ; {file:30}{line:701}
+If Not {var629} Then ; {file:30}{line:702}
+{var263} = 15 ; {file:30}{line:703}
+ExitLoop ; {file:30}{line:704}
+EndIf ; {file:30}{line:705}
+Switch {var1764} ; {file:30}{line:706}
+Case 0 ; {file:30}{line:707}
+Case 1 ; {file:30}{line:709}
+Local Const {var1772} = {string7035} ; {file:30}{line:710}
+{var677} = {funcA129} ( {string7036} & {var1772} & {string7037} )  ; {file:30}{line:711}
+{funcA133} ( {var677} , {string7038} , 1 )  ; {file:30}{line:712}
+{funcA133} ( {var677} , {string7039} , 1 )  ; {file:30}{line:713}
+{funcA133} ( {var677} , {string7040} , 4 )  ; {file:30}{line:714}
+{funcA133} ( {var677} , {string7041} , {funcA131} ( {var677} , {string7042} ) )  ; {file:30}{line:715}
+{funcA133} ( {var677} , {string7043} , {var954} )  ; {file:30}{line:716}
+{var733} = {funcA122} ( {string7044} , {string7045} , {string7046} , {string7047} , {string7048} , {string7049} , {funcA131} ( {var677} , 2 ) )  ; {file:30}{line:717}
+If {macro22} Or {var733}[0] Then ; {file:30}{line:719}
+{var677} = 0 ; {file:30}{line:720}
+EndIf ; {file:30}{line:721}
+EndSwitch ; {file:30}{line:722}
+{var341} = {funcU131} ( )  ; {file:30}{line:723}
+{var733} = {funcA122} ( {string7050} , {string7051} , {string7052} , {string7053} , {var6} , {string7054} , {var341} , {string7055} , {var629} , {string7056} , {var677} )  ; {file:30}{line:724}
+If {macro22} Or {var733}[0] Then ; {file:30}{line:726}
+{var263} = {macro22} + 900 ; {file:30}{line:727}
+ExitLoop ; {file:30}{line:728}
+EndIf ; {file:30}{line:729}
+{var1125} = {funcU1071} ( {var341} )  ; {file:30}{line:730}
+{var733} = {funcA122} ( {string7057} , {string7058} , {string7059} , {string7060} , {var1125} )  ; {file:30}{line:731}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:732}
+{var263} = {macro22} + 1000 ; {file:30}{line:733}
+ExitLoop ; {file:30}{line:734}
+EndIf ; {file:30}{line:735}
+{var264} = {var733}[0] ; {file:30}{line:736}
+{var733} = {funcA122} ( {string7061} , {string7062} , {string7063} , {string7064} , {var1125} )  ; {file:30}{line:737}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:738}
+{var263} = {macro22} + 1100 ; {file:30}{line:739}
+ExitLoop ; {file:30}{line:740}
+EndIf ; {file:30}{line:741}
+{var484} = {funcU689} ( {var484} , {var264} , 1 )  ; {file:30}{line:742}
+If Not {macro22} Then ; {file:30}{line:743}
+{funcU691} ( {var484} , {var733} [ 0 ] , {var264} )  ; {file:30}{line:744}
+Else ; {file:30}{line:747}
+{var263} = {macro22} + 1300 ; {file:30}{line:748}
+EndIf ; {file:30}{line:749}
+Until 1 ; {file:30}{line:750}
+If {var341} Then ; {file:30}{line:751}
+{funcU133} ( {var341} )  ; {file:30}{line:752}
+EndIf ; {file:30}{line:753}
+If {var6} Then ; {file:30}{line:754}
+{funcA122} ( {string7065} , {string7066} , {string7067} , {string7068} , {var6} )  ; {file:30}{line:755}
+EndIf ; {file:30}{line:756}
+If {var1150} Then ; {file:30}{line:757}
+{funcA122} ( {string7069} , {string7070} , {string7071} , {string7072} , {var1150} )  ; {file:30}{line:758}
+EndIf ; {file:30}{line:759}
+If {var1768} Then ; {file:30}{line:760}
+{funcU10} ( {var1768} )  ; {file:30}{line:761}
+EndIf ; {file:30}{line:762}
+If {var263} Then Return {funcA374} ( {var263} , 0 , 0 )  ; {file:30}{line:763}
+Return {var264} ; {file:30}{line:765}
+EndFunc  ; {file:30}{line:766}
+Func {funcU1000} ({var10}) ; {file:30}{line:772}
+{var10} = {funcU1072} ( {var10} , 0 , 0 , 0 , 0x2000 )  ; {file:30}{line:773}
+Return {funcA374} ( {macro22} , {macro25} , {var10} )  ; {file:30}{line:774}
+EndFunc  ; {file:30}{line:775}
+Func {funcU1073} ({var1773}, {var850} = {string7073}) ; {file:30}{line:781}
+Local {var1774} = {string7074} ; {file:30}{line:782}
+If Not {funcA420} ( {var850} , {var69} + {var1081} ) Then  ; {file:30}{line:783}
+{var1774} = {string7075} ; {file:30}{line:784}
+{var850} = 0 ; {file:30}{line:785}
+EndIf ; {file:30}{line:786}
+Local {var733} = {funcA122} ( {string7076} , {string7077} , {string7078} , {string7079} , {var1773} , {var1774} , {var850} )  ; {file:30}{line:788}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:789}
+Return {var733}[0] ; {file:30}{line:792}
+EndFunc  ; {file:30}{line:793}
+Func {funcU1072} ({var6}, {var674} = 0, {var1681} = 0, {var1682} = 0, {var300} = 0) ; {file:30}{line:799}
+Local {var733} = {funcA122} ( {string7080} , {string7081} , {string7082} , {string7083} , {var6} , {string7084} , {var674} , {string7085} , {var1681} , {string7086} , {var1682} , {string7087} , {var300} )  ; {file:30}{line:800}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:802}
+Return {var733}[0] ; {file:30}{line:805}
+EndFunc  ; {file:30}{line:806}
+Func {funcU1074} ({var195}) ; {file:30}{line:812}
+Local {var454} = {funcA129} ( {var456} )  ; {file:30}{line:813}
+Local {var733} = {funcA122} ( {string7088} , {string7089} , {string7090} , {string7091} , {var454} , {string7092} , {var195} )  ; {file:30}{line:814}
+If {macro22} Or Not {var733} [ 0 ] Then {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:815}
+Return {var454} ; {file:30}{line:818}
+EndFunc  ; {file:30}{line:819}
+Func {funcU1075} ({var272}, {var1775} = False, {var1318} = False) ; {file:30}{line:825}
+Local {var10} = 0 ; {file:30}{line:826}
+Local {var1776}[2] = [0, 0] ; {file:30}{line:827}
+Local {var1777} = {funcU1048} ( {var272} )  ; {file:30}{line:829}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:830}
+Local {var263} = 0 ; {file:30}{line:832}
+Do ; {file:30}{line:833}
+Local {var1675} = {funcA129} ( {var1053} )  ; {file:30}{line:834}
+Local {var733} = {funcA122} ( {string7093} , {string7094} , {string7095} , {string7096} , {var1777} , {string7097} , {var1675} )  ; {file:30}{line:835}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:836}
+{var263} = {macro22} + 10 ; {file:30}{line:837}
+ExitLoop ; {file:30}{line:838}
+EndIf ; {file:30}{line:839}
+For {var79} = 0 To 1 ; {file:30}{line:840}
+{var1776} [ {var79} ] = {funcA130} ( {var1675} , {var79} + 4 )  ; {file:30}{line:841}
+Next ; {file:30}{line:842}
+Local {var1671} = {funcA129} ( {var1676} )  ; {file:30}{line:843}
+If Not {funcU567} ( {var1776} [ 0 ] , {funcA132} ( {var1671} ) , {funcA131} ( {var1671} ) ) Then  ; {file:30}{line:844}
+{var263} = {macro22} + 20 ; {file:30}{line:845}
+ExitLoop ; {file:30}{line:846}
+EndIf ; {file:30}{line:847}
+If {var1775} Then ; {file:30}{line:848}
+{var10} = {funcU1067} ( {funcA130} ( {var1671} , {string7098} ) , {funcA130} ( {var1671} , {string7099} ) )  ; {file:30}{line:849}
+Local {var447} = {funcU178} ( 0 )  ; {file:30}{line:850}
+Local {var1766} = {funcU180} ( {var447} , {var10} )  ; {file:30}{line:851}
+{funcU181} ( {var447} , 0 , 0 , {var1777} )  ; {file:30}{line:852}
+{funcU180} ( {var447} , {var1766} )  ; {file:30}{line:853}
+{funcU185} ( {var447} )  ; {file:30}{line:854}
+Else ; {file:30}{line:855}
+{var10} = {var1776}[1] ; {file:30}{line:856}
+{var1776}[1] = 0 ; {file:30}{line:857}
+EndIf ; {file:30}{line:858}
+Until 1 ; {file:30}{line:859}
+For {var79} = 0 To 1 ; {file:30}{line:860}
+If {var1776}[{var79}] Then ; {file:30}{line:861}
+{funcU10} ( {var1776} [ {var79} ] )  ; {file:30}{line:862}
+EndIf ; {file:30}{line:863}
+Next ; {file:30}{line:864}
+{funcU136} ( {var1777} )  ; {file:30}{line:865}
+If {var263} Then Return {funcA374} ( {var263} , 0 , 0 )  ; {file:30}{line:866}
+If Not {var10} Then Return {funcA374} ( 12 , 0 , 0 )  ; {file:30}{line:867}
+If {var1318} Then ; {file:30}{line:869}
+{funcU136} ( {var272} )  ; {file:30}{line:870}
+EndIf ; {file:30}{line:871}
+Return {var10} ; {file:30}{line:873}
+EndFunc  ; {file:30}{line:874}
+Func {funcU1048} ({var272}, {var1318} = False) ; {file:30}{line:880}
+Local {var1674}[2], {var1673} = 0 ; {file:30}{line:881}
+Local {var1776}[2][2] = [[0, 0],[0, 0]] ; {file:30}{line:882}
+Local {var1675} = {funcA129} ( {var1053} )  ; {file:30}{line:884}
+Local {var733} = {funcA122} ( {string7100} , {string7101} , {string7102} , {string7103} , {var272} , {string7104} , {var1675} )  ; {file:30}{line:885}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:886}
+If Not {var733} [ 0 ] Then Return {funcA374} ( 10 , 0 , 0 )  ; {file:30}{line:887}
+For {var79} = 0 To 1 ; {file:30}{line:889}
+{var1674} [ {var79} ] = {funcA130} ( {var1675} , {var79} + 4 )  ; {file:30}{line:890}
+Next ; {file:30}{line:891}
+If {funcU1070} ( {var1674} [ 1 ] ) Then  ; {file:30}{line:892}
+{var1776} [ 0 ] [ 0 ] = {funcU1076} ( {var1674} [ 1 ] )  ; {file:30}{line:893}
+If Not {macro22} Then ; {file:30}{line:894}
+{var1673} = {funcU1003} ( {var1674} [ 1 ] , {var1776} [ 0 ] [ 0 ] )  ; {file:30}{line:895}
+EndIf ; {file:30}{line:896}
+Else ; {file:30}{line:897}
+Local {var445} = {funcU834} ( {var1674} [ 1 ] )  ; {file:30}{line:898}
+Local {var1668}[2] ; {file:30}{line:899}
+For {var79} = 0 To 1 ; {file:30}{line:900}
+{var1668} [ {var79} ] = {funcA130} ( {var445} , {var79} + 1 )  ; {file:30}{line:901}
+Next ; {file:30}{line:902}
+Local {var887} = {funcU178} ( 0 )  ; {file:30}{line:903}
+Local {var1778} = {funcU178} ( 0 )  ; {file:30}{line:904}
+Local {var1736}, {var1779} ; {file:30}{line:905}
+For {var79} = 0 To 1 ; {file:30}{line:906}
+{var1776} [ {var79} ] [ 0 ] = {funcU1067} ( {var1668} [ 0 ] , {var1668} [ 1 ] )  ; {file:30}{line:907}
+{var1776}[{var79}][1] = {var1654} ; {file:30}{line:908}
+{var1736} = {funcU180} ( {var887} , {var1674} [ {var79} ] )  ; {file:30}{line:909}
+{var1779} = {funcU180} ( {var1778} , {var1776} [ {var79} ] [ 0 ] )  ; {file:30}{line:910}
+{funcU487} ( {var1778} , 0 , 0 , {var1668} [ 0 ] , {var1668} [ 1 ] , {var887} , 0 , 0 , 0x00C000CA )  ; {file:30}{line:911}
+{funcU180} ( {var887} , {var1736} )  ; {file:30}{line:912}
+{funcU180} ( {var1778} , {var1779} )  ; {file:30}{line:913}
+Next ; {file:30}{line:914}
+{funcU185} ( {var887} )  ; {file:30}{line:915}
+{funcU185} ( {var1778} )  ; {file:30}{line:916}
+{var733} = {funcA122} ( {string7105} , {string7106} , {string7107} , {string7108} , {funcU1077} ( ) , {string7109} , 0 , {string7110} , {var1668} [ 0 ] * {var1668} [ 1 ] * 4 , {string7111} , {var1776} [ 0 ] [ 1 ] , {string7112} , {var1776} [ 1 ] [ 1 ] )  ; {file:30}{line:917}
+If Not {macro22} And {var733}[0] Then ; {file:30}{line:919}
+{var1673} = {funcU1003} ( {var1776} [ 1 ] [ 0 ] , {var1674} [ 0 ] )  ; {file:30}{line:920}
+EndIf ; {file:30}{line:921}
+EndIf ; {file:30}{line:922}
+For {var79} = 0 To 1 ; {file:30}{line:923}
+{funcU10} ( {var1674} [ {var79} ] )  ; {file:30}{line:924}
+If {var1776}[{var79}][0] Then ; {file:30}{line:925}
+{funcU10} ( {var1776} [ {var79} ] [ 0 ] )  ; {file:30}{line:926}
+EndIf ; {file:30}{line:927}
+Next ; {file:30}{line:928}
+If Not {var1673} Then Return {funcA374} ( 11 , 0 , 0 )  ; {file:30}{line:929}
+If {var1318} Then ; {file:30}{line:931}
+{funcU136} ( {var272} )  ; {file:30}{line:932}
+EndIf ; {file:30}{line:933}
+Return {var1673} ; {file:30}{line:935}
+EndFunc  ; {file:30}{line:936}
+Func {funcU1076} ({var10}) ; {file:30}{line:942}
+Local {var263} = 0, {var1672} = 0 ; {file:30}{line:943}
+{var10} = {funcU1000} ( {var10} )  ; {file:30}{line:945}
+If Not {var10} Then Return {funcA374} ( {macro22} + 20 , {macro25} , 0 )  ; {file:30}{line:946}
+Do ; {file:30}{line:948}
+Local {var1780}[2] ; {file:30}{line:949}
+{var1780} [ 0 ] = {funcA129} ( {var1770} )  ; {file:30}{line:950}
+If ( Not {funcU567} ( {var10} , {funcA132} ( {var1780} [ 0 ] ) , {funcA131} ( {var1780} [ 0 ] ) ) ) Or ( {funcA130} ( {var1780} [ 0 ] , {string7113} ) < > 32 ) Or ( {funcA130} ( {var1780} [ 0 ] , {string7114} ) ) Then  ; {file:30}{line:951}
+{var263} = 10 ; {file:30}{line:953}
+ExitLoop ; {file:30}{line:954}
+EndIf ; {file:30}{line:955}
+{var1780} [ 1 ] = {funcA129} ( {var1676} )  ; {file:30}{line:956}
+{var1672} = {funcU1067} ( {funcA130} ( {var1780} [ 0 ] , {string7115} ) , {funcA130} ( {var1780} [ 0 ] , {string7116} ) , 1 )  ; {file:30}{line:957}
+If Not {funcU567} ( {var1672} , {funcA132} ( {var1780} [ 1 ] ) , {funcA131} ( {var1780} [ 1 ] ) ) Then  ; {file:30}{line:958}
+{var263} = 11 ; {file:30}{line:959}
+ExitLoop ; {file:30}{line:960}
+EndIf ; {file:30}{line:961}
+Local {var733} = {funcA122} ( {string7117} , {string7118} , {string7119} , {string7120} , {funcU1078} ( ) , {string7121} , 0 , {string7122} , 0 , {string7123} , {funcA131} ( {var1780} [ 0 ] ) , {string7124} , {funcA131} ( {var1780} [ 1 ] ) )  ; {file:30}{line:962}
+If {macro22} Then ; {file:30}{line:964}
+{var263} = {macro22} ; {file:30}{line:965}
+ExitLoop ; {file:30}{line:966}
+EndIf ; {file:30}{line:967}
+If Not {var733}[0] Then ; {file:30}{line:968}
+{var263} = 12 ; {file:30}{line:969}
+ExitLoop ; {file:30}{line:970}
+EndIf ; {file:30}{line:971}
+{var263} = 0 ; {file:30}{line:972}
+Until 1 ; {file:30}{line:973}
+{funcU10} ( {var10} )  ; {file:30}{line:974}
+If {var263} Then ; {file:30}{line:975}
+If {var1672} Then ; {file:30}{line:976}
+{funcU10} ( {var1672} )  ; {file:30}{line:977}
+EndIf ; {file:30}{line:978}
+{var1672} = 0 ; {file:30}{line:979}
+EndIf ; {file:30}{line:980}
+Return {funcA374} ( {var263} , 0 , {var1672} )  ; {file:30}{line:982}
+EndFunc  ; {file:30}{line:983}
+Func {funcU1079} (ByRef {var1671}) ; {file:30}{line:989}
+Local {var733} = {funcA122} ( {string7125} , {string7126} , {string7127} , {string7128} , {var1671} )  ; {file:30}{line:990}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:991}
+Return {var733}[0] ; {file:30}{line:994}
+EndFunc  ; {file:30}{line:995}
+Func {funcU1080} ({var377}, {var1213}, {var1781} = 0) ; {file:30}{line:1001}
+Local {var1782} = {funcA129} ( {var1783} )  ; {file:30}{line:1002}
+{funcA133} ( {var1782} , 1 , {var377} )  ; {file:30}{line:1003}
+{funcA133} ( {var1782} , 2 , {funcU1062} ( {var1213} ) )  ; {file:30}{line:1004}
+{funcA133} ( {var1782} , 3 , {var1781} )  ; {file:30}{line:1005}
+Local {var733} = {funcA122} ( {string7129} , {string7130} , {string7131} , {string7132} , {var1782} )  ; {file:30}{line:1007}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1008}
+Return {var733}[0] ; {file:30}{line:1011}
+EndFunc  ; {file:30}{line:1012}
+Func {funcU1081} ({var300} = 0, {var1784} = 0, {var1785} = 10000, {var1786} = 10000, {var1787} = 10000, {var1788} = 0, {var1789} = 10000, {var1790} = 0, {var1791} = 0, {var1792} = 0, {var1793} = 0) ; {file:30}{line:1018}
+Local {var1794} = {funcA129} ( {var1795} )  ; {file:30}{line:1019}
+{funcA133} ( {var1794} , 1 , {funcA132} ( {var1794} ) )  ; {file:30}{line:1020}
+{funcA133} ( {var1794} , 2 , {var300} )  ; {file:30}{line:1021}
+{funcA133} ( {var1794} , 3 , {var1784} )  ; {file:30}{line:1022}
+{funcA133} ( {var1794} , 4 , {var1785} )  ; {file:30}{line:1023}
+{funcA133} ( {var1794} , 5 , {var1786} )  ; {file:30}{line:1024}
+{funcA133} ( {var1794} , 6 , {var1787} )  ; {file:30}{line:1025}
+{funcA133} ( {var1794} , 7 , {var1788} )  ; {file:30}{line:1026}
+{funcA133} ( {var1794} , 8 , {var1789} )  ; {file:30}{line:1027}
+{funcA133} ( {var1794} , 9 , {var1790} )  ; {file:30}{line:1028}
+{funcA133} ( {var1794} , 10 , {var1791} )  ; {file:30}{line:1029}
+{funcA133} ( {var1794} , 11 , {var1792} )  ; {file:30}{line:1030}
+{funcA133} ( {var1794} , 12 , {var1793} )  ; {file:30}{line:1031}
+Return {var1794} ; {file:30}{line:1033}
+EndFunc  ; {file:30}{line:1034}
+Func {funcU1082} ({var447}, {var194}, {var193}, {var1213}) ; {file:30}{line:1040}
+Local {var458} = {funcU1080} ( 0 , {var1213} )  ; {file:30}{line:1041}
+Local {var733} = {funcA122} ( {string7133} , {string7134} , {string7135} , {string7136} , {var447} )  ; {file:30}{line:1042}
+Local {var884} = {var733}[0] ; {file:30}{line:1043}
+{var733} = {funcA122} ( {string7137} , {string7138} , {string7139} , {string7140} , {var447} , {string7141} , {var194} , {string7142} , {var193} )  ; {file:30}{line:1044}
+Local {var421} = {var733}[0] ; {file:30}{line:1045}
+{var733} = {funcA122} ( {string7143} , {string7144} , {string7145} , {string7146} , {var884} , {string7147} , {var421} )  ; {file:30}{line:1046}
+Local {var1340} = {var733}[0] ; {file:30}{line:1047}
+Local {var195} = {funcU1083} ( 0 , 0 , {var194} , {var193} )  ; {file:30}{line:1048}
+Local {var263} = 0 ; {file:30}{line:1049}
+{var733} = {funcA122} ( {string7148} , {string7149} , {string7150} , {string7151} , {var884} , {string7152} , {var195} , {string7153} , {var458} )  ; {file:30}{line:1050}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:1051}
+{var263} = {macro22} + 10 ; {file:30}{line:1052}
+{funcU10} ( {var421} )  ; {file:30}{line:1053}
+EndIf ; {file:30}{line:1054}
+{funcU10} ( {var458} )  ; {file:30}{line:1055}
+{funcA122} ( {string7154} , {string7155} , {string7156} , {string7157} , {var884} , {string7158} , {var1340} )  ; {file:30}{line:1056}
+{funcA122} ( {string7159} , {string7160} , {string7161} , {string7162} , {var884} )  ; {file:30}{line:1057}
+If {var263} Then Return {funcA374} ( {var263} , 0 , 0 )  ; {file:30}{line:1058}
+Return {var421} ; {file:30}{line:1060}
+EndFunc  ; {file:30}{line:1061}
+Func {funcU1067} ({var194}, {var193}, {var915} = 32, {var1796} = 0, {var1797} = 0) ; {file:30}{line:1067}
+Local {var1798}[2], {var691}, {var1799} ; {file:30}{line:1068}
+Switch {var915} ; {file:30}{line:1069}
+Case 1 ; {file:30}{line:1070}
+{var691} = 2 ; {file:30}{line:1071}
+Case 4 ; {file:30}{line:1072}
+{var691} = 16 ; {file:30}{line:1073}
+Case 8 ; {file:30}{line:1074}
+{var691} = 256 ; {file:30}{line:1075}
+Case Else ; {file:30}{line:1076}
+{var691} = 0 ; {file:30}{line:1077}
+EndSwitch ; {file:30}{line:1078}
+If {var691} Then ; {file:30}{line:1079}
+If Not {funcA285} ( {var1796} ) Then  ; {file:30}{line:1080}
+Switch {var915} ; {file:30}{line:1081}
+Case 1 ; {file:30}{line:1082}
+{var1798}[0] = 0 ; {file:30}{line:1083}
+{var1798}[1] = 0xFFFFFF ; {file:30}{line:1084}
+{var1796} = {funcU1084} ( {var1798} )  ; {file:30}{line:1085}
+Case Else ; {file:30}{line:1086}
+EndSwitch ; {file:30}{line:1088}
+Else ; {file:30}{line:1089}
+If {var691} > {var1797} Then ; {file:30}{line:1090}
+{var691} = {var1797} ; {file:30}{line:1091}
+EndIf ; {file:30}{line:1092}
+If ( Not {var691} ) Or ( ( 4 * {var691} ) > {funcA132} ( {var1796} ) ) Then  ; {file:30}{line:1093}
+Return {funcA374} ( 20 , 0 , 0 )  ; {file:30}{line:1094}
+EndIf ; {file:30}{line:1095}
+EndIf ; {file:30}{line:1096}
+{var1799} = {string7163} & {var691} & {string7164} ; {file:30}{line:1097}
+Else ; {file:30}{line:1098}
+{var1799} = {string7165} ; {file:30}{line:1099}
+EndIf ; {file:30}{line:1100}
+Local {var446} = {funcA129} ( {var1724} & {var1799} )  ; {file:30}{line:1101}
+{funcA133} ( {var446} , {string7166} , 40 )  ; {file:30}{line:1103}
+{funcA133} ( {var446} , {string7167} , {var194} )  ; {file:30}{line:1104}
+{funcA133} ( {var446} , {string7168} , {var193} )  ; {file:30}{line:1105}
+{funcA133} ( {var446} , {string7169} , 1 )  ; {file:30}{line:1106}
+{funcA133} ( {var446} , {string7170} , {var915} )  ; {file:30}{line:1107}
+{funcA133} ( {var446} , {string7171} , 0 )  ; {file:30}{line:1108}
+{funcA133} ( {var446} , {string7172} , 0 )  ; {file:30}{line:1109}
+{funcA133} ( {var446} , {string7173} , 0 )  ; {file:30}{line:1110}
+{funcA133} ( {var446} , {string7174} , 0 )  ; {file:30}{line:1111}
+{funcA133} ( {var446} , {string7175} , {var691} )  ; {file:30}{line:1112}
+{funcA133} ( {var446} , {string7176} , 0 )  ; {file:30}{line:1113}
+If {var691} Then ; {file:30}{line:1114}
+If {funcA285} ( {var1796} ) Then  ; {file:30}{line:1115}
+{funcU691} ( {funcA131} ( {var446} , {string7177} ) , {funcA131} ( {var1796} ) , 4 * {var691} )  ; {file:30}{line:1116}
+Else ; {file:30}{line:1117}
+{funcU1085} ( {funcA131} ( {var446} , {string7178} ) , 4 * {var691} )  ; {file:30}{line:1118}
+EndIf ; {file:30}{line:1119}
+EndIf ; {file:30}{line:1120}
+Local {var10} = {funcU179} ( 0 , {var446} , 0 , {var1654} )  ; {file:30}{line:1121}
+If Not {var10} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1122}
+Return {var10} ; {file:30}{line:1124}
+EndFunc  ; {file:30}{line:1125}
+Func {funcU1084} (Const ByRef {var1800}, {var283} = 0, {var1238} = -1) ; {file:30}{line:1131}
+If {funcU677} ( {var1800} , {var283} , {var1238} ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:1132}
+Local {var1796} = {funcA129} ( {string7179} & ( {var1238} - {var283} + 1 ) & {string7180} )  ; {file:30}{line:1134}
+Local {var482} = 1 ; {file:30}{line:1136}
+For {var79} = {var283} To {var1238} ; {file:30}{line:1137}
+{funcA133} ( {var1796} , 1 , {funcU1086} ( {funcU1062} ( {var1800} [ {var79} ] ) ) , {var482} )  ; {file:30}{line:1138}
+{var482} += 1 ; {file:30}{line:1139}
+Next ; {file:30}{line:1140}
+Return {var1796} ; {file:30}{line:1141}
+EndFunc  ; {file:30}{line:1142}
+Func {funcU1087} ({var447}, ByRef {var446}, {var1049}, {var448} = 0) ; {file:30}{line:1148}
+Local {var1801} = 0 ; {file:30}{line:1149}
+If {var448} Then ; {file:30}{line:1150}
+{var1801} = 0x04 ; {file:30}{line:1151}
+EndIf ; {file:30}{line:1152}
+Local {var733} = {funcA122} ( {string7181} , {string7182} , {string7183} , {string7184} , {var447} , {string7185} , {var446} , {string7186} , {var1801} , {string7187} , {var448} , {string7188} , {var446} , {string7189} , {var1049} )  ; {file:30}{line:1154}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1156}
+Return {var733}[0] ; {file:30}{line:1159}
+EndFunc  ; {file:30}{line:1160}
+Func {funcU179} ({var447}, {var446}, {var1049}, ByRef {var448}, {var1802} = 0, {var681} = 0) ; {file:30}{line:1166}
+{var448} = 0 ; {file:30}{line:1167}
+Local {var733} = {funcA122} ( {string7190} , {string7191} , {string7192} , {string7193} , {var447} , {string7194} , {var446} , {string7195} , {var1049} , {string7196} , 0 , {string7197} , {var1802} , {string7198} , {var681} )  ; {file:30}{line:1169}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1171}
+{var448} = {var733}[4] ; {file:30}{line:1174}
+Return {var733}[0] ; {file:30}{line:1175}
+EndFunc  ; {file:30}{line:1176}
+Func {funcU1088} ({var195}) ; {file:30}{line:1182}
+Local {var733} = {funcA122} ( {string7199} , {string7200} , {string7201} , {string7202} , {var195} )  ; {file:30}{line:1183}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1184}
+Return {var733}[0] ; {file:30}{line:1187}
+EndFunc  ; {file:30}{line:1188}
+Func {funcU1002} ({var194}, {var193}, {var915} = 32) ; {file:30}{line:1194}
+Local {var1803} = {funcU1067} ( {var194} , {var193} , {var915} )  ; {file:30}{line:1195}
+Local {var1804} = {funcU1067} ( {var194} , {var193} , 1 )  ; {file:30}{line:1196}
+Local {var447} = {funcU178} ( 0 )  ; {file:30}{line:1197}
+Local {var1766} = {funcU180} ( {var447} , {var1804} )  ; {file:30}{line:1198}
+Local {var458} = {funcU506} ( 0xFFFFFF )  ; {file:30}{line:1199}
+Local {var195} = {funcU1089} ( 0 , 0 , {var194} , {var193} )  ; {file:30}{line:1200}
+{funcU507} ( {var447} , {funcA131} ( {var195} ) , {var458} )  ; {file:30}{line:1201}
+{funcU10} ( {var458} )  ; {file:30}{line:1202}
+{funcU180} ( {var447} , {var1766} )  ; {file:30}{line:1203}
+{funcU185} ( {var447} )  ; {file:30}{line:1204}
+Local {var272} = {funcU1003} ( {var1803} , {var1804} )  ; {file:30}{line:1205}
+Local {var263} = {macro22} ; {file:30}{line:1206}
+If {var1803} Then ; {file:30}{line:1207}
+{funcU10} ( {var1803} )  ; {file:30}{line:1208}
+EndIf ; {file:30}{line:1209}
+If {var1804} Then ; {file:30}{line:1210}
+{funcU10} ( {var1804} )  ; {file:30}{line:1211}
+EndIf ; {file:30}{line:1212}
+If Not {var272} Then Return {funcA374} ( {var263} + 10 , 0 , 0 )  ; {file:30}{line:1213}
+Return {var272} ; {file:30}{line:1215}
+EndFunc  ; {file:30}{line:1216}
+Func {funcU1090} ({var447} = 0, {var195} = 0, {var1805} = False, {var850} = {string7203}, {var1806} = {string7204}) ; {file:30}{line:1222}
+Local {var1774} = {string7205} ; {file:30}{line:1223}
+If Not {funcA420} ( {var850} , {var69} + {var1081} ) Then  ; {file:30}{line:1224}
+{var1774} = {string7206} ; {file:30}{line:1225}
+{var850} = 0 ; {file:30}{line:1226}
+EndIf ; {file:30}{line:1227}
+Local {var454} = 0 , {var696} = {funcA418} ( {var1806} , {string7207} , {var1158} )  ; {file:30}{line:1229}
+If {funcA456} ( {var696} ) < 2 Then  ; {file:30}{line:1230}
+ReDim {var696}[2] ; {file:30}{line:1231}
+{var696}[1] = {string7208} ; {file:30}{line:1232}
+EndIf ; {file:30}{line:1233}
+For {var79} = 0 To 1 ; {file:30}{line:1234}
+{var696} [ {var79} ] = {funcA420} ( {var696} [ {var79} ] , {var69} + {var1081} )  ; {file:30}{line:1235}
+Next ; {file:30}{line:1236}
+If ( {var696} [ 0 ] ) Or ( {var696} [ 1 ] ) Then  ; {file:30}{line:1237}
+{var454} = {funcU1091} ( {var696} )  ; {file:30}{line:1238}
+EndIf ; {file:30}{line:1239}
+Local {var1807}, {var1808}, {var1809}, {var1810}, {var1811} = 0 ; {file:30}{line:1241}
+If {var1805} And ( {funcA285} ( {var195} ) ) Then  ; {file:30}{line:1242}
+If Not {var447} Then ; {file:30}{line:1243}
+{var1811} = {funcU505} ( 0 )  ; {file:30}{line:1244}
+EndIf ; {file:30}{line:1245}
+{var1807} = {funcU552} ( {var1811} , 8 )  ; {file:30}{line:1246}
+{var1808} = {funcU552} ( {var1811} , 10 )  ; {file:30}{line:1247}
+{var1809} = {funcU552} ( {var1811} , 4 )  ; {file:30}{line:1248}
+{var1810} = {funcU552} ( {var1811} , 6 )  ; {file:30}{line:1249}
+If {var1811} Then ; {file:30}{line:1250}
+{funcU508} ( 0 , {var1811} )  ; {file:30}{line:1251}
+EndIf ; {file:30}{line:1252}
+For {var79} = 1 To 3 Step 2 ; {file:30}{line:1253}
+{funcA133} ( {var195} , {var79} , {funcA367} ( {funcA130} ( {var195} , {var79} ) * {var1809} / {var1807} * 100 ) )  ; {file:30}{line:1254}
+Next ; {file:30}{line:1255}
+For {var79} = 2 To 4 Step 2 ; {file:30}{line:1256}
+{funcA133} ( {var195} , {var79} , {funcA367} ( {funcA130} ( {var195} , {var79} ) * {var1810} / {var1808} * 100 ) )  ; {file:30}{line:1257}
+Next ; {file:30}{line:1258}
+EndIf ; {file:30}{line:1259}
+Local {var733} = {funcA122} ( {string7209} , {string7210} , {string7211} , {string7212} , {var447} , {var1774} , {var850} , {string7213} , {var195} , {string7214} , {var454} )  ; {file:30}{line:1261}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1263}
+Return {var733}[0] ; {file:30}{line:1266}
+EndFunc  ; {file:30}{line:1267}
+Func {funcU1092} ({var193}, {var194} = 0, {var1812} = 0, {var1813} = 0, {var849} = 400, {var830} = False, {var831} = False, {var947} = False, {var948} = 1, {var1814} = 0, {var1815} = 0, {var954} = 0, {var1816} = 0, {var847} = {string7215}, {var377} = 0) ; {file:30}{line:1273}
+Local {var733} = {funcA122} ( {string7216} , {string7217} , {string7218} , {string7219} , {var193} , {string7220} , {var194} , {string7221} , {var1812} , {string7222} , {var1813} , {string7223} , {var849} , {string7224} , {var830} , {string7225} , {var831} , {string7226} , {var947} , {string7227} , {var948} , {string7228} , {var1814} , {string7229} , {var1815} , {string7230} , {var954} , {string7231} , {var1816} , {string7232} , {funcU1093} ( {var847} , {var377} , {var948} ) )  ; {file:30}{line:1274}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1278}
+Return {var733}[0] ; {file:30}{line:1281}
+EndFunc  ; {file:30}{line:1282}
+Func {funcU1003} ({var10}, {var1817}, {var1818} = 0, {var1819} = 0, {var1680} = True) ; {file:30}{line:1288}
+Local {var1675} = {funcA129} ( {var1053} )  ; {file:30}{line:1289}
+{funcA133} ( {var1675} , 1 , {var1680} )  ; {file:30}{line:1290}
+{funcA133} ( {var1675} , 2 , {var1818} )  ; {file:30}{line:1291}
+{funcA133} ( {var1675} , 3 , {var1819} )  ; {file:30}{line:1292}
+{funcA133} ( {var1675} , 4 , {var1817} )  ; {file:30}{line:1293}
+{funcA133} ( {var1675} , 5 , {var10} )  ; {file:30}{line:1294}
+Local {var733} = {funcA122} ( {string7233} , {string7234} , {string7235} , {string7236} , {var1675} )  ; {file:30}{line:1296}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1297}
+Return {var733}[0] ; {file:30}{line:1300}
+EndFunc  ; {file:30}{line:1301}
+Func {funcU1094} ({none}) ; {file:30}{line:1307}
+Local {var733} = {funcA122} ( {string7237} , {string7238} , {string7239} , {string7240} , 0 , {string7241} , 0 , {string7242} , 0 , {string7243} , 0 )  ; {file:30}{line:1308}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1309}
+Return {var733}[0] ; {file:30}{line:1312}
+EndFunc  ; {file:30}{line:1313}
+Func {funcU1095} (Const ByRef {var1820}, {var283} = 0, {var1238} = -1, {var134} = 1) ; {file:30}{line:1319}
+If {funcU677} ( {var1820} , {var283} , {var1238} , 2 , 2 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:1320}
+Local {var1162} = {string7244} ; {file:30}{line:1322}
+For {var79} = {var283} To {var1238} ; {file:30}{line:1323}
+{var1162} &= {string7245} ; {file:30}{line:1324}
+Next ; {file:30}{line:1325}
+Local {var454} = {funcA129} ( {var1162} )  ; {file:30}{line:1326}
+Local {var482} = 1 ; {file:30}{line:1328}
+For {var79} = {var283} To {var1238} ; {file:30}{line:1329}
+For {var253} = 0 To 1 ; {file:30}{line:1330}
+{funcA133} ( {var454} , {var482} , {var1820} [ {var79} ] [ {var253} ] , {var253} + 1 )  ; {file:30}{line:1331}
+Next ; {file:30}{line:1332}
+{var482} += 1 ; {file:30}{line:1333}
+Next ; {file:30}{line:1334}
+Local {var733} = {funcA122} ( {string7246} , {string7247} , {string7248} , {string7249} , {var454} , {string7250} , {var482} - 1 , {string7251} , {var134} )  ; {file:30}{line:1336}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1337}
+Return {var733}[0] ; {file:30}{line:1340}
+EndFunc  ; {file:30}{line:1341}
+Func {funcU1096} ({var195}) ; {file:30}{line:1347}
+Local {var733} = {funcA122} ( {string7252} , {string7253} , {string7254} , {string7255} , {var195} )  ; {file:30}{line:1348}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1349}
+Return {var733}[0] ; {file:30}{line:1352}
+EndFunc  ; {file:30}{line:1353}
+Func {funcU1097} ({var663} = 1, {var664} = 0, {var665} = 0, {var666} = 1, {var566} = 0, {var567} = 0) ; {file:30}{line:1359}
+Local {var1762} = {funcA129} ( {var1763} )  ; {file:30}{line:1360}
+{funcA133} ( {var1762} , 1 , {var663} )  ; {file:30}{line:1361}
+{funcA133} ( {var1762} , 2 , {var664} )  ; {file:30}{line:1362}
+{funcA133} ( {var1762} , 3 , {var665} )  ; {file:30}{line:1363}
+{funcA133} ( {var1762} , 4 , {var666} )  ; {file:30}{line:1364}
+{funcA133} ( {var1762} , 5 , {var566} )  ; {file:30}{line:1365}
+{funcA133} ( {var1762} , 6 , {var567} )  ; {file:30}{line:1366}
+Return {var1762} ; {file:30}{line:1368}
+EndFunc  ; {file:30}{line:1369}
+Func {funcU138} ({var1773}) ; {file:30}{line:1375}
+Local {var733} = {funcA122} ( {string7256} , {string7257} , {string7258} , {string7259} , {var1773} )  ; {file:30}{line:1376}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1377}
+Return {var733}[0] ; {file:30}{line:1380}
+EndFunc  ; {file:30}{line:1381}
+Func {funcU1098} ({var447}, ByRef {var196}, {var482} = 1) ; {file:30}{line:1387}
+Local {var733} = {funcA122} ( {string7260} , {string7261} , {string7262} , {string7263} , {var447} , {string7264} , {var196} , {string7265} , {var482} )  ; {file:30}{line:1388}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1389}
+Return {var733}[0] ; {file:30}{line:1392}
+EndFunc  ; {file:30}{line:1393}
+Func {funcU1099} ({var52}, {var1821}, {var1822}) ; {file:30}{line:1399}
+Local {var733} = {funcA122} ( {string7266} , {string7267} , {string7268} , {string7269} , {var52} , {string7270} , 3 , {string7271} , {var1821} , {string7272} , {var1822} )  ; {file:30}{line:1400}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1402}
+Return {var733}[0] ; {file:30}{line:1405}
+EndFunc  ; {file:30}{line:1406}
+Func {funcU1068} ({var447}, {var207}, {var208}, {var10}, {var890} = 0x00CC0020) ; {file:30}{line:1412}
+Local {var1735} = {funcA129} ( {var1676} )  ; {file:30}{line:1413}
+Local {var733} = {funcA122} ( {string7273} , {string7274} , {string7275} , {string7276} , {var10} , {string7277} , {funcA132} ( {var1735} ) , {string7278} , {var1735} )  ; {file:30}{line:1414}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 20 , {macro25} , 0 )  ; {file:30}{line:1415}
+{var733} = {funcA122} ( {string7279} , {string7280} , {string7281} , {string7282} , 0 )  ; {file:30}{line:1417}
+Local {var1823} = {var733}[0] ; {file:30}{line:1418}
+{var733} = {funcA122} ( {string7283} , {string7284} , {string7285} , {string7286} , {var1823} )  ; {file:30}{line:1419}
+Local {var887} = {var733}[0] ; {file:30}{line:1420}
+{var733} = {funcA122} ( {string7287} , {string7288} , {string7289} , {string7290} , {var887} , {string7291} , {var10} )  ; {file:30}{line:1421}
+Local {var1736} = {var733}[0] ; {file:30}{line:1422}
+Local {var263} = 0 ; {file:30}{line:1423}
+{var733} = {funcA122} ( {string7292} , {string7293} , {string7294} , {string7295} , {var447} , {string7296} , {var207} , {string7297} , {var208} , {string7298} , {funcA130} ( {var1735} , {string7299} ) , {string7300} , {funcA130} ( {var1735} , {string7301} ) , {string7302} , {var887} , {string7303} , 0 , {string7304} , 0 , {string7305} , {var890} )  ; {file:30}{line:1424}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:1425}
+{var263} = {macro22} + 1 ; {file:30}{line:1426}
+EndIf ; {file:30}{line:1427}
+{funcA122} ( {string7306} , {string7307} , {string7308} , {string7309} , 0 , {string7310} , {var1823} )  ; {file:30}{line:1428}
+{funcA122} ( {string7311} , {string7312} , {string7313} , {string7314} , {var887} , {string7315} , {var1736} )  ; {file:30}{line:1429}
+{funcA122} ( {string7316} , {string7317} , {string7318} , {string7319} , {var887} )  ; {file:30}{line:1430}
+If Not {var263} Then Return {funcA374} ( 10 , 0 , 0 )  ; {file:30}{line:1431}
+Return 1 ; {file:30}{line:1433}
+EndFunc  ; {file:30}{line:1434}
+Func {funcU1100} ({var447}, {var195}) ; {file:30}{line:1440}
+Local {var733} = {funcA122} ( {string7320} , {string7321} , {string7322} , {string7323} , {var447} , {string7324} , {var195} )  ; {file:30}{line:1441}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1442}
+Return {var733}[0] ; {file:30}{line:1445}
+EndFunc  ; {file:30}{line:1446}
+Func {funcU1101} ({var447}, {var248}, {var1824}, {var1825}, {var1826} = 0, {var1827} = 0, {var195} = 0, {var300} = 0) ; {file:30}{line:1452}
+Local {var733} ; {file:30}{line:1453}
+If Not {funcA285} ( {var195} ) Then  ; {file:30}{line:1455}
+{var195} = {funcA129} ( {var456} )  ; {file:30}{line:1456}
+{var733} = {funcA122} ( {string7325} , {string7326} , {string7327} , {string7328} , {funcU1102} ( {var447} ) , {string7329} , {var195} )  ; {file:30}{line:1457}
+If {macro22} Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:1458}
+If Not {var733} [ 0 ] Then Return {funcA374} ( 10 , 0 , 0 )  ; {file:30}{line:1459}
+EndIf ; {file:30}{line:1460}
+{var733} = {funcA122} ( {string7330} , {string7331} , {string7332} , {string7333} , {var447} , {string7334} , {var248} , {string7335} , - 1 , {string7336} , {var195} , {string7337} , {var300} , {string7338} , {funcU1062} ( {var1824} ) , {string7339} , {funcU1062} ( {var1825} ) , {string7340} , {var1826} , {string7341} , {var1827} )  ; {file:30}{line:1461}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1463}
+Return {var733}[0] ; {file:30}{line:1466}
+EndFunc  ; {file:30}{line:1467}
+Func {funcU1103} ({var52}, {var40}, {var233}, {var234}) ; {file:30}{line:1473}
+Local {var733} = {funcA122} ( {string7342} , {string7343} , {string7344} , {string7345} , {var52} , {string7346} , {var40} , {string7347} , {var233} , {string7348} , {var234} , {string7349} , 0 )  ; {file:30}{line:1474}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:1475}
+Return {var733}[5] ; {file:30}{line:1477}
+EndFunc  ; {file:30}{line:1478}
+Func {funcU1104} ({var52}, {var572} = True, {var1828} = False, {var1105} = 0) ; {file:30}{line:1484}
+Local {var1829} = {funcA129} ( {string7350} )  ; {file:30}{line:1485}
+Local {var300} = 0 ; {file:30}{line:1486}
+If {var1105} Then ; {file:30}{line:1488}
+{var300} += 2 ; {file:30}{line:1489}
+{funcA133} ( {var1829} , 3 , {var1105} )  ; {file:30}{line:1490}
+EndIf ; {file:30}{line:1491}
+{funcA133} ( {var1829} , 1 , {funcA49} ( {var300} , 0x05 ) )  ; {file:30}{line:1493}
+{funcA133} ( {var1829} , 2 , {var572} )  ; {file:30}{line:1494}
+{funcA133} ( {var1829} , 4 , {var1828} )  ; {file:30}{line:1495}
+Local {var733} = {funcA122} ( {string7351} , {string7352} , {string7353} , {string7354} , {var52} , {string7355} , {var1829} )  ; {file:30}{line:1497}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1498}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1499}
+Return 1 ; {file:30}{line:1501}
+EndFunc  ; {file:30}{line:1502}
+Func {funcU1105} ({var572}) ; {file:30}{line:1508}
+If {var572} Then {var572} = 1 ; {file:30}{line:1509}
+Local {var733} = {funcA122} ( {string7356} , {string7357} , {string7358} , {string7359} , {var572} )  ; {file:30}{line:1511}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1512}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1513}
+Return 1 ; {file:30}{line:1515}
+EndFunc  ; {file:30}{line:1516}
+Func {funcU1106} ({var52}, {var1830} = 0) ; {file:30}{line:1522}
+If Not {funcA285} ( {var1830} ) Then  ; {file:30}{line:1523}
+{var1830} = {funcU1107} ( - 1 , - 1 , - 1 , - 1 )  ; {file:30}{line:1524}
+EndIf ; {file:30}{line:1525}
+Local {var733} = {funcA122} ( {string7360} , {string7361} , {string7362} , {string7363} , {var52} , {string7364} , {funcA131} ( {var1830} ) )  ; {file:30}{line:1527}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1528}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1529}
+Return 1 ; {file:30}{line:1531}
+EndFunc  ; {file:30}{line:1532}
+Func {funcU1108} ({none}) ; {file:30}{line:1538}
+Local {var733} = {funcA122} ( {string7365} , {string7366} , {string7367} , {string7368} , 0 , {string7369} , 0 )  ; {file:30}{line:1539}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1540}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1541}
+Return {funcA375} ( {var733} [ 2 ] , {var733} [ 1 ] )  ; {file:30}{line:1543}
+EndFunc  ; {file:30}{line:1544}
+Func {funcU1109} ({none}) ; {file:30}{line:1550}
+Local {var1831} = {funcA129} ( {var1832} )  ; {file:30}{line:1551}
+Local {var733} = {funcA122} ( {string7370} , {string7371} , 127 , {string7372} , {funcA131} ( {var1831} ) )  ; {file:30}{line:1552}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1553}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1554}
+Return {var1831} ; {file:30}{line:1556}
+EndFunc  ; {file:30}{line:1557}
+Func {funcU1110} ({var52}, {var1833}) ; {file:30}{line:1563}
+Local {var1162} ; {file:30}{line:1564}
+Switch {var1833} ; {file:30}{line:1565}
+Case 5, 9 ; {file:30}{line:1566}
+{var1162} = {var456} ; {file:30}{line:1567}
+Case 1 ; {file:30}{line:1568}
+{var1162} = {string7373} ; {file:30}{line:1569}
+Case Else ; {file:30}{line:1570}
+Return {funcA374} ( 11 , 0 , 0 )  ; {file:30}{line:1571}
+EndSwitch ; {file:30}{line:1572}
+Local {var454} = {funcA129} ( {var1162} )  ; {file:30}{line:1574}
+Local {var733} = {funcA122} ( {string7374} , {string7375} , {string7376} , {string7377} , {var52} , {string7378} , {var1833} , {string7379} , {var454} , {string7380} , {funcA132} ( {var454} ) )  ; {file:30}{line:1575}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1577}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1578}
+Switch {var1833} ; {file:30}{line:1580}
+Case 1 ; {file:30}{line:1581}
+Return {funcA130} ( {var454} , 1 )  ; {file:30}{line:1582}
+Case Else ; {file:30}{line:1583}
+Return {var454} ; {file:30}{line:1584}
+EndSwitch ; {file:30}{line:1585}
+EndFunc  ; {file:30}{line:1586}
+Func {funcU1111} ({var52}) ; {file:30}{line:1592}
+Local {var733} = {funcA122} ( {string7381} , {string7382} , {string7383} , {string7384} , {var52} )  ; {file:30}{line:1593}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1594}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1595}
+Return 1 ; {file:30}{line:1597}
+EndFunc  ; {file:30}{line:1598}
+Func {funcU1112} ({none}) ; {file:30}{line:1604}
+Local {var733} = {funcA122} ( {string7385} , {string7386} , {string7387} , {string7388} , 0 )  ; {file:30}{line:1605}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1606}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1607}
+Return {var733}[1] ; {file:30}{line:1609}
+EndFunc  ; {file:30}{line:1610}
+Func {funcU1113} ({var1834}) ; {file:30}{line:1616}
+Local {var445} = {funcA129} ( {var1098} )  ; {file:30}{line:1617}
+Local {var733} = {funcA122} ( {string7389} , {string7390} , {string7391} , {string7392} , {var1834} , {string7393} , {var445} )  ; {file:30}{line:1618}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1619}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1620}
+Return {var445} ; {file:30}{line:1622}
+EndFunc  ; {file:30}{line:1623}
+Func {funcU1114} ({var1835}, {var1768}) ; {file:30}{line:1629}
+Local {var733} = {funcA122} ( {string7394} , {string7395} , {string7396} , {string7397} , {var1835} , {string7398} , {var1768} , {string7399} , 0 )  ; {file:30}{line:1630}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1631}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1632}
+Return {var733}[3] ; {file:30}{line:1634}
+EndFunc  ; {file:30}{line:1635}
+Func {funcU1115} ({var1831}) ; {file:30}{line:1641}
+Local {var733} = {funcA122} ( {string7400} , {string7401} , 131 , {string7402} , {funcA131} ( {var1831} ) , {string7403} , 0 )  ; {file:30}{line:1642}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1643}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1644}
+Return 1 ; {file:30}{line:1646}
+EndFunc  ; {file:30}{line:1647}
+Func {funcU1116} ({var52}, {var10}, {var1836} = False, {var1837} = 0) ; {file:30}{line:1653}
+Local {var300} ; {file:30}{line:1654}
+If {var1836} Then ; {file:30}{line:1655}
+{var300} = 0x00000001 ; {file:30}{line:1656}
+Else ; {file:30}{line:1657}
+{var300} = 0 ; {file:30}{line:1658}
+EndIf ; {file:30}{line:1659}
+Local {var733} = {funcA122} ( {string7404} , {string7405} , {string7406} , {string7407} , {var52} , {string7408} , {var10} , {string7409} , {var1837} , {string7410} , {var300} )  ; {file:30}{line:1661}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1663}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1664}
+Return 1 ; {file:30}{line:1666}
+EndFunc  ; {file:30}{line:1667}
+Func {funcU1117} ({var52}, {var10}, {var1836} = False) ; {file:30}{line:1673}
+Local {var300} ; {file:30}{line:1674}
+If {var1836} Then ; {file:30}{line:1675}
+{var300} = 0x00000001 ; {file:30}{line:1676}
+Else ; {file:30}{line:1677}
+{var300} = 0 ; {file:30}{line:1678}
+EndIf ; {file:30}{line:1679}
+Local {var733} = {funcA122} ( {string7411} , {string7412} , {string7413} , {string7414} , {var52} , {string7415} , {var10} , {string7416} , {var300} )  ; {file:30}{line:1681}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1682}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1683}
+Return 1 ; {file:30}{line:1685}
+EndFunc  ; {file:30}{line:1686}
+Func {funcU1118} ({var52}, {var1833}, {var1137}) ; {file:30}{line:1692}
+Switch {var1833} ; {file:30}{line:1693}
+Case 2, 3, 4, 6, 7, 8, 10, 11, 12 ; {file:30}{line:1694}
+Case Else ; {file:30}{line:1696}
+Return {funcA374} ( 1 , 0 , 0 )  ; {file:30}{line:1697}
+EndSwitch ; {file:30}{line:1698}
+Local {var733} = {funcA122} ( {string7417} , {string7418} , {string7419} , {string7420} , {var52} , {string7421} , {var1833} , {string7422} , {var1137} , {string7423} , 4 )  ; {file:30}{line:1700}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1702}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1703}
+Return 1 ; {file:30}{line:1705}
+EndFunc  ; {file:30}{line:1706}
+Func {funcU1119} ({var1834}) ; {file:30}{line:1712}
+Local {var733} = {funcA122} ( {string7424} , {string7425} , {string7426} , {string7427} , {var1834} )  ; {file:30}{line:1713}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1714}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1715}
+Return 1 ; {file:30}{line:1717}
+EndFunc  ; {file:30}{line:1718}
+Func {funcU1120} ({var1834}, {var1013} = True, {var1838} = False, {var1339} = 255, {var1839} = 0, {var1840} = 0) ; {file:30}{line:1724}
+Local Const {var1841} = {string7428} ; {file:30}{line:1725}
+Local {var1842} = {funcA129} ( {var1841} )  ; {file:30}{line:1726}
+Local {var445}, {var300} = 0 ; {file:30}{line:1727}
+If Not {funcA285} ( {var1839} ) Then  ; {file:30}{line:1728}
+{var445} = {funcU1113} ( {var1834} )  ; {file:30}{line:1729}
+If {macro22} Then ; {file:30}{line:1730}
+Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:1731}
+EndIf ; {file:30}{line:1732}
+{var1839} = {funcU1083} ( 0 , 0 , {funcA130} ( {var445} , 1 ) , {funcA130} ( {var445} , 2 ) )  ; {file:30}{line:1733}
+EndIf ; {file:30}{line:1734}
+For {var79} = 1 To 4 ; {file:30}{line:1735}
+{funcA133} ( {var1842} , 2 , {funcA130} ( {var1839} , {var79} ) , {var79} )  ; {file:30}{line:1736}
+Next ; {file:30}{line:1737}
+If {funcA285} ( {var1840} ) Then  ; {file:30}{line:1738}
+{var300} += 2 ; {file:30}{line:1739}
+For {var79} = 1 To 4 ; {file:30}{line:1740}
+{funcA133} ( {var1842} , 3 , {funcA130} ( {var1840} , {var79} ) , {var79} )  ; {file:30}{line:1741}
+Next ; {file:30}{line:1742}
+EndIf ; {file:30}{line:1743}
+{funcA133} ( {var1842} , 1 , {funcA49} ( {var300} , 0x1D ) )  ; {file:30}{line:1745}
+{funcA133} ( {var1842} , 4 , {var1339} )  ; {file:30}{line:1746}
+{funcA133} ( {var1842} , 5 , {var1013} )  ; {file:30}{line:1747}
+{funcA133} ( {var1842} , 6 , {var1838} )  ; {file:30}{line:1748}
+Local {var733} = {funcA122} ( {string7429} , {string7430} , {string7431} , {string7432} , {var1834} , {string7433} , {var1842} )  ; {file:30}{line:1750}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1752}
+If {var733} [ 0 ] Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:1753}
+Return 1 ; {file:30}{line:1755}
+EndFunc  ; {file:30}{line:1756}
+Func {funcU1121} ({var447}, {var195}) ; {file:30}{line:1762}
+Local {var733} = {funcA122} ( {string7434} , {string7435} , {string7436} , {string7437} , {var447} , {string7438} , {funcA130} ( {var195} , 1 ) , {string7439} , {funcA130} ( {var195} , 2 ) , {string7440} , {funcA130} ( {var195} , 3 ) , {string7441} , {funcA130} ( {var195} , 4 ) )  ; {file:30}{line:1763}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1765}
+Return {var733}[0] ; {file:30}{line:1768}
+EndFunc  ; {file:30}{line:1769}
+Func {funcU1122} ({var52}, ByRef {var1755}) ; {file:30}{line:1775}
+Local {var733} = {funcA122} ( {string7442} , {string7443} , {string7444} , {string7445} , {var52} , {string7446} , {var1755} )  ; {file:30}{line:1776}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1777}
+Return {var733}[0] ; {file:30}{line:1779}
+EndFunc  ; {file:30}{line:1780}
+Func {funcU1123} ({var447}) ; {file:30}{line:1786}
+Local {var733} = {funcA122} ( {string7447} , {string7448} , {string7449} , {string7450} , {var447} )  ; {file:30}{line:1787}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1788}
+Return {var733}[0] ; {file:30}{line:1791}
+EndFunc  ; {file:30}{line:1792}
+Func {funcU1124} ({var447} = 0, {var195} = 0) ; {file:30}{line:1798}
+Local {var1262} = {funcA126} ( {string7451} , {string7452} , {string7453} )  ; {file:30}{line:1799}
+Dim {var1263}[101][2] = [[0]] ; {file:30}{line:1801}
+Local {var733} = {funcA122} ( {string7454} , {string7455} , {string7456} , {string7457} , {var447} , {string7458} , {var195} , {string7459} , {funcA125} ( {var1262} ) , {string7460} , 0 )  ; {file:30}{line:1802}
+If {macro22} Or Not {var733}[0] Or Not {var1263}[0][0] Then ; {file:30}{line:1804}
+{var1263} = {macro22} + 10 ; {file:30}{line:1805}
+EndIf ; {file:30}{line:1806}
+{funcA124} ( {var1262} )  ; {file:30}{line:1807}
+If {var1263} Then Return {funcA374} ( {var1263} , 0 , 0 )  ; {file:30}{line:1808}
+{funcU705} ( {var1263} , - 1 )  ; {file:30}{line:1810}
+Return {var1263} ; {file:30}{line:1811}
+EndFunc  ; {file:30}{line:1812}
+Func {funcU1125} ({var1000}, {var134}) ; {file:30}{line:1818}
+Local {var1843} = {string7461} ; {file:30}{line:1819}
+If Not {funcA420} ( {var1000} , {var69} + {var1081} ) Then  ; {file:30}{line:1820}
+{var1843} = {string7462} ; {file:30}{line:1821}
+{var1000} = 0 ; {file:30}{line:1822}
+EndIf ; {file:30}{line:1823}
+Local {var1844} = {funcA129} ( {var1845} )  ; {file:30}{line:1825}
+{funcA133} ( {var1844} , {string7463} , {funcA132} ( {var1844} ) )  ; {file:30}{line:1826}
+{funcA133} ( {var1844} , {string7464} , 0 )  ; {file:30}{line:1827}
+Local {var733} = {funcA122} ( {string7465} , {string7466} , {string7467} , {var1843} , {var1000} , {string7468} , {var134} , {string7469} , {var1844} )  ; {file:30}{line:1829}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:1831}
+Local {var228}[5] ; {file:30}{line:1833}
+{var228} [ 0 ] = {funcA130} ( {var1844} , {string7470} )  ; {file:30}{line:1834}
+{var228} [ 1 ] = {funcA130} ( {var1844} , {string7471} )  ; {file:30}{line:1835}
+{var228} [ 2 ] = {funcA130} ( {var1844} , {string7472} )  ; {file:30}{line:1836}
+{var228} [ 3 ] = {funcA130} ( {var1844} , {string7473} )  ; {file:30}{line:1837}
+{var228} [ 4 ] = {funcA130} ( {var1844} , {string7474} )  ; {file:30}{line:1838}
+Return {var228} ; {file:30}{line:1839}
+EndFunc  ; {file:30}{line:1840}
+Func {funcU1126} ({var447} = 0, {var847} = {string7475}, {var948} = 1, {var1846} = 0x07, {var1847} = {string7476}, {var1848} = False) ; {file:30}{line:1846}
+Local {var840} = {funcA129} ( {var841} )  ; {file:30}{line:1847}
+Local {var1849} = {funcA129} ( {string7477} & ( {funcA410} ( {var1847} ) + 1 ) & {string7478} )  ; {file:30}{line:1848}
+{funcA133} ( {var1849} , 1 , {var1846} )  ; {file:30}{line:1850}
+If Not {var1847} Then ; {file:30}{line:1851}
+{funcA133} ( {var1849} , 2 , 0 )  ; {file:30}{line:1852}
+{funcA133} ( {var1849} , 3 , 0 )  ; {file:30}{line:1853}
+Else ; {file:30}{line:1854}
+{funcA133} ( {var1849} , 2 , {var1848} )  ; {file:30}{line:1855}
+{funcA133} ( {var1849} , 3 , {funcA131} ( {var1849} , 4 ) )  ; {file:30}{line:1856}
+{funcA133} ( {var1849} , 4 , {var1847} )  ; {file:30}{line:1857}
+EndIf ; {file:30}{line:1858}
+{funcA133} ( {var840} , 9 , {var948} )  ; {file:30}{line:1859}
+{funcA133} ( {var840} , 13 , 0 )  ; {file:30}{line:1860}
+{funcA133} ( {var840} , 14 , {funcA409} ( {var847} , 31 ) )  ; {file:30}{line:1861}
+Local {var1850} ; {file:30}{line:1862}
+If Not {var447} Then ; {file:30}{line:1863}
+{var1850} = {funcU178} ( 0 )  ; {file:30}{line:1864}
+Else ; {file:30}{line:1865}
+{var1850} = {var447} ; {file:30}{line:1866}
+EndIf ; {file:30}{line:1867}
+Dim {var1263}[101][8] = [[0]] ; {file:30}{line:1868}
+Local {var1262} = {funcA126} ( {string7479} , {string7480} , {string7481} )  ; {file:30}{line:1869}
+Local {var733} = {funcA122} ( {string7482} , {string7483} , {string7484} , {string7485} , {var1850} , {string7486} , {var840} , {string7487} , {funcA125} ( {var1262} ) , {string7488} , {funcA131} ( {var1849} ) , {string7489} , 0 )  ; {file:30}{line:1870}
+If {macro22} Or Not {var733}[0] Or Not {var1263}[0][0] Then ; {file:30}{line:1872}
+{var1263} = {macro22} + 10 ; {file:30}{line:1873}
+EndIf ; {file:30}{line:1874}
+{funcA124} ( {var1262} )  ; {file:30}{line:1875}
+If Not {var447} Then ; {file:30}{line:1876}
+{funcU185} ( {var1850} )  ; {file:30}{line:1877}
+EndIf ; {file:30}{line:1878}
+If {var1263} Then Return {funcA374} ( {var1263} , 0 , 0 )  ; {file:30}{line:1879}
+{funcU705} ( {var1263} , - 1 )  ; {file:30}{line:1881}
+Return {var1263} ; {file:30}{line:1882}
+EndFunc  ; {file:30}{line:1883}
+Func {funcU1127} ({var1851}, {var1852}) ; {file:30}{line:1889}
+Local {var733} = {funcA122} ( {string7490} , {string7491} , {string7492} , {string7493} , {var1851} , {string7494} , {var1852} )  ; {file:30}{line:1890}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1891}
+Return {var733}[0] ; {file:30}{line:1893}
+EndFunc  ; {file:30}{line:1894}
+Func {funcU1128} ({var1853}, {var1854}) ; {file:30}{line:1900}
+Local {var733} = {funcA122} ( {string7495} , {string7496} , {string7497} , {string7498} , {var1853} , {string7499} , {var1854} )  ; {file:30}{line:1901}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1902}
+Return {var733}[0] ; {file:30}{line:1904}
+EndFunc  ; {file:30}{line:1905}
+Func {funcU1129} ({var447}, {var195}) ; {file:30}{line:1911}
+Local {var733} = {funcA122} ( {string7500} , {string7501} , {string7502} , {string7503} , {var447} , {string7504} , {funcA130} ( {var195} , 1 ) , {string7505} , {funcA130} ( {var195} , 2 ) , {string7506} , {funcA130} ( {var195} , 3 ) , {string7507} , {funcA130} ( {var195} , 4 ) )  ; {file:30}{line:1912}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1914}
+Return {var733}[0] ; {file:30}{line:1917}
+EndFunc  ; {file:30}{line:1918}
+Func {funcU1130} ({var958}, {var194}, {var1855}, {var1213}, {var1781} = 0, {var1856} = 0, {var283} = 0, {var1238} = -1) ; {file:30}{line:1924}
+Local {var482} = 0, {var1857} = 0 ; {file:30}{line:1925}
+If {funcA47} ( {var958} , 0xFF ) = 7 Then  ; {file:30}{line:1927}
+If {funcU677} ( {var1856} , {var283} , {var1238} ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:1928}
+{var1857} = {funcA129} ( {string7508} & ( {var1238} - {var283} + 1 ) & {string7509} )  ; {file:30}{line:1929}
+For {var79} = {var283} To {var1238} ; {file:30}{line:1931}
+{funcA133} ( {var1857} , 1 , {var1856} [ {var79} ] , {var482} + 1 )  ; {file:30}{line:1932}
+{var482} += 1 ; {file:30}{line:1933}
+Next ; {file:30}{line:1934}
+EndIf ; {file:30}{line:1935}
+Local {var1782} = {funcA129} ( {var1783} )  ; {file:30}{line:1937}
+{funcA133} ( {var1782} , 1 , {var1855} )  ; {file:30}{line:1938}
+{funcA133} ( {var1782} , 2 , {funcU1062} ( {var1213} ) )  ; {file:30}{line:1939}
+{funcA133} ( {var1782} , 3 , {var1781} )  ; {file:30}{line:1940}
+Local {var733} = {funcA122} ( {string7510} , {string7511} , {string7512} , {string7513} , {var958} , {string7514} , {var194} , {string7515} , {var1782} , {string7516} , {var482} , {string7517} , {var1857} )  ; {file:30}{line:1942}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1944}
+Return {var733}[0] ; {file:30}{line:1946}
+EndFunc  ; {file:30}{line:1947}
+Func {funcU1131} ({var1858}, {var1762} = 0) ; {file:30}{line:1953}
+Local {var733} = {funcA122} ( {string7518} , {string7519} , {string7520} , {string7521} , {var1762} , {string7522} , {funcA132} ( {var1858} ) , {string7523} , {var1858} )  ; {file:30}{line:1954}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1956}
+Return {var733}[0] ; {file:30}{line:1959}
+EndFunc  ; {file:30}{line:1960}
+Func {funcU1132} ({var447}, {var207}, {var208}, {var1213}, {var674} = 0) ; {file:30}{line:1966}
+Local {var733} = {funcA122} ( {string7524} , {string7525} , {string7526} , {string7527} , {var447} , {string7528} , {var207} , {string7529} , {var208} , {string7530} , {funcU1062} ( {var1213} ) , {string7531} , {var674} )  ; {file:30}{line:1967}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1969}
+Return {var733}[0] ; {file:30}{line:1972}
+EndFunc  ; {file:30}{line:1973}
+Func {funcU1133} ({var447}, {var1105}, {var134} = 5) ; {file:30}{line:1979}
+Local {var733} = {funcA122} ( {string7532} , {string7533} , {string7534} , {string7535} , {var447} , {string7536} , {var1105} , {string7537} , {var134} )  ; {file:30}{line:1980}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:1981}
+Return {var733}[0] ; {file:30}{line:1984}
+EndFunc  ; {file:30}{line:1985}
+Func {funcU1134} ({var447}) ; {file:30}{line:1991}
+Local {var733} = {funcA122} ( {string7538} , {string7539} , {string7540} , {string7541} , {var447} )  ; {file:30}{line:1992}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:1993}
+Return {var733}[0] ; {file:30}{line:1996}
+EndFunc  ; {file:30}{line:1997}
+Func {funcU1135} ({var447}, {var1105}, {var458}) ; {file:30}{line:2003}
+Local {var733} = {funcA122} ( {string7542} , {string7543} , {string7544} , {string7545} , {var447} , {string7546} , {var1105} , {string7547} , {var458} )  ; {file:30}{line:2004}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2005}
+Return {var733}[0] ; {file:30}{line:2008}
+EndFunc  ; {file:30}{line:2009}
+Func {funcU1136} ({var447}) ; {file:30}{line:2015}
+Local {var733} = {funcA122} ( {string7548} , {string7549} , {string7550} , {string7551} , {var447} )  ; {file:30}{line:2016}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2017}
+Return {var733}[0] ; {file:30}{line:2020}
+EndFunc  ; {file:30}{line:2021}
+Func {funcU1137} ({var447}, {var1105}, {var458}, {var194}, {var193}) ; {file:30}{line:2027}
+Local {var733} = {funcA122} ( {string7552} , {string7553} , {string7554} , {string7555} , {var447} , {string7556} , {var1105} , {string7557} , {var458} , {string7558} , {var194} , {string7559} , {var193} )  ; {file:30}{line:2028}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2029}
+Return {var733}[0] ; {file:30}{line:2032}
+EndFunc  ; {file:30}{line:2033}
+Func {funcU1138} ({var447}, {var484}, {var483}) ; {file:30}{line:2039}
+Local {var733} = {funcA122} ( {string7560} , {string7561} , {string7562} , {string7563} , {var447} , {string7564} , {var483} , {string7565} , {var484} )  ; {file:30}{line:2040}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2041}
+Return {var733}[0] ; {file:30}{line:2044}
+EndFunc  ; {file:30}{line:2045}
+Func {funcU1139} ({var447}) ; {file:30}{line:2051}
+Local {var733} = {funcA122} ( {string7566} , {string7567} , {string7568} , {string7569} , {var447} )  ; {file:30}{line:2052}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2053}
+If ( {var733} [ 0 ] < 1 ) Or ( {var733} [ 0 ] > 2 ) Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:2054}
+Return {var733}[0] ; {file:30}{line:2056}
+EndFunc  ; {file:30}{line:2057}
+Func {funcU1069} ({var10}, {var483}, {var448}) ; {file:30}{line:2063}
+Local {var733} = {funcA122} ( {string7570} , {string7571} , {string7572} , {string7573} , {var10} , {string7574} , {var483} , {string7575} , {var448} )  ; {file:30}{line:2064}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2065}
+Return {var733}[0] ; {file:30}{line:2068}
+EndFunc  ; {file:30}{line:2069}
+Func {funcU1140} ({var10}) ; {file:30}{line:2075}
+Local {var445} = {funcA129} ( {var1098} )  ; {file:30}{line:2076}
+Local {var733} = {funcA122} ( {string7576} , {string7577} , {string7578} , {string7579} , {var10} , {string7580} , {var445} )  ; {file:30}{line:2077}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2078}
+Return {var445} ; {file:30}{line:2081}
+EndFunc  ; {file:30}{line:2082}
+Func {funcU1141} ({var447}) ; {file:30}{line:2088}
+Local {var733} = {funcA122} ( {string7581} , {string7582} , {string7583} , {string7584} , {var447} )  ; {file:30}{line:2089}
+If {macro22} Or ( {var733} [ 0 ] = - 1 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:2090}
+Return {funcU1062} ( {var733} [ 0 ] )  ; {file:30}{line:2093}
+EndFunc  ; {file:30}{line:2094}
+Func {funcU1142} ({var447}, {var300} = 0) ; {file:30}{line:2100}
+Local {var195} = {funcA129} ( {var456} )  ; {file:30}{line:2101}
+Local {var733} = {funcA122} ( {string7585} , {string7586} , {string7587} , {string7588} , {var447} , {string7589} , {var195} , {string7590} , {var300} )  ; {file:30}{line:2102}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2103}
+Return {funcA375} ( {var733} [ 0 ] , {var195} )  ; {file:30}{line:2105}
+EndFunc  ; {file:30}{line:2106}
+Func {funcU1143} ({var447}) ; {file:30}{line:2112}
+Local {var196} = {funcA129} ( {var858} )  ; {file:30}{line:2113}
+Local {var733} = {funcA122} ( {string7591} , {string7592} , {string7593} , {string7594} , {var447} , {string7595} , {var196} )  ; {file:30}{line:2114}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2115}
+Return {var196} ; {file:30}{line:2117}
+EndFunc  ; {file:30}{line:2118}
+Func {funcU1144} ({var1213}) ; {file:30}{line:2124}
+Return {funcA51} ( {funcA47} ( {funcU1062} ( {var1213} ) , 0xFF0000 ) , 16 )  ; {file:30}{line:2125}
+EndFunc  ; {file:30}{line:2126}
+Func {funcU1145} ({var447}, ByRef {var195}) ; {file:30}{line:2132}
+{var195} = {funcA129} ( {var456} )  ; {file:30}{line:2133}
+Local {var733} = {funcA122} ( {string7596} , {string7597} , {string7598} , {string7599} , {var447} , {string7600} , {var195} )  ; {file:30}{line:2134}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:2135}
+{var195} = 0 ; {file:30}{line:2137}
+Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2138}
+EndIf ; {file:30}{line:2139}
+Return {var733}[0] ; {file:30}{line:2141}
+EndFunc  ; {file:30}{line:2142}
+Func {funcU1146} ({var447}) ; {file:30}{line:2148}
+Local {var1105} = {funcU502} ( 0 , 0 , 0 , 0 )  ; {file:30}{line:2149}
+Local {var263} = 0 ; {file:30}{line:2150}
+Local {var733} = {funcA122} ( {string7601} , {string7602} , {string7603} , {string7604} , {var447} , {string7605} , {var1105} )  ; {file:30}{line:2151}
+If {macro22} Or ( {var733} [ 0 ] = - 1 ) Then {var263} = {macro22} + 10  ; {file:30}{line:2152}
+If {var263} Or Not {var733}[0] Then ; {file:30}{line:2153}
+{funcU10} ( {var1105} )  ; {file:30}{line:2154}
+{var1105} = 0 ; {file:30}{line:2155}
+EndIf ; {file:30}{line:2156}
+Return {funcA374} ( {var263} , 0 , {var1105} )  ; {file:30}{line:2158}
+EndFunc  ; {file:30}{line:2159}
+Func {funcU1147} ({var447}) ; {file:30}{line:2165}
+Local {var1734} = {funcA129} ( {var1795} )  ; {file:30}{line:2166}
+Local {var733} = {funcA122} ( {string7606} , {string7607} , {string7608} , {string7609} , {var447} , {string7610} , {var1734} )  ; {file:30}{line:2167}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2168}
+Return {var1734} ; {file:30}{line:2170}
+EndFunc  ; {file:30}{line:2171}
+Func {funcU1148} ({var447}, {var674}) ; {file:30}{line:2177}
+Local {var733} = {funcA122} ( {string7611} , {string7612} , {string7613} , {string7614} , {var447} , {string7615} , {var674} )  ; {file:30}{line:2178}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2179}
+Return {var733}[0] ; {file:30}{line:2182}
+EndFunc  ; {file:30}{line:2183}
+Func {funcU1149} ({var447}) ; {file:30}{line:2189}
+Local {var196} = {funcA129} ( {var858} )  ; {file:30}{line:2190}
+Local {var733} = {funcA122} ( {string7616} , {string7617} , {string7618} , {string7619} , {var447} , {string7620} , {var196} )  ; {file:30}{line:2191}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2192}
+Return {var196} ; {file:30}{line:2195}
+EndFunc  ; {file:30}{line:2196}
+Func {funcU1150} ({var52}, {var1105}, {var300}) ; {file:30}{line:2202}
+Local {var733} = {funcA122} ( {string7621} , {string7622} , {string7623} , {string7624} , {var52} , {string7625} , {var1105} , {string7626} , {var300} )  ; {file:30}{line:2203}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2204}
+Return {var733}[0] ; {file:30}{line:2207}
+EndFunc  ; {file:30}{line:2208}
+Func {funcU1151} ({var447}, ByRef {var1859}) ; {file:30}{line:2214}
+{var1859} = 0 ; {file:30}{line:2215}
+Local {var454} = {funcA129} ( {string7627} )  ; {file:30}{line:2217}
+Local {var733} = {funcA122} ( {string7628} , {string7629} , {string7630} , {string7631} , {var447} , {string7632} , {var454} )  ; {file:30}{line:2218}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2219}
+Dim {var1859}[256][3] ; {file:30}{line:2222}
+For {var79} = 0 To 2 ; {file:30}{line:2223}
+For {var253} = 0 To 255 ; {file:30}{line:2224}
+{var1859} [ {var253} ] [ {var79} ] = {funcA130} ( {var454} , {var79} + 1 , {var253} + 1 )  ; {file:30}{line:2225}
+Next ; {file:30}{line:2226}
+Next ; {file:30}{line:2227}
+Return 1 ; {file:30}{line:2228}
+EndFunc  ; {file:30}{line:2229}
+Func {funcU1152} ({var10}) ; {file:30}{line:2235}
+Local {var447} = {funcU178} ( 0 )  ; {file:30}{line:2236}
+Local {var1766} = {funcU180} ( {var447} , {var10} )  ; {file:30}{line:2237}
+Local {var1860} = {funcA129} ( {string7633} )  ; {file:30}{line:2238}
+Local {var263} = 0 ; {file:30}{line:2239}
+Local {var733} = {funcA122} ( {string7634} , {string7635} , {string7636} , {string7637} , {var447} , {string7638} , 0 , {string7639} , 256 , {string7640} , {var1860} )  ; {file:30}{line:2240}
+If {macro22} Or Not {var733}[0] Then {var263} = {macro22} + 10 ; {file:30}{line:2241}
+{funcU180} ( {var447} , {var1766} )  ; {file:30}{line:2243}
+{funcU185} ( {var447} )  ; {file:30}{line:2244}
+If {var263} Then Return {funcA374} ( {var263} , 0 , 0 )  ; {file:30}{line:2245}
+Local {var454} = {funcA129} ( {string7641} & {var733} [ 0 ] & {string7642} )  ; {file:30}{line:2247}
+If {macro22} Then Return {funcA374} ( {macro22} + 20 , {macro25} , 0 )  ; {file:30}{line:2248}
+{funcU691} ( {funcA131} ( {var454} ) , {var733} [ 4 ] , 4 * {var733} [ 0 ] )  ; {file:30}{line:2250}
+Return {funcA375} ( {var733} [ 0 ] , {var454} )  ; {file:30}{line:2254}
+EndFunc  ; {file:30}{line:2255}
+Func {funcU1153} ({var850}) ; {file:30}{line:2261}
+Local {var733} = {funcA122} ( {string7643} , {string7644} , {string7645} , {string7646} , {var850} )  ; {file:30}{line:2262}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2263}
+Return {var733}[0] ; {file:30}{line:2266}
+EndFunc  ; {file:30}{line:2267}
+Func {funcU1154} ({var1773}, ByRef {var484}) ; {file:30}{line:2273}
+Local {var733} = {funcA122} ( {string7647} , {string7648} , {string7649} , {string7650} , {var1773} , {string7651} , 0 , {string7652} , 0 )  ; {file:30}{line:2274}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 50 , {macro25} , 0 )  ; {file:30}{line:2275}
+{var484} = {funcU689} ( {var484} , {var733} [ 0 ] , 1 )  ; {file:30}{line:2276}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2277}
+{var733} = {funcA122} ( {string7653} , {string7654} , {string7655} , {string7656} , {var1773} , {string7657} , {var733} [ 0 ] , {string7658} , {var484} )  ; {file:30}{line:2279}
+If Not {var733} [ 0 ] Then Return {funcA374} ( 60 , 0 , 0 )  ; {file:30}{line:2280}
+Return {var733}[2] ; {file:30}{line:2282}
+EndFunc  ; {file:30}{line:2283}
+Func {funcU1155} ({var1773}) ; {file:30}{line:2289}
+Local {var454} = {funcA129} ( {string7659} )  ; {file:30}{line:2290}
+Local {var733} = {funcA122} ( {string7660} , {string7661} , {string7662} , {string7663} , {var1773} , {string7664} , 4096 , {string7665} , {var454} )  ; {file:30}{line:2291}
+If {macro22} Or ( {var733} [ 0 ] = 4294967295 ) Then Return {funcA374} ( {macro22} + 20 , {var733} [ 0 ] , 0 )  ; {file:30}{line:2292}
+If Not {var733}[0] Then Return 0 ; {file:30}{line:2293}
+Local {var696} = {funcU1156} ( {var454} )  ; {file:30}{line:2295}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2296}
+Local {var228}[2] ; {file:30}{line:2298}
+For {var79} = 0 To 1 ; {file:30}{line:2299}
+If {var696}[0] > {var79} Then ; {file:30}{line:2300}
+{var228}[{var79}] = {var696}[{var79} + 1] ; {file:30}{line:2301}
+Else ; {file:30}{line:2302}
+{var228}[{var79}] = {string7666} ; {file:30}{line:2303}
+EndIf ; {file:30}{line:2304}
+Next ; {file:30}{line:2305}
+Return {var228} ; {file:30}{line:2306}
+EndFunc  ; {file:30}{line:2307}
+Func {funcU1157} ({var1773}) ; {file:30}{line:2313}
+Local {var1861} = {funcU1158} ( {var1773} )  ; {file:30}{line:2314}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2315}
+Local {var445} = {funcA129} ( {var1098} )  ; {file:30}{line:2317}
+{funcA133} ( {var445} , 1 , {funcA367} ( ( {funcA130} ( {var1861} , {string7667} , 3 ) - {funcA130} ( {var1861} , {string7668} , 1 ) ) * {funcA130} ( {var1861} , {string7669} , 1 ) / {funcA130} ( {var1861} , {string7670} , 1 ) / 100 ) )  ; {file:30}{line:2318}
+{funcA133} ( {var445} , 2 , {funcA367} ( ( {funcA130} ( {var1861} , {string7671} , 4 ) - {funcA130} ( {var1861} , {string7672} , 2 ) ) * {funcA130} ( {var1861} , {string7673} , 2 ) / {funcA130} ( {var1861} , {string7674} , 2 ) / 100 ) )  ; {file:30}{line:2319}
+Return {var445} ; {file:30}{line:2321}
+EndFunc  ; {file:30}{line:2322}
+Func {funcU1158} ({var1773}) ; {file:30}{line:2328}
+Local {var1861} = {funcA129} ( {var1862} )  ; {file:30}{line:2329}
+Local {var733} = {funcA122} ( {string7675} , {string7676} , {string7677} , {string7678} , {var1773} , {string7679} , {funcA132} ( {var1861} ) , {string7680} , {var1861} )  ; {file:30}{line:2330}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2332}
+Return {funcA375} ( {var733} [ 0 ] , {var1861} )  ; {file:30}{line:2334}
+EndFunc  ; {file:30}{line:2335}
+Func {funcU1093} ({var847}, {var377} = 0, {var948} = 1) ; {file:30}{line:2341}
+If Not {var847} Then Return {funcA374} ( 1 , 0 , {string7681} )  ; {file:30}{line:2342}
+Local {var300} = 0 ; {file:30}{line:2344}
+If {funcA47} ( {var377} , 0x01 ) Then  ; {file:30}{line:2345}
+{var300} += 0x00000020 ; {file:30}{line:2346}
+EndIf ; {file:30}{line:2347}
+If {funcA47} ( {var377} , 0x02 ) Then  ; {file:30}{line:2348}
+{var300} += 0x00000001 ; {file:30}{line:2349}
+EndIf ; {file:30}{line:2350}
+If Not {var300} Then ; {file:30}{line:2351}
+{var300} = 0x00000040 ; {file:30}{line:2352}
+EndIf ; {file:30}{line:2353}
+Local {var840} = {funcA129} ( {var841} )  ; {file:30}{line:2354}
+{funcA133} ( {var840} , 9 , {var948} )  ; {file:30}{line:2355}
+{funcA133} ( {var840} , 13 , 0 )  ; {file:30}{line:2356}
+{funcA133} ( {var840} , 14 , {funcA409} ( {var847} , 31 ) )  ; {file:30}{line:2357}
+Local {var1863} = {funcA129} ( {string7682} )  ; {file:30}{line:2358}
+{funcA133} ( {var1863} , 1 , {var300} )  ; {file:30}{line:2359}
+{funcA133} ( {var1863} , 2 , {string7683} )  ; {file:30}{line:2360}
+Local {var447} = {funcU178} ( 0 )  ; {file:30}{line:2361}
+Local {var1262} = {funcA126} ( {string7684} , {string7685} , {string7686} )  ; {file:30}{line:2362}
+Local {var1864} = {string7687} ; {file:30}{line:2363}
+Local {var733} = {funcA122} ( {string7688} , {string7689} , {string7690} , {string7691} , {var447} , {string7692} , {var840} , {string7693} , {funcA125} ( {var1262} ) , {string7694} , {var1863} , {string7695} , 0 )  ; {file:30}{line:2364}
+If Not {macro22} And Not {var733} [ 0 ] Then {var1864} = {funcA130} ( {var1863} , 2 )  ; {file:30}{line:2366}
+{funcA124} ( {var1262} )  ; {file:30}{line:2367}
+{funcU185} ( {var447} )  ; {file:30}{line:2368}
+If Not {var1864} Then Return {funcA374} ( 2 , 0 , {string7696} )  ; {file:30}{line:2369}
+Return {var1864} ; {file:30}{line:2371}
+EndFunc  ; {file:30}{line:2372}
+Func {funcU1159} ({var247}, {var1865} = False) ; {file:30}{line:2378}
+If {var1865} Then ; {file:30}{line:2379}
+If Not {funcU1046} ( {var247} , 0x20 ) Then Return {funcA374} ( {macro22} + 20 , {macro25} , {string7697} )  ; {file:30}{line:2380}
+EndIf ; {file:30}{line:2381}
+Local {var263} = 0 ; {file:30}{line:2383}
+Local {var733} = {funcA122} ( {string7698} , {string7699} , {string7700} , {string7701} , {var247} , {string7702} , 4096 , {string7703} , {string7704} , {string7705} , 0x01 )  ; {file:30}{line:2384}
+If {macro22} Or Not {var733}[0] Then {var263} = {macro22} + 10 ; {file:30}{line:2385}
+If {var1865} Then ; {file:30}{line:2387}
+{funcU1160} ( {var247} , 0x20 )  ; {file:30}{line:2388}
+EndIf ; {file:30}{line:2389}
+If {var263} Then Return {funcA374} ( {var263} , 0 , {string7706} )  ; {file:30}{line:2390}
+Return {var733}[3] ; {file:30}{line:2392}
+EndFunc  ; {file:30}{line:2393}
+Func {funcU1161} ({var447}, {var1866}, {var426}, ByRef {var484}, {var1867} = 0) ; {file:30}{line:2399}
+Local {var1868} = {funcA129} ( {var1869} )  ; {file:30}{line:2400}
+Local {var733}, {var264} = 0 ; {file:30}{line:2401}
+If Not {funcA285} ( {var1867} ) Then  ; {file:30}{line:2403}
+{var1867} = {funcA129} ( {string7707} )  ; {file:30}{line:2404}
+{funcA133} ( {var1867} , 1 , 1 , 2 )  ; {file:30}{line:2405}
+{funcA133} ( {var1867} , 1 , 1 , 8 )  ; {file:30}{line:2406}
+EndIf ; {file:30}{line:2407}
+If {var426} Then ; {file:30}{line:2408}
+{var733} = {funcA122} ( {string7708} , {string7709} , {string7710} , {string7711} , {var447} , {string7712} , {funcA6} ( {var1866} ) , {string7713} , {var426} , {string7714} , {var1868} , {string7715} , 0 , {string7716} , 0 , {string7717} , {var1867} )  ; {file:30}{line:2409}
+If {macro22} Or ( {var733} [ 0 ] = 4294967295 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2411}
+{var264} = {var733}[0] ; {file:30}{line:2412}
+{var484} = {funcU689} ( {var484} , {var264} , 1 )  ; {file:30}{line:2413}
+If {macro22} Then Return {funcA374} ( {macro22} + 20 , {macro25} , 0 )  ; {file:30}{line:2414}
+EndIf ; {file:30}{line:2415}
+{var733} = {funcA122} ( {string7718} , {string7719} , {string7720} , {string7721} , {var447} , {string7722} , {funcA6} ( {var1866} ) , {string7723} , {var426} , {string7724} , {var1868} , {string7725} , {var264} , {string7726} , {var484} , {string7727} , {var1867} )  ; {file:30}{line:2416}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2418}
+If {var733} [ 0 ] = 4294967295 Then Return {funcA374} ( 10 , - 1 , 0 )  ; {file:30}{line:2419}
+Return {funcA375} ( {var264} , {var1868} )  ; {file:30}{line:2421}
+EndFunc  ; {file:30}{line:2422}
+Func {funcU1162} ({var447}) ; {file:30}{line:2428}
+Local {var733} = {funcA122} ( {string7728} , {string7729} , {string7730} , {string7731} , {var447} )  ; {file:30}{line:2429}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2430}
+Return {var733}[0] ; {file:30}{line:2433}
+EndFunc  ; {file:30}{line:2434}
+Func {funcU1163} ({var1213}) ; {file:30}{line:2440}
+Return {funcA51} ( {funcA47} ( {funcU1062} ( {var1213} ) , 0x00FF00 ) , 8 )  ; {file:30}{line:2441}
+EndFunc  ; {file:30}{line:2442}
+Func {funcU177} ({var272}) ; {file:30}{line:2448}
+Local {var1675} = {funcA129} ( {var1053} )  ; {file:30}{line:2449}
+Local {var733} = {funcA122} ( {string7732} , {string7733} , {string7734} , {string7735} , {var272} , {string7736} , {var1675} )  ; {file:30}{line:2450}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2451}
+Local {var445} = {funcU834} ( {funcA130} ( {var1675} , 5 ) )  ; {file:30}{line:2453}
+For {var79} = 4 To 5 ; {file:30}{line:2454}
+{funcU10} ( {funcA130} ( {var1675} , {var79} ) )  ; {file:30}{line:2455}
+Next ; {file:30}{line:2456}
+If Not {funcA285} ( {var445} ) Then Return {funcA374} ( 20 , 0 , 0 )  ; {file:30}{line:2457}
+Return {var445} ; {file:30}{line:2459}
+EndFunc  ; {file:30}{line:2460}
+Func {funcU1164} ({var447}) ; {file:30}{line:2466}
+Local {var733} = {funcA122} ( {string7737} , {string7738} , {string7739} , {string7740} , {var447} )  ; {file:30}{line:2467}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2468}
+Return {var733}[0] ; {file:30}{line:2471}
+EndFunc  ; {file:30}{line:2472}
+Func {funcU1165} ({var894}) ; {file:30}{line:2478}
+Local {var733} = {funcA122} ( {string7741} , {string7742} , {string7743} , {string7744} , {var894} )  ; {file:30}{line:2479}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2480}
+Return {var733}[0] ; {file:30}{line:2483}
+EndFunc  ; {file:30}{line:2484}
+Func {funcU1166} ({var447}) ; {file:30}{line:2490}
+Local {var733} = {funcA122} ( {string7745} , {string7746} , {string7747} , {string7748} , {var447} , {string7749} , 0 , {string7750} , 0 )  ; {file:30}{line:2491}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2492}
+Local {var454} = {funcA129} ( {string7751} & {var733} [ 0 ] & {string7752} )  ; {file:30}{line:2493}
+Local {var1870} = {funcA129} ( {var1871} , {funcA131} ( {var454} ) )  ; {file:30}{line:2494}
+{var733} = {funcA122} ( {string7753} , {string7754} , {string7755} , {string7756} , {var447} , {string7757} , {var733} [ 0 ] , {string7758} , {var454} )  ; {file:30}{line:2495}
+If Not {var733} [ 0 ] Then Return {funcA374} ( 20 , 0 , 0 )  ; {file:30}{line:2496}
+Return {var1870} ; {file:30}{line:2498}
+EndFunc  ; {file:30}{line:2499}
+Func {funcU1167} ({var447}, {var207}, {var208}) ; {file:30}{line:2505}
+Local {var733} = {funcA122} ( {string7759} , {string7760} , {string7761} , {string7762} , {var447} , {string7763} , {var207} , {string7764} , {var208} )  ; {file:30}{line:2506}
+If {macro22} Or ( {var733} [ 0 ] = 4294967295 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:2507}
+Return {funcU1062} ( {var733} [ 0 ] )  ; {file:30}{line:2510}
+EndFunc  ; {file:30}{line:2511}
+Func {funcU1168} ({var447}) ; {file:30}{line:2517}
+Local {var733} = {funcA122} ( {string7765} , {string7766} , {string7767} , {string7768} , {var447} )  ; {file:30}{line:2518}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2519}
+Return {var733}[0] ; {file:30}{line:2522}
+EndFunc  ; {file:30}{line:2523}
+Func {funcU1169} ({var195}) ; {file:30}{line:2529}
+Local {var228}[4] ; {file:30}{line:2530}
+For {var79} = 0 To 3 ; {file:30}{line:2531}
+{var228} [ {var79} ] = {funcA130} ( {var195} , {var79} + 1 )  ; {file:30}{line:2532}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2533}
+Next ; {file:30}{line:2534}
+For {var79} = 2 To 3 ; {file:30}{line:2536}
+{var228}[{var79}] -= {var228}[{var79} - 2] ; {file:30}{line:2537}
+Next ; {file:30}{line:2538}
+Return {var228} ; {file:30}{line:2539}
+EndFunc  ; {file:30}{line:2540}
+Func {funcU1170} ({var1105}, ByRef {var1858}) ; {file:30}{line:2546}
+Local {var733} = {funcA122} ( {string7769} , {string7770} , {string7771} , {string7772} , {var1105} , {string7773} , 0 , {string7774} , 0 )  ; {file:30}{line:2547}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:2548}
+{var1858} = 0 ; {file:30}{line:2549}
+Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2551}
+EndIf ; {file:30}{line:2552}
+{var1858} = {funcA129} ( {var1872} )  ; {file:30}{line:2553}
+Local {var1873} = {var733} [ 0 ] - {funcA132} ( {var1858} )  ; {file:30}{line:2554}
+If {var1873} > 0 Then {var1858} = {funcA129} ( {var1872} & {string7775} & {var1873} & {string7776} )  ; {file:30}{line:2555}
+{var733} = {funcA122} ( {string7777} , {string7778} , {string7779} , {string7780} , {var1105} , {string7781} , {var733} [ 0 ] , {string7782} , {var1858} )  ; {file:30}{line:2556}
+If Not {var733}[0] Then {var1858} = 0 ; {file:30}{line:2557}
+Return {var733}[0] ; {file:30}{line:2559}
+EndFunc  ; {file:30}{line:2560}
+Func {funcU1171} ({var1105}, ByRef {var195}) ; {file:30}{line:2566}
+{var195} = {funcA129} ( {var456} )  ; {file:30}{line:2567}
+Local {var733} = {funcA122} ( {string7783} , {string7784} , {string7785} , {string7786} , {var1105} , {string7787} , {var195} )  ; {file:30}{line:2568}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:2569}
+{var195} = 0 ; {file:30}{line:2570}
+Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2572}
+EndIf ; {file:30}{line:2573}
+Return {var733}[0] ; {file:30}{line:2575}
+EndFunc  ; {file:30}{line:2576}
+Func {funcU1172} ({var447}) ; {file:30}{line:2582}
+Local {var733} = {funcA122} ( {string7788} , {string7789} , {string7790} , {string7791} , {var447} )  ; {file:30}{line:2583}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2584}
+Return {var733}[0] ; {file:30}{line:2587}
+EndFunc  ; {file:30}{line:2588}
+Func {funcU1173} ({var1213}) ; {file:30}{line:2594}
+Return {funcA47} ( {funcU1062} ( {var1213} ) , 0x0000FF )  ; {file:30}{line:2595}
+EndFunc  ; {file:30}{line:2596}
+Func {funcU1174} ({var447}) ; {file:30}{line:2602}
+Local {var733} = {funcA122} ( {string7792} , {string7793} , {string7794} , {string7795} , {var447} )  ; {file:30}{line:2603}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2604}
+Return {var733}[0] ; {file:30}{line:2607}
+EndFunc  ; {file:30}{line:2608}
+Func {funcU1175} ({var447}, {var248}, {var1874} = 0, {var283} = 0, {var1238} = -1) ; {file:30}{line:2614}
+Local {var1875}, {var482} ; {file:30}{line:2615}
+If Not {funcA281} ( {var1874} ) Then  ; {file:30}{line:2616}
+If {var1874} Then ; {file:30}{line:2617}
+{var1875} = {var1874} ; {file:30}{line:2618}
+Dim {var1874}[1] = [{var1875}] ; {file:30}{line:2619}
+{var283} = 0 ; {file:30}{line:2620}
+{var1238} = 0 ; {file:30}{line:2621}
+{var482} = 1 ; {file:30}{line:2622}
+Else ; {file:30}{line:2623}
+{var482} = 0 ; {file:30}{line:2624}
+EndIf ; {file:30}{line:2625}
+Else ; {file:30}{line:2626}
+{var482} = 1 ; {file:30}{line:2627}
+EndIf ; {file:30}{line:2628}
+If {var482} Then ; {file:30}{line:2630}
+If {funcU677} ( {var1874} , {var283} , {var1238} ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2631}
+{var482} = {var1238} - {var283} + 1 ; {file:30}{line:2633}
+Local {var1876} = {funcA129} ( {string7796} & {var482} & {string7797} )  ; {file:30}{line:2634}
+{var1875} = 1 ; {file:30}{line:2635}
+For {var79} = {var283} To {var1238} ; {file:30}{line:2636}
+{funcA133} ( {var1876} , 1 , {var1874} [ {var79} ] , {var1875} )  ; {file:30}{line:2637}
+{var1875} += 1 ; {file:30}{line:2638}
+Next ; {file:30}{line:2639}
+EndIf ; {file:30}{line:2640}
+Local {var733} = {funcA122} ( {string7798} , {string7799} , {string7800} , {string7801} , {var447} , {string7802} , {var248} , {string7803} , {funcA410} ( {var248} ) , {string7804} , {var482} , {string7805} , {funcA131} ( {var1876} ) )  ; {file:30}{line:2641}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 20 , {macro25} , 0 )  ; {file:30}{line:2642}
+Return {funcU1176} ( {funcU600} ( {var733} [ 0 ] ) , {funcU592} ( {var733} [ 0 ] ) )  ; {file:30}{line:2644}
+EndFunc  ; {file:30}{line:2645}
+Func {funcU1177} ({var447}) ; {file:30}{line:2651}
+Local {var733} = {funcA122} ( {string7806} , {string7807} , {string7808} , {string7809} , {var447} )  ; {file:30}{line:2652}
+If {macro22} Or ( {var733} [ 0 ] = 4294967295 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:2653}
+Return {var733}[0] ; {file:30}{line:2656}
+EndFunc  ; {file:30}{line:2657}
+Func {funcU1178} ({var447}) ; {file:30}{line:2663}
+Local {var733} = {funcA122} ( {string7810} , {string7811} , {string7812} , {string7813} , {var447} )  ; {file:30}{line:2664}
+If {macro22} Or ( {var733} [ 0 ] = 0x8000000 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:2665}
+Return {var733}[0] ; {file:30}{line:2668}
+EndFunc  ; {file:30}{line:2669}
+Func {funcU1179} ({var447}) ; {file:30}{line:2675}
+Local {var733} = {funcA122} ( {string7814} , {string7815} , {string7816} , {string7817} , {var447} )  ; {file:30}{line:2676}
+If {macro22} Or ( {var733} [ 0 ] = 4294967295 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:2677}
+Return {funcU1062} ( {var733} [ 0 ] )  ; {file:30}{line:2680}
+EndFunc  ; {file:30}{line:2681}
+Func {funcU1180} ({var447}) ; {file:30}{line:2687}
+Local {var733} = {funcA122} ( {string7818} , {string7819} , {string7820} , {string7821} , {var447} , {string7822} , 2048 , {string7823} , {string7824} )  ; {file:30}{line:2688}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , {string7825} )  ; {file:30}{line:2689}
+Return {var733}[3] ; {file:30}{line:2691}
+EndFunc  ; {file:30}{line:2692}
+Func {funcU1181} ({none}) ; {file:30}{line:2698}
+Return {funcA307} ( {var1877} )  ; {file:30}{line:2699}
+EndFunc  ; {file:30}{line:2700}
+Func {funcU1182} ({var52}, {var1114} = True) ; {file:30}{line:2706}
+Local {var195} = {funcA129} ( {var456} )  ; {file:30}{line:2707}
+Local {var733} = {funcA122} ( {string7826} , {string7827} , {string7828} , {string7829} , {var52} , {string7830} , {var195} , {string7831} , {var1114} )  ; {file:30}{line:2708}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2709}
+Return {var195} ; {file:30}{line:2711}
+EndFunc  ; {file:30}{line:2712}
+Func {funcU1183} ({var52}, {var1105}, {var1114} = True) ; {file:30}{line:2718}
+Local {var733} = {funcA122} ( {string7832} , {string7833} , {string7834} , {string7835} , {var52} , {string7836} , {var1105} , {string7837} , {var1114} )  ; {file:30}{line:2719}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2720}
+Return {var733}[0] ; {file:30}{line:2723}
+EndFunc  ; {file:30}{line:2724}
+Func {funcU1184} ({var447}) ; {file:30}{line:2730}
+Local {var445} = {funcA129} ( {var1098} )  ; {file:30}{line:2731}
+Local {var733} = {funcA122} ( {string7838} , {string7839} , {string7840} , {string7841} , {var447} , {string7842} , {var445} )  ; {file:30}{line:2732}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2733}
+Return {var445} ; {file:30}{line:2735}
+EndFunc  ; {file:30}{line:2736}
+Func {funcU1185} ({var447}) ; {file:30}{line:2742}
+Local {var196} = {funcA129} ( {var858} )  ; {file:30}{line:2743}
+Local {var733} = {funcA122} ( {string7843} , {string7844} , {string7845} , {string7846} , {var447} , {string7847} , {var196} )  ; {file:30}{line:2744}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2745}
+Return {var196} ; {file:30}{line:2747}
+EndFunc  ; {file:30}{line:2748}
+Func {funcU1186} ({var52}, ByRef {var195}) ; {file:30}{line:2754}
+{var195} = {funcA129} ( {var456} )  ; {file:30}{line:2755}
+Local {var733} = {funcA122} ( {string7848} , {string7849} , {string7850} , {string7851} , {var52} , {string7852} , {var195} )  ; {file:30}{line:2756}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2757}
+Return {var733}[0] ; {file:30}{line:2759}
+EndFunc  ; {file:30}{line:2760}
+Func {funcU1187} ({var447}) ; {file:30}{line:2766}
+Local {var1762} = {funcA129} ( {var1763} )  ; {file:30}{line:2767}
+Local {var733} = {funcA122} ( {string7853} , {string7854} , {string7855} , {string7856} , {var447} , {string7857} , {var1762} )  ; {file:30}{line:2768}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2769}
+Return {var1762} ; {file:30}{line:2771}
+EndFunc  ; {file:30}{line:2772}
+Func {funcU1188} ({var447}, Const ByRef {var1878}, {var283} = 0, {var1238} = -1, {var1879} = False) ; {file:30}{line:2778}
+If {funcU677} ( {var1878} , {var283} , {var1238} , 2 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2779}
+If {funcA456} ( {var1878} , {var1474} ) < 3 Then Return {funcA374} ( 13 , 0 , 0 )  ; {file:30}{line:2780}
+Local {var246} = {var1238} - {var283} + 1 ; {file:30}{line:2782}
+If {var246} > 3 Then ; {file:30}{line:2783}
+{var1238} = {var283} + 2 ; {file:30}{line:2784}
+{var246} = 3 ; {file:30}{line:2785}
+EndIf ; {file:30}{line:2786}
+Local {var134} ; {file:30}{line:2787}
+Switch {var246} ; {file:30}{line:2788}
+Case 2 ; {file:30}{line:2789}
+{var134} = {funcA307} ( Not {var1879} )  ; {file:30}{line:2790}
+Case 3 ; {file:30}{line:2791}
+{var134} = 2 ; {file:30}{line:2792}
+Case Else ; {file:30}{line:2793}
+Return {funcA374} ( 15 , 0 , 0 )  ; {file:30}{line:2794}
+EndSwitch ; {file:30}{line:2795}
+Local {var1162} = {string7858} ; {file:30}{line:2796}
+For {var79} = {var283} To {var1238} ; {file:30}{line:2797}
+{var1162} &= {string7859} ; {file:30}{line:2798}
+Next ; {file:30}{line:2799}
+Local {var1880} = {funcA129} ( {var1162} )  ; {file:30}{line:2800}
+Local {var482} = 1 ; {file:30}{line:2802}
+Local {var1881} = {funcA129} ( {string7860} & {var246} & {string7861} )  ; {file:30}{line:2803}
+For {var79} = {var283} To {var1238} ; {file:30}{line:2804}
+{funcA133} ( {var1881} , 1 , {var482} - 1 , {var482} )  ; {file:30}{line:2805}
+{funcA133} ( {var1880} , {var482} , {funcU600} ( {var1878} [ {var79} ] [ 0 ] ) , 1 )  ; {file:30}{line:2806}
+{funcA133} ( {var1880} , {var482} , {funcU592} ( {var1878} [ {var79} ] [ 0 ] ) , 2 )  ; {file:30}{line:2807}
+{funcA133} ( {var1880} , {var482} , {funcU600} ( {var1878} [ {var79} ] [ 1 ] ) , 3 )  ; {file:30}{line:2808}
+{funcA133} ( {var1880} , {var482} , {funcU592} ( {var1878} [ {var79} ] [ 1 ] ) , 4 )  ; {file:30}{line:2809}
+{funcA133} ( {var1880} , {var482} , {funcA51} ( {funcU1173} ( {var1878} [ {var79} ] [ 2 ] ) , - 8 ) , 5 )  ; {file:30}{line:2810}
+{funcA133} ( {var1880} , {var482} , {funcA51} ( {funcU1163} ( {var1878} [ {var79} ] [ 2 ] ) , - 8 ) , 6 )  ; {file:30}{line:2811}
+{funcA133} ( {var1880} , {var482} , {funcA51} ( {funcU1144} ( {var1878} [ {var79} ] [ 2 ] ) , - 8 ) , 7 )  ; {file:30}{line:2812}
+{funcA133} ( {var1880} , {var482} , 0 , 8 )  ; {file:30}{line:2813}
+{var482} += 1 ; {file:30}{line:2814}
+Next ; {file:30}{line:2815}
+Local {var733} = {funcA122} ( {string7862} , {string7863} , {string7864} , {string7865} , {var447} , {string7866} , {var1880} , {string7867} , {var246} , {string7868} , {var1881} , {string7869} , 1 , {string7870} , {var134} )  ; {file:30}{line:2817}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2819}
+Return {var733}[0] ; {file:30}{line:2821}
+EndFunc  ; {file:30}{line:2822}
+Func {funcU1189} (ByRef {var195}, {var1882}, {var1883}) ; {file:30}{line:2828}
+Local {var733} = {funcA122} ( {string7871} , {string7872} , {string7873} , {string7874} , {var195} , {string7875} , {var1882} , {string7876} , {var1883} )  ; {file:30}{line:2829}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2830}
+Return {var733}[0] ; {file:30}{line:2833}
+EndFunc  ; {file:30}{line:2834}
+Func {funcU1190} ({var447}, {var195}) ; {file:30}{line:2840}
+Local {var733} = {funcA122} ( {string7877} , {string7878} , {string7879} , {string7880} , {var447} , {string7881} , {funcA130} ( {var195} , 1 ) , {string7882} , {funcA130} ( {var195} , 2 ) , {string7883} , {funcA130} ( {var195} , 3 ) , {string7884} , {funcA130} ( {var195} , 4 ) )  ; {file:30}{line:2841}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2844}
+Return {var733}[0] ; {file:30}{line:2846}
+EndFunc  ; {file:30}{line:2847}
+Func {funcU1191} ({var1851}, {var1852}) ; {file:30}{line:2853}
+Local {var195} = {funcA129} ( {var456} )  ; {file:30}{line:2854}
+Local {var733} = {funcA122} ( {string7885} , {string7886} , {string7887} , {string7888} , {var195} , {string7889} , {var1851} , {string7890} , {var1852} )  ; {file:30}{line:2855}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2856}
+Return {var195} ; {file:30}{line:2858}
+EndFunc  ; {file:30}{line:2859}
+Func {funcU1192} ({var52}, {var1105} = 0, {var1114} = True) ; {file:30}{line:2865}
+Local {var733} = {funcA122} ( {string7891} , {string7892} , {string7893} , {string7894} , {var52} , {string7895} , {var1105} , {string7896} , {var1114} )  ; {file:30}{line:2866}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2867}
+Return {var733}[0] ; {file:30}{line:2869}
+EndFunc  ; {file:30}{line:2870}
+Func {funcU1193} ({var10}, {var1318} = False) ; {file:30}{line:2876}
+Local {var1671} = {funcA129} ( {var1676} )  ; {file:30}{line:2877}
+If Not {funcU567} ( {var10} , {funcA132} ( {var1671} ) , {funcA131} ( {var1671} ) ) Or ( {funcA130} ( {var1671} , {string7897} ) < > 1 ) Then  ; {file:30}{line:2878}
+Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:2879}
+EndIf ; {file:30}{line:2880}
+Local {var1673} = {funcU1067} ( {funcA130} ( {var1671} , {string7898} ) , {funcA130} ( {var1671} , {string7899} ) , 1 )  ; {file:30}{line:2881}
+If Not {var1673} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:2882}
+Local {var887} = {funcU178} ( 0 )  ; {file:30}{line:2885}
+Local {var1736} = {funcU180} ( {var887} , {var10} )  ; {file:30}{line:2886}
+Local {var1778} = {funcU178} ( 0 )  ; {file:30}{line:2887}
+Local {var1779} = {funcU180} ( {var1778} , {var1673} )  ; {file:30}{line:2888}
+{funcU487} ( {var1778} , 0 , 0 , {funcA130} ( {var1671} , {string7900} ) , {funcA130} ( {var1671} , {string7901} ) , {var887} , 0 , 0 , 0x00330008 )  ; {file:30}{line:2889}
+{funcU180} ( {var887} , {var1736} )  ; {file:30}{line:2890}
+{funcU185} ( {var887} )  ; {file:30}{line:2891}
+{funcU180} ( {var1778} , {var1779} )  ; {file:30}{line:2892}
+{funcU185} ( {var1778} )  ; {file:30}{line:2893}
+If {var1318} Then ; {file:30}{line:2894}
+{funcU10} ( {var10} )  ; {file:30}{line:2895}
+EndIf ; {file:30}{line:2896}
+Return {var1673} ; {file:30}{line:2897}
+EndFunc  ; {file:30}{line:2898}
+Func {funcU1194} ({var974}) ; {file:30}{line:2904}
+If {var974} = -1 Then Return 0 ; {file:30}{line:2905}
+Return 0xFFFFFF - {funcA47} ( {var974} , 0xFFFFFF )  ; {file:30}{line:2906}
+EndFunc  ; {file:30}{line:2907}
+Func {funcU1195} ({var447}, ByRef {var195}) ; {file:30}{line:2913}
+Local {var733} = {funcA122} ( {string7902} , {string7903} , {string7904} , {string7905} , {var447} , {string7906} , {var195} )  ; {file:30}{line:2914}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2915}
+Return {var733}[0] ; {file:30}{line:2918}
+EndFunc  ; {file:30}{line:2919}
+Func {funcU1196} ({var447}, {var1105}) ; {file:30}{line:2925}
+Local {var733} = {funcA122} ( {string7907} , {string7908} , {string7909} , {string7910} , {var447} , {string7911} , {var1105} )  ; {file:30}{line:2926}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2927}
+Return {var733}[0] ; {file:30}{line:2930}
+EndFunc  ; {file:30}{line:2931}
+Func {funcU1070} ({var10}) ; {file:30}{line:2937}
+{var10} = {funcU1000} ( {var10} )  ; {file:30}{line:2938}
+If Not {var10} Then Return {funcA374} ( {macro22} + 20 , {macro25} , 0 )  ; {file:30}{line:2939}
+Local {var733}, {var263} = 0 ; {file:30}{line:2941}
+Do ; {file:30}{line:2942}
+Local {var1769} = {funcA129} ( {var1770} )  ; {file:30}{line:2943}
+If ( Not {funcU567} ( {var10} , {funcA132} ( {var1769} ) , {funcA131} ( {var1769} ) ) ) Or ( {funcA130} ( {var1769} , {string7912} ) < > 32 ) Or ( {funcA130} ( {var1769} , {string7913} ) ) Then  ; {file:30}{line:2944}
+{var263} = 1 ; {file:30}{line:2945}
+ExitLoop ; {file:30}{line:2946}
+EndIf ; {file:30}{line:2947}
+{var733} = {funcA122} ( {string7914} , {string7915} , {string7916} , {string7917} , {funcU1197} ( ) , {string7918} , 0 , {string7919} , 0 , {string7920} , {var1769} , {string7921} , 0 )  ; {file:30}{line:2948}
+If {macro22} Or ( {var733} [ 0 ] = - 1 ) Then  ; {file:30}{line:2949}
+{var263} = {macro22} + 10 ; {file:30}{line:2950}
+ExitLoop ; {file:30}{line:2951}
+EndIf ; {file:30}{line:2952}
+Until 1 ; {file:30}{line:2953}
+{funcU10} ( {var10} )  ; {file:30}{line:2954}
+If {var263} Then Return {funcA374} ( {var263} , 0 , 0 )  ; {file:30}{line:2955}
+Return {var733}[0] ; {file:30}{line:2957}
+EndFunc  ; {file:30}{line:2958}
+Func {funcU1198} (ByRef {var195}) ; {file:30}{line:2964}
+Local {var733} = {funcA122} ( {string7922} , {string7923} , {string7924} , {string7925} , {var195} )  ; {file:30}{line:2965}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2966}
+Return {var733}[0] ; {file:30}{line:2968}
+EndFunc  ; {file:30}{line:2969}
+Func {funcU1199} ({var991}, {var992}, {var993}, {var994}, {var1884}, {var340} = 0) ; {file:30}{line:2975}
+Local {var733} = {funcA122} ( {string7926} , {string7927} , {string7928} , {string7929} , {var991} , {string7930} , {var992} , {string7931} , {var993} , {string7932} , {var994} , {string7933} , {var1884} , {string7934} , {var340} )  ; {file:30}{line:2976}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2978}
+Return {var733}[0] ; {file:30}{line:2981}
+EndFunc  ; {file:30}{line:2982}
+Func {funcU1200} ({var52}) ; {file:30}{line:2988}
+Local {var733} = {funcA122} ( {string7935} , {string7936} , {string7937} , {string7938} , {var52} )  ; {file:30}{line:2989}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:2990}
+Return {var733}[0] ; {file:30}{line:2993}
+EndFunc  ; {file:30}{line:2994}
+Func {funcU1201} ({var447}, ByRef {var196}, {var482} = 1) ; {file:30}{line:3000}
+Local {var733} = {funcA122} ( {string7939} , {string7940} , {string7941} , {string7942} , {var447} , {string7943} , {var196} , {string7944} , {var482} )  ; {file:30}{line:3001}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3002}
+Return {var733}[0] ; {file:30}{line:3005}
+EndFunc  ; {file:30}{line:3006}
+Func {funcU1202} ({var884}, {var885}, {var886}, {var194}, {var193}, {var887}, {var888}, {var889}, {var1817}, {var1885}, {var1886}, {var890}) ; {file:30}{line:3012}
+Local {var733} = {funcA122} ( {string7945} , {string7946} , {string7947} , {string7948} , {var884} , {string7949} , {var885} , {string7950} , {var886} , {string7951} , {var194} , {string7952} , {var193} , {string7953} , {var887} , {string7954} , {var888} , {string7955} , {var889} , {string7956} , {var1817} , {string7957} , {var1885} , {string7958} , {var1886} , {string7959} , {var890} )  ; {file:30}{line:3013}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3016}
+Return {var733}[0] ; {file:30}{line:3019}
+EndFunc  ; {file:30}{line:3020}
+Func {funcU1203} ({var447}, ByRef {var1762}, {var134}) ; {file:30}{line:3026}
+Local {var733} = {funcA122} ( {string7960} , {string7961} , {string7962} , {string7963} , {var447} , {string7964} , {var1762} , {string7965} , {var134} )  ; {file:30}{line:3027}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3028}
+Return {var733}[0] ; {file:30}{line:3031}
+EndFunc  ; {file:30}{line:3032}
+Func {funcU1204} (ByRef {var196}, {var719} = 1) ; {file:30}{line:3038}
+If {funcA132} ( {var196} ) < > 8 Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:3039}
+Local {var733} = {funcA122} ( {string7966} , {string7967} , {string7968} , {string7969} , {var196} , {string7970} , {var719} )  ; {file:30}{line:3041}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3042}
+Return {var733}[0] ; {file:30}{line:3044}
+EndFunc  ; {file:30}{line:3045}
+Func {funcU1205} (ByRef {var195}, {var719} = 1) ; {file:30}{line:3051}
+Local {var733} = {funcA122} ( {string7971} , {string7972} , {string7973} , {string7974} , {var195} , {string7975} , {var719} )  ; {file:30}{line:3052}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3053}
+Return {var733}[0] ; {file:30}{line:3055}
+EndFunc  ; {file:30}{line:3056}
+Func {funcU1206} ({var52}, {var719} = 1) ; {file:30}{line:3062}
+Local {var733} = {funcA122} ( {string7976} , {string7977} , {string7978} , {string7979} , {var52} , {string7980} , {var719} )  ; {file:30}{line:3063}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3064}
+Return {var733}[0] ; {file:30}{line:3066}
+EndFunc  ; {file:30}{line:3067}
+Func {funcU1207} ({var447}, {var207}, {var208}) ; {file:30}{line:3073}
+Local {var196} = {funcA129} ( {var858} )  ; {file:30}{line:3074}
+Local {var733} = {funcA122} ( {string7981} , {string7982} , {string7983} , {string7984} , {var447} , {string7985} , {var207} , {string7986} , {var208} , {string7987} , {var196} )  ; {file:30}{line:3075}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:3076}
+Return {var196} ; {file:30}{line:3078}
+EndFunc  ; {file:30}{line:3079}
+Func {funcU1208} ({var447}, {var1826}, {var1827}) ; {file:30}{line:3085}
+Local {var733} = {funcA122} ( {string7988} , {string7989} , {string7990} , {string7991} , {var447} , {string7992} , {var1826} , {string7993} , {var1827} )  ; {file:30}{line:3086}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3087}
+Return {var733}[0] ; {file:30}{line:3090}
+EndFunc  ; {file:30}{line:3091}
+Func {funcU1209} (ByRef {var1820}, {var1826}, {var1827}, {var283} = 0, {var1238} = -1) ; {file:30}{line:3097}
+If {funcU677} ( {var1820} , {var283} , {var1238} , 2 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:3098}
+If {funcA456} ( {var1820} , {var1474} ) < 2 Then Return {funcA374} ( 13 , 0 , 0 )  ; {file:30}{line:3099}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3101}
+{var1820}[{var79}][0] += {var1826} ; {file:30}{line:3102}
+{var1820}[{var79}][1] += {var1827} ; {file:30}{line:3103}
+Next ; {file:30}{line:3104}
+Return 1 ; {file:30}{line:3105}
+EndFunc  ; {file:30}{line:3106}
+Func {funcU1210} (ByRef {var195}, {var1882}, {var1883}) ; {file:30}{line:3112}
+Local {var733} = {funcA122} ( {string7994} , {string7995} , {string7996} , {string7997} , {var195} , {string7998} , {var1882} , {string7999} , {var1883} )  ; {file:30}{line:3113}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3114}
+Return {var733}[0] ; {file:30}{line:3117}
+EndFunc  ; {file:30}{line:3118}
+Func {funcU1211} ({var1105}, {var1826}, {var1827}) ; {file:30}{line:3124}
+Local {var733} = {funcA122} ( {string8000} , {string8001} , {string8002} , {string8003} , {var1105} , {string8004} , {var1826} , {string8005} , {var1827} )  ; {file:30}{line:3125}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3126}
+Return {var733}[0] ; {file:30}{line:3129}
+EndFunc  ; {file:30}{line:3130}
+Func {funcU1212} ({var447}, {var1826}, {var1827}) ; {file:30}{line:3136}
+{var1654} = {funcA129} ( {var858} )  ; {file:30}{line:3137}
+Local {var733} = {funcA122} ( {string8006} , {string8007} , {string8008} , {string8009} , {var447} , {string8010} , {var1826} , {string8011} , {var1827} , {string8012} , {var1654} )  ; {file:30}{line:3138}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3140}
+Return {var733}[0] ; {file:30}{line:3143}
+EndFunc  ; {file:30}{line:3144}
+Func {funcU1213} ({var447}) ; {file:30}{line:3150}
+Local {var733} = {funcA122} ( {string8013} , {string8014} , {string8015} , {string8016} , {var447} )  ; {file:30}{line:3151}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3152}
+Return {var733}[0] ; {file:30}{line:3155}
+EndFunc  ; {file:30}{line:3156}
+Func {funcU1214} ({var447}, {var1105}) ; {file:30}{line:3162}
+Local {var733} = {funcA122} ( {string8017} , {string8018} , {string8019} , {string8020} , {var447} , {string8021} , {var1105} )  ; {file:30}{line:3163}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3164}
+Return {var733}[0] ; {file:30}{line:3167}
+EndFunc  ; {file:30}{line:3168}
+Func {funcU1215} ({var447}, {var207}, {var208}, {var194}, {var193}, {var890}) ; {file:30}{line:3174}
+Local {var733} = {funcA122} ( {string8022} , {string8023} , {string8024} , {string8025} , {var447} , {string8026} , {var207} , {string8027} , {var208} , {string8028} , {var194} , {string8029} , {var193} , {string8030} , {var890} )  ; {file:30}{line:3175}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3177}
+Return {var733}[0] ; {file:30}{line:3180}
+EndFunc  ; {file:30}{line:3181}
+Func {funcU1216} ({var447}) ; {file:30}{line:3187}
+Local {var733} = {funcA122} ( {string8031} , {string8032} , {string8033} , {string8034} , {var447} )  ; {file:30}{line:3188}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3189}
+Return {var733}[0] ; {file:30}{line:3192}
+EndFunc  ; {file:30}{line:3193}
+Func {funcU1217} ({var447}, {var1773}, ByRef {var195}) ; {file:30}{line:3199}
+Local {var733} = {funcA122} ( {string8035} , {string8036} , {string8037} , {string8038} , {var447} , {string8039} , {var1773} , {string8040} , {var195} )  ; {file:30}{line:3200}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3201}
+Return {var733}[0] ; {file:30}{line:3204}
+EndFunc  ; {file:30}{line:3205}
+Func {funcU1218} ({var884}, Const ByRef {var1820}, {var887}, {var888}, {var889}, {var194}, {var193}, {var1817} = 0, {var1885} = 0, {var1886} = 0) ; {file:30}{line:3211}
+If ( {funcA456} ( {var1820} ) < 3 ) Or ( {funcA456} ( {var1820} , {var1474} ) < 2 ) Then Return {funcA374} ( 12 , 0 , False )  ; {file:30}{line:3212}
+Local {var520} = {funcA129} ( {string8041} )  ; {file:30}{line:3214}
+For {var79} = 0 To 2 ; {file:30}{line:3215}
+For {var253} = 0 To 1 ; {file:30}{line:3216}
+{funcA133} ( {var520} , {var79} + 1 , {var1820} [ {var79} ] [ {var253} ] , {var253} + 1 )  ; {file:30}{line:3217}
+Next ; {file:30}{line:3218}
+Next ; {file:30}{line:3219}
+Local {var733} = {funcA122} ( {string8042} , {string8043} , {string8044} , {string8045} , {var884} , {string8046} , {var520} , {string8047} , {var887} , {string8048} , {var888} , {string8049} , {var889} , {string8050} , {var194} , {string8051} , {var193} , {string8052} , {var1817} , {string8053} , {var1885} , {string8054} , {var1886} )  ; {file:30}{line:3221}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3224}
+Return {var733}[0] ; {file:30}{line:3227}
+EndFunc  ; {file:30}{line:3228}
+Func {funcU1219} ({var447}, Const ByRef {var1820}, {var283} = 0, {var1238} = -1) ; {file:30}{line:3234}
+If {funcU677} ( {var1820} , {var283} , {var1238} , 2 , 2 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , False )  ; {file:30}{line:3235}
+Local {var246} = 1 + 3 * {funcA187} ( ( {var1238} - {var283} ) / 3 )  ; {file:30}{line:3237}
+If {var246} < 1 Then Return {funcA374} ( 15 , 0 , False )  ; {file:30}{line:3238}
+{var1238} = {var283} + {var246} - 1 ; {file:30}{line:3240}
+Local {var1162} = {string8055} ; {file:30}{line:3241}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3242}
+{var1162} &= {string8056} ; {file:30}{line:3243}
+Next ; {file:30}{line:3244}
+Local {var196} = {funcA129} ( {var1162} )  ; {file:30}{line:3245}
+Local {var482} = 0 ; {file:30}{line:3247}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3248}
+{var482} += 1 ; {file:30}{line:3249}
+For {var253} = 0 To 1 ; {file:30}{line:3250}
+{funcA133} ( {var196} , {var482} , {var1820} [ {var79} ] [ {var253} ] , {var253} + 1 )  ; {file:30}{line:3251}
+Next ; {file:30}{line:3252}
+Next ; {file:30}{line:3253}
+Local {var733} = {funcA122} ( {string8057} , {string8058} , {string8059} , {string8060} , {var447} , {string8061} , {var196} , {string8062} , {var246} )  ; {file:30}{line:3255}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3256}
+Return {var733}[0] ; {file:30}{line:3259}
+EndFunc  ; {file:30}{line:3260}
+Func {funcU1220} ({var447}, Const ByRef {var1820}, {var283} = 0, {var1238} = -1) ; {file:30}{line:3266}
+If {funcU677} ( {var1820} , {var283} , {var1238} , 2 , 2 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , False )  ; {file:30}{line:3267}
+Local {var246} = 3 * {funcA187} ( ( {var1238} - {var283} + 1 ) / 3 )  ; {file:30}{line:3269}
+If {var246} < 3 Then Return {funcA374} ( 15 , 0 , False )  ; {file:30}{line:3270}
+{var1238} = {var283} + {var246} - 1 ; {file:30}{line:3272}
+Local {var1162} = {string8063} ; {file:30}{line:3273}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3274}
+{var1162} &= {string8064} ; {file:30}{line:3275}
+Next ; {file:30}{line:3276}
+Local {var196} = {funcA129} ( {var1162} )  ; {file:30}{line:3277}
+Local {var482} = 0 ; {file:30}{line:3279}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3280}
+{var482} += 1 ; {file:30}{line:3281}
+For {var253} = 0 To 1 ; {file:30}{line:3282}
+{funcA133} ( {var196} , {var482} , {var1820} [ {var79} ] [ {var253} ] , {var253} + 1 )  ; {file:30}{line:3283}
+Next ; {file:30}{line:3284}
+Next ; {file:30}{line:3285}
+Local {var733} = {funcA122} ( {string8065} , {string8066} , {string8067} , {string8068} , {var447} , {string8069} , {var196} , {string8070} , {var246} )  ; {file:30}{line:3287}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3288}
+Return {var733}[0] ; {file:30}{line:3291}
+EndFunc  ; {file:30}{line:3292}
+Func {funcU1221} ({var447}, Const ByRef {var1820}, {var283} = 0, {var1238} = -1) ; {file:30}{line:3298}
+If {funcU677} ( {var1820} , {var283} , {var1238} , 2 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:3299}
+If {funcA456} ( {var1820} , {var1474} ) < 3 Then Return {funcA374} ( 13 , 0 , False )  ; {file:30}{line:3300}
+Local {var246} = {var1238} - {var283} + 1 ; {file:30}{line:3302}
+Local {var1162} = {string8071} ; {file:30}{line:3303}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3304}
+{var1162} &= {string8072} ; {file:30}{line:3305}
+Next ; {file:30}{line:3306}
+Local {var196} = {funcA129} ( {var1162} )  ; {file:30}{line:3307}
+Local {var693} = {funcA129} ( {string8073} & {var246} & {string8074} )  ; {file:30}{line:3308}
+Local {var482} = 0 ; {file:30}{line:3309}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3310}
+{var482} += 1 ; {file:30}{line:3311}
+For {var253} = 0 To 1 ; {file:30}{line:3312}
+{funcA133} ( {var196} , {var482} , {var1820} [ {var79} ] [ {var253} ] , {var253} + 1 )  ; {file:30}{line:3313}
+Next ; {file:30}{line:3314}
+{funcA133} ( {var693} , 1 , {var1820} [ {var79} ] [ 2 ] , {var482} )  ; {file:30}{line:3315}
+Next ; {file:30}{line:3316}
+Local {var733} = {funcA122} ( {string8075} , {string8076} , {string8077} , {string8078} , {var447} , {string8079} , {var196} , {string8080} , {var693} , {string8081} , {var246} )  ; {file:30}{line:3318}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3319}
+Return {var733}[0] ; {file:30}{line:3322}
+EndFunc  ; {file:30}{line:3323}
+Func {funcU1222} ({var447}, Const ByRef {var1820}, {var283} = 0, {var1238} = -1) ; {file:30}{line:3329}
+If {funcU677} ( {var1820} , {var283} , {var1238} , 2 , 2 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , False )  ; {file:30}{line:3330}
+Local {var1162} = {string8082} ; {file:30}{line:3332}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3333}
+{var1162} &= {string8083} ; {file:30}{line:3334}
+Next ; {file:30}{line:3335}
+Local {var454} = {funcA129} ( {var1162} )  ; {file:30}{line:3336}
+Local {var482} = 1 ; {file:30}{line:3337}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3338}
+For {var253} = 0 To 1 ; {file:30}{line:3339}
+{funcA133} ( {var454} , {var482} , {var1820} [ {var79} ] [ {var253} ] , {var253} + 1 )  ; {file:30}{line:3340}
+Next ; {file:30}{line:3341}
+{var482} += 1 ; {file:30}{line:3342}
+Next ; {file:30}{line:3343}
+Local {var733} = {funcA122} ( {string8084} , {string8085} , {string8086} , {string8087} , {var447} , {string8088} , {var454} , {string8089} , {var482} - 1 )  ; {file:30}{line:3345}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3346}
+Return {var733}[0] ; {file:30}{line:3349}
+EndFunc  ; {file:30}{line:3350}
+Func {funcU1223} ({var52}, {var447}, {var1887} = False) ; {file:30}{line:3356}
+Local {var733} = {funcA122} ( {string8090} , {string8091} , {string8092} , {string8093} , {var52} , {string8094} , {var447} , {string8095} , {var1887} )  ; {file:30}{line:3357}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3358}
+Return {var733}[0] ; {file:30}{line:3361}
+EndFunc  ; {file:30}{line:3362}
+Func {funcU1224} ({var207}, {var208}, {var249}, {var250}, {var859}, {var860}) ; {file:30}{line:3368}
+Local {var195} = {funcU1089} ( {var249} , {var250} , {var859} , {var860} )  ; {file:30}{line:3369}
+Local {var196} = {funcU1225} ( {var207} , {var208} )  ; {file:30}{line:3370}
+Local {var733} = {funcA122} ( {string8096} , {string8097} , {string8098} , {string8099} , {var195} , {string8100} , {var196} )  ; {file:30}{line:3371}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3372}
+Return {var733}[0] ; {file:30}{line:3374}
+EndFunc  ; {file:30}{line:3375}
+Func {funcU1226} ({var1105}, {var207}, {var208}) ; {file:30}{line:3381}
+Local {var733} = {funcA122} ( {string8101} , {string8102} , {string8103} , {string8104} , {var1105} , {string8105} , {var207} , {string8106} , {var208} )  ; {file:30}{line:3382}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3383}
+Return {var733}[0] ; {file:30}{line:3385}
+EndFunc  ; {file:30}{line:3386}
+Func {funcU1227} ({var447}, {var207}, {var208}) ; {file:30}{line:3392}
+Local {var733} = {funcA122} ( {string8107} , {string8108} , {string8109} , {string8110} , {var447} , {string8111} , {var207} , {string8112} , {var208} )  ; {file:30}{line:3393}
+If {macro22} Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:3394}
+If {var733} [ 0 ] = - 1 Then Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:3395}
+Return {var733}[0] ; {file:30}{line:3397}
+EndFunc  ; {file:30}{line:3398}
+Func {funcU1228} ({var447}, {var207}, {var208}, {var1744}, {var1888}, {var1889}, {var1890} = 0, {var1891} = 360, {var1892} = 5) ; {file:30}{line:3404}
+If {funcA1} ( {var1890} ) > 360 Then  ; {file:30}{line:3405}
+{var1890} = {funcA297} ( {var1890} , 360 )  ; {file:30}{line:3406}
+EndIf ; {file:30}{line:3407}
+If {funcA1} ( {var1891} ) > 360 Then  ; {file:30}{line:3408}
+{var1891} = {funcA297} ( {var1891} , 360 )  ; {file:30}{line:3409}
+EndIf ; {file:30}{line:3410}
+If ( {var1890} < 0 ) Or ( {var1891} < 0 ) Then  ; {file:30}{line:3411}
+{var1890} += 360 ; {file:30}{line:3412}
+{var1891} += 360 ; {file:30}{line:3413}
+EndIf ; {file:30}{line:3414}
+If {var1890} > {var1891} Then ; {file:30}{line:3415}
+Local {var1893} = {var1890} ; {file:30}{line:3416}
+{var1890} = {var1891} ; {file:30}{line:3417}
+{var1891} = {var1893} ; {file:30}{line:3418}
+EndIf ; {file:30}{line:3419}
+If {var1892} < 1 Then ; {file:30}{line:3420}
+{var1892} = 1 ; {file:30}{line:3421}
+EndIf ; {file:30}{line:3422}
+Local {var1894} = {funcA9} ( 1 ) / 45  ; {file:30}{line:3424}
+Local {var1807} = {funcA367} ( {var207} + {var1744} * {funcA115} ( {var1894} * {var1890} ) )  ; {file:30}{line:3425}
+Local {var1808} = {funcA367} ( {var208} + {var1744} * {funcA379} ( {var1894} * {var1890} ) )  ; {file:30}{line:3426}
+Local {var1895}, {var1896}, {var1897} = {var1890} ; {file:30}{line:3427}
+Local {var1878}[3][3] ; {file:30}{line:3428}
+While {var1897} < {var1891} ; {file:30}{line:3430}
+{var1897} += {var1892} ; {file:30}{line:3431}
+If {var1897} > {var1891} Then ; {file:30}{line:3432}
+{var1897} = {var1891} ; {file:30}{line:3433}
+EndIf ; {file:30}{line:3434}
+{var1895} = {funcA367} ( {var207} + {var1744} * {funcA115} ( {var1894} * {var1897} ) )  ; {file:30}{line:3435}
+{var1896} = {funcA367} ( {var208} + {var1744} * {funcA379} ( {var1894} * {var1897} ) )  ; {file:30}{line:3436}
+{var1878}[0][0] = {var207} ; {file:30}{line:3437}
+{var1878}[0][1] = {var208} ; {file:30}{line:3438}
+{var1878}[0][2] = {var1888} ; {file:30}{line:3439}
+{var1878}[1][0] = {var1807} ; {file:30}{line:3440}
+{var1878}[1][1] = {var1808} ; {file:30}{line:3441}
+{var1878}[1][2] = {var1889} ; {file:30}{line:3442}
+{var1878}[2][0] = {var1895} ; {file:30}{line:3443}
+{var1878}[2][1] = {var1896} ; {file:30}{line:3444}
+{var1878}[2][2] = {var1889} ; {file:30}{line:3445}
+If Not {funcU1188} ( {var447} , {var1878} , 0 , 2 ) Then  ; {file:30}{line:3446}
+Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3447}
+EndIf ; {file:30}{line:3448}
+{var1807} = {var1895} ; {file:30}{line:3449}
+{var1808} = {var1896} ; {file:30}{line:3450}
+WEnd ; {file:30}{line:3451}
+Return 1 ; {file:30}{line:3453}
+EndFunc  ; {file:30}{line:3454}
+Func {funcU1229} ({var447}, {var195}) ; {file:30}{line:3460}
+Local {var733} = {funcA122} ( {string8113} , {string8114} , {string8115} , {string8116} , {var447} , {string8117} , {funcA130} ( {var195} , 1 ) , {string8118} , {funcA130} ( {var195} , 2 ) , {string8119} , {funcA130} ( {var195} , 3 ) , {string8120} , {funcA130} ( {var195} , 4 ) )  ; {file:30}{line:3461}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3463}
+Return {var733}[0] ; {file:30}{line:3466}
+EndFunc  ; {file:30}{line:3467}
+Func {funcU1230} ({var1105}, {var195}) ; {file:30}{line:3473}
+Local {var733} = {funcA122} ( {string8121} , {string8122} , {string8123} , {string8124} , {var1105} , {string8125} , {var195} )  ; {file:30}{line:3474}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3475}
+Return {var733}[0] ; {file:30}{line:3477}
+EndFunc  ; {file:30}{line:3478}
+Func {funcU1231} ({var447}, {var195}) ; {file:30}{line:3484}
+Local {var733} = {funcA122} ( {string8126} , {string8127} , {string8128} , {string8129} , {var447} , {string8130} , {var195} )  ; {file:30}{line:3485}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3486}
+Switch {var733}[0] ; {file:30}{line:3487}
+Case 0, 1, 2 ; {file:30}{line:3488}
+Case Else ; {file:30}{line:3490}
+Return {funcA374} ( 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:3491}
+EndSwitch ; {file:30}{line:3492}
+Return {var733}[0] ; {file:30}{line:3494}
+EndFunc  ; {file:30}{line:3495}
+Func {funcU139} ({var297}) ; {file:30}{line:3501}
+Local {var733} = {funcA122} ( {string8131} , {string8132} , {string8133} , {string8134} , {var297} )  ; {file:30}{line:3502}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3503}
+Return {var733}[0] ; {file:30}{line:3506}
+EndFunc  ; {file:30}{line:3507}
+Func {funcU1160} ({var247}, {var719} = 0, {var1728} = False) ; {file:30}{line:3513}
+Local {var733} = {funcA122} ( {string8135} , {string8136} , {string8137} , {string8138} , {var247} , {string8139} , {var719} , {string8140} , 0 )  ; {file:30}{line:3514}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3515}
+If {var1728} Then ; {file:30}{line:3518}
+Local Const {var1729} = 0x001D ; {file:30}{line:3519}
+Local Const {var1730} = 0xFFFF ; {file:30}{line:3520}
+{funcA122} ( {string8141} , {string8142} , {string8143} , {string8144} , {var1730} , {string8145} , {var1729} , {string8146} , 0 , {string8147} , 0 )  ; {file:30}{line:3521}
+EndIf ; {file:30}{line:3522}
+Return {var733}[0] ; {file:30}{line:3523}
+EndFunc  ; {file:30}{line:3524}
+Func {funcU1232} ({var447}, {var1320}) ; {file:30}{line:3530}
+Local {var733} = {funcA122} ( {string8148} , {string8149} , {string8150} , {string8151} , {var447} , {string8152} , {var1320} )  ; {file:30}{line:3531}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3532}
+Return {var733}[0] ; {file:30}{line:3535}
+EndFunc  ; {file:30}{line:3536}
+Func {funcU1233} ({var1898}, {var1899}, {var1900}) ; {file:30}{line:3542}
+Return {funcU1062} ( {funcA49} ( {funcA51} ( {var1900} , - 16 ) , {funcA51} ( {var1899} , - 8 ) , {var1898} ) )  ; {file:30}{line:3543}
+EndFunc  ; {file:30}{line:3544}
+Func {funcU1234} (ByRef {var1820}, {var1901}, {var1902}, {var552}, {var283} = 0, {var1238} = -1) ; {file:30}{line:3550}
+If {funcU677} ( {var1820} , {var283} , {var1238} , 2 ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:3551}
+If {funcA456} ( {var1820} , {var1474} ) < 2 Then Return {funcA374} ( 13 , 0 , 0 )  ; {file:30}{line:3552}
+Local {var1903} = {funcA115} ( {funcA9} ( 1 ) / 45 * {var552} )  ; {file:30}{line:3554}
+Local {var1904} = {funcA379} ( {funcA9} ( 1 ) / 45 * {var552} )  ; {file:30}{line:3555}
+Local {var1895}, {var1896} ; {file:30}{line:3556}
+For {var79} = {var283} To {var1238} ; {file:30}{line:3558}
+{var1895} = {var1820}[{var79}][0] - {var1901} ; {file:30}{line:3559}
+{var1896} = {var1820}[{var79}][1] - {var1902} ; {file:30}{line:3560}
+{var1820} [ {var79} ] [ 0 ] = {var1901} + {funcA367} ( {var1895} * {var1903} - {var1896} * {var1904} )  ; {file:30}{line:3561}
+{var1820} [ {var79} ] [ 1 ] = {var1902} + {funcA367} ( {var1895} * {var1904} + {var1896} * {var1903} )  ; {file:30}{line:3562}
+Next ; {file:30}{line:3563}
+Return 1 ; {file:30}{line:3564}
+EndFunc  ; {file:30}{line:3565}
+Func {funcU1235} ({var447}, {var195}, {var194}, {var193}) ; {file:30}{line:3571}
+Local {var733} = {funcA122} ( {string8153} , {string8154} , {string8155} , {string8156} , {var447} , {string8157} , {funcA130} ( {var195} , 1 ) , {string8158} , {funcA130} ( {var195} , 2 ) , {string8159} , {funcA130} ( {var195} , 3 ) , {string8160} , {funcA130} ( {var195} , 4 ) , {string8161} , {var194} , {string8162} , {var193} )  ; {file:30}{line:3572}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3575}
+Return {var733}[0] ; {file:30}{line:3578}
+EndFunc  ; {file:30}{line:3579}
+Func {funcU1236} ({var447}) ; {file:30}{line:3585}
+Local {var733} = {funcA122} ( {string8163} , {string8164} , {string8165} , {string8166} , {var447} )  ; {file:30}{line:3586}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3587}
+Return {var733}[0] ; {file:30}{line:3590}
+EndFunc  ; {file:30}{line:3591}
+Func {funcU1237} ({var850}, {var10}, {var1905} = Default, {var1906} = Default) ; {file:30}{line:3597}
+Local {var1907} = {funcA129} ( {string8167} )  ; {file:30}{line:3598}
+Local {var1769} = {funcA129} ( {var1770} )  ; {file:30}{line:3599}
+Local {var447}, {var1766}, {var1768} = 0 ; {file:30}{line:3601}
+While {var10} ; {file:30}{line:3602}
+If ( Not {funcU567} ( {var10} , {funcA132} ( {var1769} ) , {funcA131} ( {var1769} ) ) ) Or ( {funcA130} ( {var1769} , {string8168} ) ) Then  ; {file:30}{line:3603}
+{var10} = 0 ; {file:30}{line:3604}
+Else ; {file:30}{line:3605}
+Switch {funcA130} ( {var1769} , {string8169} )  ; {file:30}{line:3606}
+Case 32 ; {file:30}{line:3607}
+If Not {funcU1070} ( {var10} ) Then  ; {file:30}{line:3608}
+If Not {var1768} Then ; {file:30}{line:3609}
+{var1768} = {funcU1067} ( {funcA130} ( {var1769} , {string8170} ) , {funcA130} ( {var1769} , {string8171} ) , 24 )  ; {file:30}{line:3610}
+If Not {var1768} Then ; {file:30}{line:3611}
+{var10} = 0 ; {file:30}{line:3612}
+EndIf ; {file:30}{line:3613}
+{var447} = {funcU178} ( 0 )  ; {file:30}{line:3614}
+{var1766} = {funcU180} ( {var447} , {var1768} )  ; {file:30}{line:3615}
+If {funcU1068} ( {var447} , 0 , 0 , {var10} ) Then  ; {file:30}{line:3616}
+{var10} = {var1768} ; {file:30}{line:3617}
+Else ; {file:30}{line:3618}
+{var10} = 0 ; {file:30}{line:3619}
+EndIf ; {file:30}{line:3620}
+{funcU180} ( {var447} , {var1766} )  ; {file:30}{line:3621}
+{funcU185} ( {var447} )  ; {file:30}{line:3622}
+Else ; {file:30}{line:3623}
+{var10} = 0 ; {file:30}{line:3624}
+EndIf ; {file:30}{line:3625}
+ContinueLoop ; {file:30}{line:3626}
+EndIf ; {file:30}{line:3627}
+Case Else ; {file:30}{line:3628}
+EndSwitch ; {file:30}{line:3630}
+If ( Not {funcA130} ( {var1769} , {string8172} ) ) Or ( Not {funcA130} ( {var1769} , {string8173} ) ) Then  ; {file:30}{line:3631}
+If Not {var1768} Then ; {file:30}{line:3632}
+{var10} = {funcU1000} ( {var10} )  ; {file:30}{line:3633}
+{var1768} = {var10} ; {file:30}{line:3634}
+Else ; {file:30}{line:3635}
+{var10} = 0 ; {file:30}{line:3636}
+EndIf ; {file:30}{line:3637}
+Else ; {file:30}{line:3638}
+ExitLoop ; {file:30}{line:3639}
+EndIf ; {file:30}{line:3640}
+EndIf ; {file:30}{line:3641}
+WEnd ; {file:30}{line:3642}
+Local {var263} = 0, {var1281} = 0 ; {file:30}{line:3644}
+Do ; {file:30}{line:3645}
+If Not {var10} Then ; {file:30}{line:3646}
+{var263} = 1 ; {file:30}{line:3647}
+ExitLoop ; {file:30}{line:3648}
+EndIf ; {file:30}{line:3649}
+Local {var696}[4][2] ; {file:30}{line:3650}
+{var696} [ 0 ] [ 0 ] = {funcA131} ( {var1907} )  ; {file:30}{line:3651}
+{var696} [ 0 ] [ 1 ] = {funcA132} ( {var1907} )  ; {file:30}{line:3652}
+{var696} [ 1 ] [ 0 ] = {funcA131} ( {var1769} , {string8174} )  ; {file:30}{line:3653}
+{var696}[1][1] = 40 ; {file:30}{line:3654}
+{var696} [ 2 ] [ 1 ] = {funcA130} ( {var1769} , {string8175} ) * 4  ; {file:30}{line:3655}
+Local {var1908} = 0 ; {file:30}{line:3656}
+If {var696}[2][1] Then ; {file:30}{line:3657}
+{var1908} = {funcU1152} ( {var10} )  ; {file:30}{line:3658}
+If {macro22} Or ( {macro25} < > {var696} [ 2 ] [ 1 ] / 4 ) Then  ; {file:30}{line:3659}
+{var263} = {macro22} + 10 ; {file:30}{line:3660}
+ExitLoop ; {file:30}{line:3661}
+EndIf ; {file:30}{line:3662}
+EndIf ; {file:30}{line:3663}
+{var696} [ 2 ] [ 0 ] = {funcA131} ( {var1908} )  ; {file:30}{line:3664}
+{var696} [ 3 ] [ 0 ] = {funcA130} ( {var1769} , {string8176} )  ; {file:30}{line:3665}
+{var696} [ 3 ] [ 1 ] = {funcA130} ( {var1769} , {string8177} )  ; {file:30}{line:3666}
+{funcA133} ( {var1907} , {string8178} , 0x4D42 )  ; {file:30}{line:3667}
+{funcA133} ( {var1907} , {string8179} , {var696} [ 0 ] [ 1 ] + {var696} [ 1 ] [ 1 ] + {var696} [ 2 ] [ 1 ] + {var696} [ 3 ] [ 1 ] )  ; {file:30}{line:3668}
+{funcA133} ( {var1907} , {string8180} , 0 )  ; {file:30}{line:3669}
+{funcA133} ( {var1907} , {string8181} , 0 )  ; {file:30}{line:3670}
+{funcA133} ( {var1907} , {string8182} , {var696} [ 0 ] [ 1 ] + {var696} [ 1 ] [ 1 ] + {var696} [ 2 ] [ 1 ] )  ; {file:30}{line:3671}
+{var447} = {funcU505} ( 0 )  ; {file:30}{line:3672}
+If {var1905} = Default Then ; {file:30}{line:3673}
+If Not {funcA130} ( {var1769} , {string8183} ) Then  ; {file:30}{line:3674}
+{funcA133} ( {var1769} , {string8184} , {funcU552} ( {var447} , 8 ) / {funcU552} ( {var447} , 4 ) * 1000 )  ; {file:30}{line:3675}
+EndIf ; {file:30}{line:3676}
+Else ; {file:30}{line:3677}
+{funcA133} ( {var1769} , {string8185} , {var1905} )  ; {file:30}{line:3678}
+EndIf ; {file:30}{line:3679}
+If {var1906} = Default Then ; {file:30}{line:3680}
+If Not {funcA130} ( {var1769} , {string8186} ) Then  ; {file:30}{line:3681}
+{funcA133} ( {var1769} , {string8187} , {funcU552} ( {var447} , 10 ) / {funcU552} ( {var447} , 6 ) * 1000 )  ; {file:30}{line:3682}
+EndIf ; {file:30}{line:3683}
+Else ; {file:30}{line:3684}
+{funcA133} ( {var1769} , {string8188} , {var1906} )  ; {file:30}{line:3685}
+EndIf ; {file:30}{line:3686}
+{funcU508} ( 0 , {var447} )  ; {file:30}{line:3687}
+Local {var1034} = {funcU497} ( {var850} , 1 , 4 )  ; {file:30}{line:3688}
+If {macro22} Then ; {file:30}{line:3689}
+{var263} = {macro22} + 20 ; {file:30}{line:3690}
+ExitLoop ; {file:30}{line:3691}
+EndIf ; {file:30}{line:3692}
+Local {var1092} ; {file:30}{line:3693}
+For {var79} = 0 To 3 ; {file:30}{line:3694}
+If {var696}[{var79}][1] Then ; {file:30}{line:3695}
+If Not {funcU666} ( {var1034} , {var696} [ {var79} ] [ 0 ] , {var696} [ {var79} ] [ 1 ] , {var1092} ) Then  ; {file:30}{line:3696}
+{var263} = {macro22} + 30 ; {file:30}{line:3697}
+ExitLoop 2 ; {file:30}{line:3698}
+EndIf ; {file:30}{line:3699}
+EndIf ; {file:30}{line:3700}
+Next ; {file:30}{line:3701}
+{var1281} = 1 ; {file:30}{line:3702}
+Until 1 ; {file:30}{line:3703}
+If {var1768} Then ; {file:30}{line:3704}
+{funcU10} ( {var1768} )  ; {file:30}{line:3705}
+EndIf ; {file:30}{line:3706}
+{funcU490} ( {var1034} )  ; {file:30}{line:3707}
+If Not {var1281} Then ; {file:30}{line:3708}
+{funcA157} ( {var850} )  ; {file:30}{line:3709}
+EndIf ; {file:30}{line:3710}
+Return {funcA374} ( {var263} , 0 , {var1281} )  ; {file:30}{line:3712}
+EndFunc  ; {file:30}{line:3713}
+Func {funcU1238} ({var850}, Const ByRef {var1909}, {var1910} = 0, {var283} = 0, {var1238} = -1) ; {file:30}{line:3719}
+Local {var1054}, {var352}, {var482} = 1 ; {file:30}{line:3720}
+If Not {funcA281} ( {var1909} ) Then  ; {file:30}{line:3721}
+Dim {var1054}[1] = [{var1909}] ; {file:30}{line:3722}
+Dim {var352}[1] = [0] ; {file:30}{line:3723}
+Else ; {file:30}{line:3724}
+If {funcU677} ( {var1909} , {var283} , {var1238} ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:3725}
+{var482} = {var1238} - {var283} + 1 ; {file:30}{line:3727}
+If {var482} Then ; {file:30}{line:3728}
+Dim {var1054}[{var482}] ; {file:30}{line:3729}
+Dim {var352}[{var482}] ; {file:30}{line:3730}
+For {var79} = 0 To {var482} - 1 ; {file:30}{line:3731}
+{var1054}[{var79}] = {var1909}[{var283} + {var79}] ; {file:30}{line:3732}
+{var352}[{var79}] = 0 ; {file:30}{line:3733}
+Next ; {file:30}{line:3734}
+EndIf ; {file:30}{line:3735}
+EndIf ; {file:30}{line:3736}
+Local {var1034} = {funcU497} ( {var850} , 1 , 4 )  ; {file:30}{line:3738}
+If {macro22} Then Return {funcA374} ( {macro22} + 20 , {macro25} , 0 )  ; {file:30}{line:3739}
+Local {var1911} = {funcA129} ( {string8189} & ( 16 * {var482} ) & {string8190} )  ; {file:30}{line:3741}
+Local {var264} = {funcA132} ( {var1911} )  ; {file:30}{line:3742}
+Local {var1912} = {funcA131} ( {var1911} )  ; {file:30}{line:3743}
+Local {var1913} = {funcA129} ( {var1724} )  ; {file:30}{line:3744}
+Local {var1048} = {funcA131} ( {var1913} )  ; {file:30}{line:3745}
+Local {var1914} = {funcA129} ( {var1053} )  ; {file:30}{line:3746}
+Local {var1769} = {funcA129} ( {var1770} )  ; {file:30}{line:3747}
+Local {var1915} = {funcA132} ( {var1769} )  ; {file:30}{line:3748}
+Local {var1916} = {funcA131} ( {var1769} )  ; {file:30}{line:3749}
+Local {var681} = {var264} ; {file:30}{line:3750}
+{funcA133} ( {var1913} , {string8191} , 40 )  ; {file:30}{line:3752}
+{funcA133} ( {var1913} , {string8192} , 1 )  ; {file:30}{line:3753}
+{funcA133} ( {var1913} , {string8193} , 0 )  ; {file:30}{line:3754}
+{funcA133} ( {var1913} , {string8194} , 0 )  ; {file:30}{line:3755}
+{funcA133} ( {var1913} , {string8195} , 0 )  ; {file:30}{line:3756}
+{funcA133} ( {var1913} , {string8196} , 0 )  ; {file:30}{line:3757}
+{funcA133} ( {var1911} , {string8197} , 0 )  ; {file:30}{line:3759}
+{funcA133} ( {var1911} , {string8198} , 1 )  ; {file:30}{line:3760}
+{funcA133} ( {var1911} , {string8199} , {var482} )  ; {file:30}{line:3761}
+Local {var1281} = 0, {var263} = 0 ; {file:30}{line:3763}
+Do ; {file:30}{line:3764}
+Local {var1092} ; {file:30}{line:3765}
+If Not {funcU666} ( {var1034} , {var1912} , {var264} , {var1092} ) Then  ; {file:30}{line:3766}
+{var263} = {macro22} + 30 ; {file:30}{line:3767}
+ExitLoop ; {file:30}{line:3768}
+EndIf ; {file:30}{line:3769}
+Local {var486}[8], {var733}, {var340} = 0, {var237} = 0 ; {file:30}{line:3770}
+While {var482} > {var237} ; {file:30}{line:3771}
+{var733} = {funcA122} ( {string8200} , {string8201} , {string8202} , {string8203} , {var1054} [ {var237} ] , {string8204} , {var1914} )  ; {file:30}{line:3772}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:3773}
+{var263} = {macro22} + 40 ; {file:30}{line:3774}
+ExitLoop 2 ; {file:30}{line:3775}
+EndIf ; {file:30}{line:3776}
+For {var79} = 4 To 5 ; {file:30}{line:3777}
+{var486} [ {var79} ] = {funcU1072} ( {funcA130} ( {var1914} , {var79} ) , 0 , 0 , 0 , 0x2008 )  ; {file:30}{line:3778}
+If {funcU567} ( {var486} [ {var79} ] , {var1915} , {var1916} ) Then  ; {file:30}{line:3779}
+{var486} [ {var79} - 4 ] = {funcA130} ( {var1769} , {string8205} )  ; {file:30}{line:3780}
+{var486} [ {var79} - 2 ] = {funcA130} ( {var1769} , {string8206} )  ; {file:30}{line:3781}
+Else ; {file:30}{line:3782}
+{var263} = {macro22} + 50 ; {file:30}{line:3783}
+EndIf ; {file:30}{line:3784}
+Next ; {file:30}{line:3785}
+{var486}[6] = 40 ; {file:30}{line:3786}
+{var486} [ 7 ] = {funcA130} ( {var1769} , {string8207} )  ; {file:30}{line:3787}
+Switch {var486}[7] ; {file:30}{line:3788}
+Case 16, 24 ; {file:30}{line:3789}
+Case 32 ; {file:30}{line:3791}
+If Not {funcU1070} ( {var486} [ 5 ] ) Then  ; {file:30}{line:3792}
+If Not {var352}[{var237}] Then ; {file:30}{line:3793}
+{var1054} [ {var237} ] = {funcU1048} ( {var1054} [ {var237} ] )  ; {file:30}{line:3794}
+{var352}[{var237}] = {var1054}[{var237}] ; {file:30}{line:3795}
+If Not {macro22} Then ; {file:30}{line:3796}
+ContinueLoop ; {file:30}{line:3797}
+Else ; {file:30}{line:3798}
+ContinueCase ; {file:30}{line:3799}
+EndIf ; {file:30}{line:3800}
+EndIf ; {file:30}{line:3801}
+Else ; {file:30}{line:3802}
+If ( {var486} [ 1 ] > = 256 * 256 * 4 ) And ( {var1910} ) Then  ; {file:30}{line:3803}
+{var1092} = {funcU1066} ( {var486} [ 5 ] , {var340} )  ; {file:30}{line:3804}
+If Not {macro22} Then ; {file:30}{line:3805}
+{var486}[0] = 0 ; {file:30}{line:3806}
+{var486}[1] = {var1092} ; {file:30}{line:3807}
+{var486}[2] = 0 ; {file:30}{line:3808}
+{var486}[3] = {var340} ; {file:30}{line:3809}
+{var486}[6] = 0 ; {file:30}{line:3810}
+EndIf ; {file:30}{line:3811}
+EndIf ; {file:30}{line:3812}
+EndIf ; {file:30}{line:3813}
+Case Else ; {file:30}{line:3814}
+{var263} = 60 ; {file:30}{line:3815}
+EndSwitch ; {file:30}{line:3816}
+If {var263} Then ; {file:30}{line:3817}
+Else ; {file:30}{line:3819}
+Local {var1668}[2] ; {file:30}{line:3820}
+Local {var454} = {funcA129} ( {string8208} , {var1912} + 6 + 16 * {var237} )  ; {file:30}{line:3821}
+{funcA133} ( {var454} , {string8209} , 0 )  ; {file:30}{line:3822}
+{funcA133} ( {var454} , {string8210} , 0 )  ; {file:30}{line:3823}
+{funcA133} ( {var454} , {string8211} , 1 )  ; {file:30}{line:3824}
+{funcA133} ( {var454} , {string8212} , {var486} [ 7 ] )  ; {file:30}{line:3825}
+{funcA133} ( {var454} , {string8213} , {var486} [ 0 ] + {var486} [ 1 ] + {var486} [ 6 ] )  ; {file:30}{line:3826}
+{funcA133} ( {var454} , {string8214} , {var681} )  ; {file:30}{line:3827}
+For {var79} = 0 To 1 ; {file:30}{line:3828}
+{var1668} [ {var79} ] = {funcA130} ( {var1769} , {var79} + 2 )  ; {file:30}{line:3829}
+If {var1668}[{var79}] < 256 Then ; {file:30}{line:3830}
+{funcA133} ( {var454} , {var79} + 1 , {var1668} [ {var79} ] )  ; {file:30}{line:3831}
+Else ; {file:30}{line:3832}
+{funcA133} ( {var454} , {var79} + 1 , 0 )  ; {file:30}{line:3833}
+EndIf ; {file:30}{line:3834}
+Next ; {file:30}{line:3835}
+{funcA133} ( {var1913} , {string8215} , {var1668} [ 0 ] )  ; {file:30}{line:3836}
+{funcA133} ( {var1913} , {string8216} , 2 * {var1668} [ 1 ] )  ; {file:30}{line:3837}
+{funcA133} ( {var1913} , {string8217} , {var486} [ 7 ] )  ; {file:30}{line:3838}
+{funcA133} ( {var1913} , {string8218} , 0 )  ; {file:30}{line:3839}
+{funcA133} ( {var1913} , {string8219} , {var486} [ 0 ] + {var486} [ 1 ] )  ; {file:30}{line:3840}
+{var681} += {var486}[0] + {var486}[1] + {var486}[6] ; {file:30}{line:3841}
+Do ; {file:30}{line:3842}
+If {var486}[6] Then ; {file:30}{line:3843}
+If Not {funcU666} ( {var1034} , {var1048} , {var486} [ 6 ] , {var1092} ) Then  ; {file:30}{line:3844}
+{var263} = {macro22} + 70 ; {file:30}{line:3845}
+ExitLoop ; {file:30}{line:3846}
+EndIf ; {file:30}{line:3847}
+For {var79} = 1 To 0 Step -1 ; {file:30}{line:3848}
+If Not {funcU666} ( {var1034} , {var486} [ {var79} + 2 ] , {var486} [ {var79} ] , {var1092} ) Then  ; {file:30}{line:3849}
+{var263} = {macro22} + 80 ; {file:30}{line:3850}
+ExitLoop 2 ; {file:30}{line:3851}
+EndIf ; {file:30}{line:3852}
+Next ; {file:30}{line:3853}
+Else ; {file:30}{line:3854}
+If Not {funcU666} ( {var1034} , {var486} [ 3 ] , {var486} [ 1 ] , {var1092} ) Then  ; {file:30}{line:3855}
+{var263} = {macro22} + 90 ; {file:30}{line:3856}
+ExitLoop ; {file:30}{line:3857}
+EndIf ; {file:30}{line:3858}
+EndIf ; {file:30}{line:3859}
+Until 1 ; {file:30}{line:3860}
+EndIf ; {file:30}{line:3861}
+For {var79} = 4 To 5 ; {file:30}{line:3862}
+{funcU10} ( {var486} [ {var79} ] )  ; {file:30}{line:3863}
+Next ; {file:30}{line:3864}
+If {var263} Then ; {file:30}{line:3865}
+ExitLoop 2 ; {file:30}{line:3866}
+EndIf ; {file:30}{line:3867}
+{var237} += 1 ; {file:30}{line:3868}
+WEnd ; {file:30}{line:3869}
+{var733} = {funcA122} ( {string8220} , {string8221} , {string8222} , {string8223} , {var1034} , {string8224} , 0 , {string8225} , 0 , {string8226} , 0 )  ; {file:30}{line:3870}
+If {macro22} Or Not {var733}[0] Then ; {file:30}{line:3871}
+{var263} = {macro22} + 100 ; {file:30}{line:3872}
+ExitLoop ; {file:30}{line:3873}
+EndIf ; {file:30}{line:3874}
+If Not {funcU666} ( {var1034} , {var1912} , {var264} , {var1092} ) Then  ; {file:30}{line:3875}
+{var263} = {macro22} + 110 ; {file:30}{line:3876}
+ExitLoop ; {file:30}{line:3877}
+EndIf ; {file:30}{line:3878}
+{var1281} = 1 ; {file:30}{line:3879}
+Until 1 ; {file:30}{line:3880}
+For {var79} = 0 To {var482} - 1 ; {file:30}{line:3881}
+If {var352}[{var79}] Then ; {file:30}{line:3882}
+{funcU136} ( {var352} [ {var79} ] )  ; {file:30}{line:3883}
+EndIf ; {file:30}{line:3884}
+Next ; {file:30}{line:3885}
+If {var340} Then ; {file:30}{line:3886}
+{funcU685} ( {var340} )  ; {file:30}{line:3887}
+EndIf ; {file:30}{line:3888}
+{funcU490} ( {var1034} )  ; {file:30}{line:3889}
+If Not {var1281} Then ; {file:30}{line:3890}
+{funcA157} ( {var850} )  ; {file:30}{line:3891}
+EndIf ; {file:30}{line:3892}
+Return {funcA374} ( {var263} , 0 , {var1281} )  ; {file:30}{line:3894}
+EndFunc  ; {file:30}{line:3895}
+Func {funcU1239} ({var447}, {var1917}, {var1918}, {var1919}, {var1920}) ; {file:30}{line:3901}
+{var1654} = {funcA129} ( {var1098} )  ; {file:30}{line:3902}
+Local {var733} = {funcA122} ( {string8227} , {string8228} , {string8229} , {string8230} , {var447} , {string8231} , {var1917} , {string8232} , {var1918} , {string8233} , {var1919} , {string8234} , {var1920} , {string8235} , {var1654} )  ; {file:30}{line:3903}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3905}
+Return {var733}[0] ; {file:30}{line:3908}
+EndFunc  ; {file:30}{line:3909}
+Func {funcU1240} ({var447}, {var134} = 5) ; {file:30}{line:3915}
+Local {var733} = {funcA122} ( {string8236} , {string8237} , {string8238} , {string8239} , {var447} , {string8240} , {var134} )  ; {file:30}{line:3916}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3917}
+Return {var733}[0] ; {file:30}{line:3920}
+EndFunc  ; {file:30}{line:3921}
+Func {funcU1241} ({var447}, {var1105}) ; {file:30}{line:3927}
+Local {var733} = {funcA122} ( {string8241} , {string8242} , {string8243} , {string8244} , {var447} , {string8245} , {var1105} )  ; {file:30}{line:3928}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3929}
+Return {var733}[0] ; {file:30}{line:3932}
+EndFunc  ; {file:30}{line:3933}
+Func {funcU1242} ({var447}, {var1921}) ; {file:30}{line:3939}
+Local {var733} = {funcA122} ( {string8246} , {string8247} , {string8248} , {string8249} , {var447} , {string8250} , {var1921} )  ; {file:30}{line:3940}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3941}
+Return {var733}[0] ; {file:30}{line:3944}
+EndFunc  ; {file:30}{line:3945}
+Func {funcU1243} ({var10}, {var483}, {var448}) ; {file:30}{line:3951}
+Local {var733} = {funcA122} ( {string8251} , {string8252} , {string8253} , {string8254} , {var10} , {string8255} , {var483} , {string8256} , {var448} )  ; {file:30}{line:3952}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:3953}
+Return {var733}[0] ; {file:30}{line:3956}
+EndFunc  ; {file:30}{line:3957}
+Func {funcU1244} ({var10}, {var194}, {var193}) ; {file:30}{line:3963}
+{var1654} = {funcA129} ( {var1098} )  ; {file:30}{line:3964}
+Local {var733} = {funcA122} ( {string8257} , {string8258} , {string8259} , {string8260} , {var10} , {string8261} , {var194} , {string8262} , {var193} , {string8263} , {var1654} )  ; {file:30}{line:3965}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3967}
+Return {var733}[0] ; {file:30}{line:3970}
+EndFunc  ; {file:30}{line:3971}
+Func {funcU1245} ({var447}, {var300}, {var195} = 0) ; {file:30}{line:3977}
+Local {var733} = {funcA122} ( {string8264} , {string8265} , {string8266} , {string8267} , {var447} , {string8268} , {var195} , {string8269} , {var300} )  ; {file:30}{line:3978}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3979}
+Return {var733}[0] ; {file:30}{line:3982}
+EndFunc  ; {file:30}{line:3983}
+Func {funcU1246} ({var447}, {var207}, {var208}) ; {file:30}{line:3989}
+{var1654} = {funcA129} ( {var858} )  ; {file:30}{line:3990}
+Local {var733} = {funcA122} ( {string8270} , {string8271} , {string8272} , {string8273} , {var447} , {string8274} , {var207} , {string8275} , {var208} , {string8276} , {var1654} )  ; {file:30}{line:3991}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:3992}
+Return {var733}[0] ; {file:30}{line:3995}
+EndFunc  ; {file:30}{line:3996}
+Func {funcU1051} ({var447}, {var1734}) ; {file:30}{line:4002}
+Local {var733} = {funcA122} ( {string8277} , {string8278} , {string8279} , {string8280} , {var447} , {string8281} , {var1734} )  ; {file:30}{line:4003}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4004}
+Return {var733}[0] ; {file:30}{line:4007}
+EndFunc  ; {file:30}{line:4008}
+Func {funcU1247} ({var447}, {var1213}) ; {file:30}{line:4014}
+Local {var733} = {funcA122} ( {string8282} , {string8283} , {string8284} , {string8285} , {var447} , {string8286} , {funcU1062} ( {var1213} ) )  ; {file:30}{line:4015}
+If {macro22} Or ( {var733} [ 0 ] = 4294967295 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:4016}
+Return {funcU1062} ( {var733} [ 0 ] )  ; {file:30}{line:4019}
+EndFunc  ; {file:30}{line:4020}
+Func {funcU1248} ({var447}, {var1213}) ; {file:30}{line:4026}
+Local {var733} = {funcA122} ( {string8287} , {string8288} , {string8289} , {string8290} , {var447} , {string8291} , {funcU1062} ( {var1213} ) )  ; {file:30}{line:4027}
+If {macro22} Or ( {var733} [ 0 ] = 4294967295 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:4028}
+Return {funcU1062} ( {var733} [ 0 ] )  ; {file:30}{line:4031}
+EndFunc  ; {file:30}{line:4032}
+Func {funcU1249} ({var447}, Const ByRef {var1859}) ; {file:30}{line:4038}
+If ( {funcA456} ( {var1859} , {var1471} ) < > 2 ) Or ( {funcA456} ( {var1859} , {var1159} ) < > 256 ) Or ( {funcA456} ( {var1859} , {var1474} ) < > 3 ) Then  ; {file:30}{line:4039}
+Return {funcA374} ( 12 , 0 , 0 )  ; {file:30}{line:4040}
+EndIf ; {file:30}{line:4041}
+Local {var454} = {funcA129} ( {string8292} )  ; {file:30}{line:4043}
+For {var79} = 0 To 2 ; {file:30}{line:4044}
+For {var253} = 0 To 255 ; {file:30}{line:4045}
+{funcA133} ( {var454} , {var79} + 1 , {var1859} [ {var253} ] [ {var79} ] , {var253} + 1 )  ; {file:30}{line:4046}
+Next ; {file:30}{line:4047}
+Next ; {file:30}{line:4048}
+Local {var733} = {funcA122} ( {string8293} , {string8294} , {string8295} , {string8296} , {var447} , {string8297} , {var454} )  ; {file:30}{line:4050}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4051}
+Return {var733}[0] ; {file:30}{line:4054}
+EndFunc  ; {file:30}{line:4055}
+Func {funcU1250} ({var10}, {var1796}, {var1797}) ; {file:30}{line:4061}
+If {var1797} > {funcA132} ( {var1796} ) / 4 Then Return {funcA374} ( 1 , 0 , 0 )  ; {file:30}{line:4062}
+Local {var447} = {funcU178} ( 0 )  ; {file:30}{line:4064}
+Local {var1766} = {funcU180} ( {var447} , {var10} )  ; {file:30}{line:4065}
+Local {var263} = 0 ; {file:30}{line:4066}
+Local {var733} = {funcA122} ( {string8298} , {string8299} , {string8300} , {string8301} , {var447} , {string8302} , 0 , {string8303} , {var1797} , {string8304} , {var1796} )  ; {file:30}{line:4067}
+If {macro22} Then {var263} = {macro22} ; {file:30}{line:4068}
+{funcU180} ( {var447} , {var1766} )  ; {file:30}{line:4070}
+{funcU185} ( {var447} )  ; {file:30}{line:4071}
+If {var263} Then Return {funcA374} ( {var263} , 0 , 0 )  ; {file:30}{line:4072}
+Return {var733}[0] ; {file:30}{line:4074}
+EndFunc  ; {file:30}{line:4075}
+Func {funcU1251} ({var447}, {var885}, {var886}, {var194}, {var193}, {var888}, {var889}, {var1046}, {var1047}, {var446}, {var1049}, {var448}) ; {file:30}{line:4081}
+Local {var733} = {funcA122} ( {string8305} , {string8306} , {string8307} , {string8308} , {var447} , {string8309} , {var885} , {string8310} , {var886} , {string8311} , {var194} , {string8312} , {var193} , {string8313} , {var888} , {string8314} , {var889} , {string8315} , {var1046} , {string8316} , {var1047} , {string8317} , {var448} , {string8318} , {var446} , {string8319} , {var1049} )  ; {file:30}{line:4082}
+If {macro22} Or ( {var733} [ 0 ] = - 1 ) Then Return {funcA374} ( {macro22} + 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:4085}
+Return {var733}[0] ; {file:30}{line:4087}
+EndFunc  ; {file:30}{line:4088}
+Func {funcU1252} ({var340}, {var264}) ; {file:30}{line:4094}
+Local {var733} = {funcA122} ( {string8320} , {string8321} , {string8322} , {string8323} , {var264} , {string8324} , {var340} )  ; {file:30}{line:4095}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4096}
+Return {var733}[0] ; {file:30}{line:4099}
+EndFunc  ; {file:30}{line:4100}
+Func {funcU1253} ({var447}, {var134}) ; {file:30}{line:4106}
+Local {var733} = {funcA122} ( {string8325} , {string8326} , {string8327} , {string8328} , {var447} , {string8329} , {var134} )  ; {file:30}{line:4107}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4108}
+Return {var733}[0] ; {file:30}{line:4111}
+EndFunc  ; {file:30}{line:4112}
+Func {funcU1254} ({var447}, {var134}) ; {file:30}{line:4118}
+Local {var733} = {funcA122} ( {string8330} , {string8331} , {string8332} , {string8333} , {var447} , {string8334} , {var134} )  ; {file:30}{line:4119}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4120}
+Return {var733}[0] ; {file:30}{line:4123}
+EndFunc  ; {file:30}{line:4124}
+Func {funcU1255} ({var447}, {var207}, {var208}, {var1213}) ; {file:30}{line:4130}
+Local {var733} = {funcA122} ( {string8335} , {string8336} , {string8337} , {string8338} , {var447} , {string8339} , {var207} , {string8340} , {var208} , {string8341} , {funcU1062} ( {var1213} ) )  ; {file:30}{line:4131}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4132}
+Return {var733}[0] ; {file:30}{line:4135}
+EndFunc  ; {file:30}{line:4136}
+Func {funcU1256} ({var447}, {var134} = 1) ; {file:30}{line:4142}
+Local {var733} = {funcA122} ( {string8342} , {string8343} , {string8344} , {string8345} , {var447} , {string8346} , {var134} )  ; {file:30}{line:4143}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4144}
+Return {var733}[0] ; {file:30}{line:4147}
+EndFunc  ; {file:30}{line:4148}
+Func {funcU1257} ({var1105}, {var195}) ; {file:30}{line:4154}
+Local {var733} = {funcA122} ( {string8347} , {string8348} , {string8349} , {string8350} , {var1105} , {string8351} , {funcA130} ( {var195} , 1 ) , {string8352} , {funcA130} ( {var195} , 2 ) , {string8353} , {funcA130} ( {var195} , 3 ) , {string8354} , {funcA130} ( {var195} , 4 ) )  ; {file:30}{line:4155}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4157}
+Return {var733}[0] ; {file:30}{line:4160}
+EndFunc  ; {file:30}{line:4161}
+Func {funcU1258} ({var447}, {var134}) ; {file:30}{line:4167}
+Local {var733} = {funcA122} ( {string8355} , {string8356} , {string8357} , {string8358} , {var447} , {string8359} , {var134} )  ; {file:30}{line:4168}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4169}
+Return {var733}[0] ; {file:30}{line:4172}
+EndFunc  ; {file:30}{line:4173}
+Func {funcU1050} ({var447}, {var134}) ; {file:30}{line:4179}
+Local {var733} = {funcA122} ( {string8360} , {string8361} , {string8362} , {string8363} , {var447} , {string8364} , {var134} )  ; {file:30}{line:4180}
+If {macro22} Or Not {var733} [ 0 ] Or ( {var733} [ 0 ] = 87 ) Then Return {funcA374} ( {macro22} + 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:4181}
+Return {var733}[0] ; {file:30}{line:4183}
+EndFunc  ; {file:30}{line:4184}
+Func {funcU1259} ({var447}, {var134} = 0) ; {file:30}{line:4190}
+Local {var733} = {funcA122} ( {string8365} , {string8366} , {string8367} , {string8368} , {var447} , {string8369} , {var134} )  ; {file:30}{line:4191}
+If {macro22} Or ( {var733} [ 0 ] = 4294967295 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:4192}
+Return {var733}[0] ; {file:30}{line:4195}
+EndFunc  ; {file:30}{line:4196}
+Func {funcU1260} ({var447}, {var1922}) ; {file:30}{line:4202}
+Local {var733} = {funcA122} ( {string8370} , {string8371} , {string8372} , {string8373} , {var447} , {string8374} , {var1922} )  ; {file:30}{line:4203}
+If {macro22} Or ( {var733} [ 0 ] = 0x80000000 ) Then Return {funcA374} ( {macro22} , {macro25} , - 1 )  ; {file:30}{line:4204}
+Return {var733}[0] ; {file:30}{line:4207}
+EndFunc  ; {file:30}{line:4208}
+Func {funcU1261} ({var447}, {var1923}, {var1924}) ; {file:30}{line:4214}
+Local {var733} = {funcA122} ( {string8375} , {string8376} , {string8377} , {string8378} , {var447} , {string8379} , {var1923} , {string8380} , {var1924} )  ; {file:30}{line:4215}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4216}
+Return {var733}[0] ; {file:30}{line:4219}
+EndFunc  ; {file:30}{line:4220}
+Func {funcU1262} ({var134}) ; {file:30}{line:4226}
+{var1877} = Not ( {var134} = 0 )  ; {file:30}{line:4227}
+EndFunc  ; {file:30}{line:4228}
+Func {funcU1263} ({var447}, {var1925}, {var1926}) ; {file:30}{line:4234}
+{var1654} = {funcA129} ( {var1098} )  ; {file:30}{line:4235}
+Local {var733} = {funcA122} ( {string8381} , {string8382} , {string8383} , {string8384} , {var447} , {string8385} , {var1925} , {string8386} , {var1926} , {string8387} , {var1654} )  ; {file:30}{line:4236}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4238}
+Return {var733}[0] ; {file:30}{line:4241}
+EndFunc  ; {file:30}{line:4242}
+Func {funcU1264} ({var447}, {var207}, {var208}) ; {file:30}{line:4248}
+{var1654} = {funcA129} ( {var858} )  ; {file:30}{line:4249}
+Local {var733} = {funcA122} ( {string8388} , {string8389} , {string8390} , {string8391} , {var447} , {string8392} , {var207} , {string8393} , {var208} , {string8394} , {var1654} )  ; {file:30}{line:4250}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4251}
+Return {var733}[0] ; {file:30}{line:4254}
+EndFunc  ; {file:30}{line:4255}
+Func {funcU1265} ({var447}, ByRef {var1762}) ; {file:30}{line:4261}
+Local {var733} = {funcA122} ( {string8395} , {string8396} , {string8397} , {string8398} , {var447} , {string8399} , {var1762} )  ; {file:30}{line:4262}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4263}
+Return {var733}[0] ; {file:30}{line:4266}
+EndFunc  ; {file:30}{line:4267}
+Func {funcU1052} ({var884}, {var885}, {var886}, {var1737}, {var1738}, {var887}, {var888}, {var889}, {var1739}, {var1740}, {var890}) ; {file:30}{line:4273}
+Local {var733} = {funcA122} ( {string8400} , {string8401} , {string8402} , {string8403} , {var884} , {string8404} , {var885} , {string8405} , {var886} , {string8406} , {var1737} , {string8407} , {var1738} , {string8408} , {var887} , {string8409} , {var888} , {string8410} , {var889} , {string8411} , {var1739} , {string8412} , {var1740} , {string8413} , {var890} )  ; {file:30}{line:4274}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4277}
+Return {var733}[0] ; {file:30}{line:4280}
+EndFunc  ; {file:30}{line:4281}
+Func {funcU1266} ({var884}, {var885}, {var886}, {var1737}, {var1738}, {var888}, {var889}, {var1739}, {var1740}, {var446}, {var1049}, {var448}, {var890}) ; {file:30}{line:4287}
+Local {var733} = {funcA122} ( {string8414} , {string8415} , {string8416} , {string8417} , {var884} , {string8418} , {var885} , {string8419} , {var886} , {string8420} , {var1737} , {string8421} , {var1738} , {string8422} , {var888} , {string8423} , {var889} , {string8424} , {var1739} , {string8425} , {var1740} , {string8426} , {var448} , {string8427} , {var446} , {string8428} , {var1049} , {string8429} , {var890} )  ; {file:30}{line:4288}
+If {macro22} Or ( {var733} [ 0 ] = - 1 ) Then Return {funcA374} ( {macro22} + 10 , {var733} [ 0 ] , 0 )  ; {file:30}{line:4292}
+Return {var733}[0] ; {file:30}{line:4294}
+EndFunc  ; {file:30}{line:4295}
+Func {funcU1267} ({var447}) ; {file:30}{line:4301}
+Local {var733} = {funcA122} ( {string8430} , {string8431} , {string8432} , {string8433} , {var447} )  ; {file:30}{line:4302}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4303}
+Return {var733}[0] ; {file:30}{line:4306}
+EndFunc  ; {file:30}{line:4307}
+Func {funcU1268} ({var447}) ; {file:30}{line:4313}
+Local {var733} = {funcA122} ( {string8434} , {string8435} , {string8436} , {string8437} , {var447} )  ; {file:30}{line:4314}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4315}
+Return {var733}[0] ; {file:30}{line:4318}
+EndFunc  ; {file:30}{line:4319}
+Func {funcU1269} (ByRef {var1851}, ByRef {var1852}) ; {file:30}{line:4325}
+Local {var195} = {funcA129} ( {var456} )  ; {file:30}{line:4326}
+Local {var733} = {funcA122} ( {string8438} , {string8439} , {string8440} , {string8441} , {var195} , {string8442} , {var1851} , {string8443} , {var1852} )  ; {file:30}{line:4327}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:4328}
+Return {var195} ; {file:30}{line:4330}
+EndFunc  ; {file:30}{line:4331}
+Func {funcU1270} ({var447}, {var207}, {var208}, {var248}, {var1874} = 0, {var283} = 0, {var1238} = -1, {var1927} = 0) ; {file:30}{line:4337}
+Local {var1875}, {var482} ; {file:30}{line:4338}
+If Not {funcA281} ( {var1874} ) Then  ; {file:30}{line:4339}
+If {var1874} Then ; {file:30}{line:4340}
+{var1875} = {var1874} ; {file:30}{line:4341}
+Dim {var1874}[1] = [{var1875}] ; {file:30}{line:4342}
+{var283} = 0 ; {file:30}{line:4343}
+{var1238} = 0 ; {file:30}{line:4344}
+{var482} = 1 ; {file:30}{line:4345}
+Else ; {file:30}{line:4346}
+{var482} = 0 ; {file:30}{line:4347}
+EndIf ; {file:30}{line:4348}
+Else ; {file:30}{line:4349}
+{var482} = 1 ; {file:30}{line:4350}
+EndIf ; {file:30}{line:4351}
+Local {var1876} = 0 ; {file:30}{line:4353}
+If {var482} Then ; {file:30}{line:4354}
+If {funcU677} ( {var1874} , {var283} , {var1238} ) Then Return {funcA374} ( {macro22} + 10 , {macro25} , 0 )  ; {file:30}{line:4355}
+{var482} = {var1238} - {var283} + 1 ; {file:30}{line:4357}
+{var1876} = {funcA129} ( {string8444} & {var482} & {string8445} )  ; {file:30}{line:4358}
+{var1875} = 1 ; {file:30}{line:4359}
+For {var79} = {var283} To {var1238} ; {file:30}{line:4360}
+{funcA133} ( {var1876} , 1 , {var1874} [ {var79} ] , {var1875} )  ; {file:30}{line:4361}
+{var1875} += 1 ; {file:30}{line:4362}
+Next ; {file:30}{line:4363}
+EndIf ; {file:30}{line:4364}
+Local {var733} = {funcA122} ( {string8446} , {string8447} , {string8448} , {string8449} , {var447} , {string8450} , {var207} , {string8451} , {var208} , {string8452} , {var248} , {string8453} , {funcA410} ( {var248} ) , {string8454} , {var482} , {string8455} , {funcA131} ( {var1876} ) , {string8456} , {var1927} )  ; {file:30}{line:4365}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4367}
+{var1654} = {funcU1176} ( {funcU600} ( {var733} [ 0 ] ) , {funcU592} ( {var733} [ 0 ] ) )  ; {file:30}{line:4369}
+Return 1 ; {file:30}{line:4370}
+EndFunc  ; {file:30}{line:4371}
+Func {funcU1271} ({var447}, {var207}, {var208}, {var248}) ; {file:30}{line:4377}
+Local {var733} = {funcA122} ( {string8457} , {string8458} , {string8459} , {string8460} , {var447} , {string8461} , {var207} , {string8462} , {var208} , {string8463} , {var248} , {string8464} , {funcA410} ( {var248} ) )  ; {file:30}{line:4378}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4380}
+Return {var733}[0] ; {file:30}{line:4383}
+EndFunc  ; {file:30}{line:4384}
+Func {funcU1272} ({var884}, {var885}, {var886}, {var1737}, {var1738}, {var887}, {var888}, {var889}, {var1739}, {var1740}, {var1213}) ; {file:30}{line:4390}
+Local {var733} = {funcA122} ( {string8465} , {string8466} , {string8467} , {string8468} , {var884} , {string8469} , {var885} , {string8470} , {var886} , {string8471} , {var1737} , {string8472} , {var1738} , {string8473} , {var887} , {string8474} , {var888} , {string8475} , {var889} , {string8476} , {var1739} , {string8477} , {var1740} , {string8478} , {funcU1062} ( {var1213} ) )  ; {file:30}{line:4391}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , False )  ; {file:30}{line:4394}
+Return {var733}[0] ; {file:30}{line:4397}
+EndFunc  ; {file:30}{line:4398}
+Func {funcU1273} (ByRef {var1851}, ByRef {var1852}) ; {file:30}{line:4404}
+Local {var195} = {funcA129} ( {var456} )  ; {file:30}{line:4405}
+Local {var733} = {funcA122} ( {string8479} , {string8480} , {string8481} , {string8482} , {var195} , {string8483} , {var1851} , {string8484} , {var1852} )  ; {file:30}{line:4406}
+If {macro22} Or Not {var733} [ 0 ] Then Return {funcA374} ( {macro22} + 10 , 0 , 0 )  ; {file:30}{line:4407}
+Return {var195} ; {file:30}{line:4409}
+EndFunc  ; {file:30}{line:4410}
+Func {funcU1274} ({var52}, {var195} = 0) ; {file:30}{line:4416}
+Local {var733} = {funcA122} ( {string8485} , {string8486} , {string8487} , {string8488} , {var52} , {string8489} , {var195} )  ; {file:30}{line:4417}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4418}
+Return {var733}[0] ; {file:30}{line:4421}
+EndFunc  ; {file:30}{line:4422}
+Func {funcU1275} ({var52}, {var1105} = 0) ; {file:30}{line:4428}
+Local {var733} = {funcA122} ( {string8490} , {string8491} , {string8492} , {string8493} , {var52} , {string8494} , {var1105} )  ; {file:30}{line:4429}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4430}
+Return {var733}[0] ; {file:30}{line:4433}
+EndFunc  ; {file:30}{line:4434}
+Func {funcU1276} ({var447}) ; {file:30}{line:4440}
+Local {var733} = {funcA122} ( {string8495} , {string8496} , {string8497} , {string8498} , {var447} )  ; {file:30}{line:4441}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4442}
+Return {var733}[0] ; {file:30}{line:4445}
+EndFunc  ; {file:30}{line:4446}
+Func {funcU1102} ({var447}) ; {file:30}{line:4452}
+Local {var733} = {funcA122} ( {string8499} , {string8500} , {string8501} , {string8502} , {var447} )  ; {file:30}{line:4453}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , 0 )  ; {file:30}{line:4454}
+Return {var733}[0] ; {file:30}{line:4456}
+EndFunc  ; {file:30}{line:4457}
+Func {funcU1197} ({none}) ; {file:30}{line:4462}
+Static {var1701} = 0 ; {file:30}{line:4463}
+If Not {var1701} Then ; {file:30}{line:4465}
+If {macro6} Then ; {file:30}{line:4466}
+{var1701} = {funcU1040} ( {funcA43} ( {string8503} & {string8504} & {string8505} & {string8506} & {string8507} & {string8508} & {string8509} & {string8510} ) )  ; {file:30}{line:4467}
+Else ; {file:30}{line:4476}
+{var1701} = {funcU1040} ( {funcA43} ( {string8511} & {string8512} & {string8513} & {string8514} & {string8515} ) )  ; {file:30}{line:4477}
+EndIf ; {file:30}{line:4483}
+EndIf ; {file:30}{line:4484}
+Return {var1701} ; {file:30}{line:4485}
+EndFunc  ; {file:30}{line:4486}
+Func {funcU1078} ({none}) ; {file:30}{line:4488}
+Static {var1701} = 0 ; {file:30}{line:4489}
+If Not {var1701} Then ; {file:30}{line:4491}
+If {macro6} Then ; {file:30}{line:4492}
+{var1701} = {funcU1040} ( {funcA43} ( {string8516} & {string8517} & {string8518} & {string8519} & {string8520} & {string8521} & {string8522} & {string8523} & {string8524} & {string8525} & {string8526} & {string8527} & {string8528} & {string8529} & {string8530} & {string8531} & {string8532} & {string8533} & {string8534} & {string8535} & {string8536} & {string8537} & {string8538} ) )  ; {file:30}{line:4493}
+Else ; {file:30}{line:4517}
+{var1701} = {funcU1040} ( {funcA43} ( {string8539} & {string8540} & {string8541} & {string8542} & {string8543} & {string8544} & {string8545} & {string8546} & {string8547} & {string8548} & {string8549} & {string8550} & {string8551} & {string8552} & {string8553} & {string8554} & {string8555} ) )  ; {file:30}{line:4518}
+EndIf ; {file:30}{line:4536}
+EndIf ; {file:30}{line:4537}
+Return {var1701} ; {file:30}{line:4538}
+EndFunc  ; {file:30}{line:4539}
+Func {funcU1077} ({none}) ; {file:30}{line:4541}
+Static {var1701} = 0 ; {file:30}{line:4542}
+If Not {var1701} Then ; {file:30}{line:4544}
+If {macro6} Then ; {file:30}{line:4545}
+{var1701} = {funcU1040} ( {funcA43} ( {string8556} & {string8557} & {string8558} & {string8559} & {string8560} & {string8561} & {string8562} & {string8563} ) )  ; {file:30}{line:4546}
+Else ; {file:30}{line:4555}
+{var1701} = {funcU1040} ( {funcA43} ( {string8564} & {string8565} & {string8566} & {string8567} & {string8568} & {string8569} ) )  ; {file:30}{line:4556}
+EndIf ; {file:30}{line:4563}
+EndIf ; {file:30}{line:4564}
+Return {var1701} ; {file:30}{line:4565}
+EndFunc  ; {file:30}{line:4566}
+Func {funcU1277} ({var1284}, {var447}, {var982}, {var234}) ; {file:30}{line:4572}
+#forceref $hDC, $lParam ; {file:30}{line:4573}
+{funcU705} ( {var1263} )  ; {file:30}{line:4575}
+{var1263}[{var1263}[0][0]][0] = {var1284} ; {file:30}{line:4576}
+If Not {var982} Then ; {file:30}{line:4577}
+{var1263}[{var1263}[0][0]][1] = 0 ; {file:30}{line:4578}
+Else ; {file:30}{line:4579}
+{var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 1 ] = {funcA129} ( {var456} )  ; {file:30}{line:4580}
+If Not {funcU691} ( {funcA131} ( {var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 1 ] ) , {var982} , 16 ) Then Return 0  ; {file:30}{line:4581}
+EndIf ; {file:30}{line:4582}
+Return 1 ; {file:30}{line:4583}
+EndFunc  ; {file:30}{line:4584}
+Func {funcU1278} ({var1928}, {var1929}, {var1846}, {var1930}) ; {file:30}{line:4586}
+Local {var1931} = {funcA129} ( {var841} & {string8570} , {var1928} )  ; {file:30}{line:4588}
+Local {var1932} = {funcA129} ( {var1933} , {var1929} )  ; {file:30}{line:4590}
+Local {var1849} = {funcA129} ( {string8571} , {var1930} )  ; {file:30}{line:4591}
+If {var1846} And Not {funcA47} ( {var1846} , {funcA130} ( {var1849} , 1 ) ) Then  ; {file:30}{line:4593}
+Return 1 ; {file:30}{line:4594}
+EndIf ; {file:30}{line:4595}
+If {funcA130} ( {var1849} , 3 ) Then  ; {file:30}{line:4596}
+Local {var733} = {funcA122} ( {string8572} , {string8573} , {string8574} , {string8575} , {funcA131} ( {var1931} , 14 ) , {string8576} , {funcA130} ( {var1849} , 3 ) )  ; {file:30}{line:4597}
+If Not {macro22} Then ; {file:30}{line:4598}
+If {funcA130} ( {var1849} , 2 ) Then  ; {file:30}{line:4599}
+If {var733}[0] Then ; {file:30}{line:4600}
+Return 1 ; {file:30}{line:4601}
+Else ; {file:30}{line:4602}
+EndIf ; {file:30}{line:4604}
+Else ; {file:30}{line:4605}
+If {var733}[0] Then ; {file:30}{line:4606}
+Else ; {file:30}{line:4608}
+Return 1 ; {file:30}{line:4609}
+EndIf ; {file:30}{line:4610}
+EndIf ; {file:30}{line:4611}
+EndIf ; {file:30}{line:4612}
+EndIf ; {file:30}{line:4613}
+{funcU705} ( {var1263} )  ; {file:30}{line:4614}
+{var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 0 ] = {funcA130} ( {var1931} , 14 )  ; {file:30}{line:4615}
+{var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 1 ] = {funcA130} ( {var1931} , 16 )  ; {file:30}{line:4616}
+{var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 2 ] = {funcA130} ( {var1931} , 15 )  ; {file:30}{line:4617}
+{var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 3 ] = {funcA130} ( {var1931} , 17 )  ; {file:30}{line:4618}
+{var1263}[{var1263}[0][0]][4] = {var1846} ; {file:30}{line:4619}
+{var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 5 ] = {funcA130} ( {var1932} , 19 )  ; {file:30}{line:4620}
+{var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 6 ] = {funcA130} ( {var1932} , 20 )  ; {file:30}{line:4621}
+{var1263} [ {var1263} [ 0 ] [ 0 ] ] [ 7 ] = {funcA130} ( {var1932} , 21 )  ; {file:30}{line:4622}
+Return 1 ; {file:30}{line:4623}
+EndFunc  ; {file:30}{line:4624}
+Func {funcU1279} ({var1928}, {var1929}, {var1846}, {var1193}) ; {file:30}{line:4626}
+#forceref $iFontType ; {file:30}{line:4627}
+Local {var1931} = {funcA129} ( {var841} & {string8577} , {var1928} )  ; {file:30}{line:4630}
+Local {var1932} = {funcA129} ( {var1933} , {var1929} )  ; {file:30}{line:4632}
+Local {var1863} = {funcA129} ( {string8578} , {var1193} )  ; {file:30}{line:4633}
+If {funcA47} ( {funcA130} ( {var1932} , {string8579} ) , 0x0061 ) = {funcA130} ( {var1863} , 1 ) Then  ; {file:30}{line:4635}
+{funcA133} ( {var1863} , 2 , {funcA130} ( {var1931} , {string8580} ) )  ; {file:30}{line:4636}
+Return 0 ; {file:30}{line:4637}
+Else ; {file:30}{line:4638}
+Return 1 ; {file:30}{line:4639}
+EndIf ; {file:30}{line:4640}
+EndFunc  ; {file:30}{line:4641}

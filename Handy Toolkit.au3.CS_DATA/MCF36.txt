@@ -1,0 +1,12 @@
+Func {funcU637} ({var52}, {var40}, {var233} = 0, {var234} = 0, {var1408} = 0, {var1989} = {string8762}, {var1990} = {string8763}, {var1991} = {string8764}) ; {file:36}{line:21}
+Local {var228} = {funcA122} ( {string8765} , {var1991} , {string8766} , {string8767} , {var52} , {string8768} , {var40} , {var1989} , {var233} , {var1990} , {var234} )  ; {file:36}{line:22}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , {string8769} )  ; {file:36}{line:23}
+If {var1408} >= 0 And {var1408} <= 4 Then Return {var228}[{var1408}] ; {file:36}{line:24}
+Return {var228} ; {file:36}{line:25}
+EndFunc  ; {file:36}{line:26}
+Func {funcU1297} ({var52}, {var40}, {var233} = 0, {var234} = 0, {var1408} = 0, {var1989} = {string8770}, {var1990} = {string8771}, {var1991} = {string8772}) ; {file:36}{line:32}
+Local {var228} = {funcA122} ( {string8773} , {var1991} , {string8774} , {string8775} , {var52} , {string8776} , {var40} , {var1989} , {var233} , {var1990} , {var234} )  ; {file:36}{line:33}
+If {macro22} Then Return {funcA374} ( {macro22} , {macro25} , {string8777} )  ; {file:36}{line:34}
+If {var1408} >= 0 And {var1408} <= 4 Then Return {var228}[{var1408}] ; {file:36}{line:35}
+Return {var228} ; {file:36}{line:36}
+EndFunc  ; {file:36}{line:37}

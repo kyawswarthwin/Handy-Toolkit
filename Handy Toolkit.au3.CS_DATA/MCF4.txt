@@ -1,0 +1,226 @@
+Global $* ; {file:4}{line:26}{ref744}
+Global $* ; {file:4}{line:42}{ref745}
+{var235} [ 0 ] [ 8 ] = {funcA47} ( {funcA51} ( {funcA393} ( {funcA43} ( {var236} [ 0 ] ) ) , 8 ) , 0xFFFFFF )  ; {file:4}{line:43}
+{var236} = {funcA122} ( {string501} , {string502} , {string503} , {string504} , 5 )  ; {file:4}{line:44}
+{var235} [ 0 ] [ 9 ] = {funcA47} ( {funcA51} ( {funcA393} ( {funcA43} ( {var236} [ 0 ] ) ) , 8 ) , 0xFFFFFF )  ; {file:4}{line:45}
+Func {funcU15} ({none}) ; {file:4}{line:59}
+{var235}[0][0] += 1 ; {file:4}{line:62}
+ReDim {var235}[{var235}[0][0] + 1][13] ; {file:4}{line:63}
+For {var79} = 2 To 12 ; {file:4}{line:65}
+{var235}[{var235}[0][0]][{var79}] = {var235}[0][{var79}] ; {file:4}{line:66}
+Next ; {file:4}{line:67}
+Return {var235}[0][0] ; {file:4}{line:69}
+EndFunc  ; {file:4}{line:71}
+Func {funcU16} ({var237}, {var238} = Default, {var239} = Default, {var240} = Default, {var241} = Default, {var242} = Default) ; {file:4}{line:94}
+Switch {var237} ; {file:4}{line:97}
+Case 1 To {var235}[0][0] ; {file:4}{line:98}
+{var237} = {funcA279} ( {var237} )  ; {file:4}{line:99}
+Case Else ; {file:4}{line:100}
+Return {funcA374} ( 1 , 1 , 0 )  ; {file:4}{line:101}
+EndSwitch ; {file:4}{line:102}
+Switch {var238} ; {file:4}{line:104}
+Case -1 ; {file:4}{line:105}
+Case Default ; {file:4}{line:107}
+{var235}[{var237}][2] = {var235}[0][2] ; {file:4}{line:108}
+Case Else ; {file:4}{line:109}
+If {funcA291} ( {var238} ) Then  ; {file:4}{line:110}
+{var235} [ {var237} ] [ 2 ] = {funcA279} ( {funcA1} ( {var238} ) )  ; {file:4}{line:111}
+Else ; {file:4}{line:112}
+Return {funcA374} ( 1 , 2 , 0 )  ; {file:4}{line:113}
+EndIf ; {file:4}{line:114}
+EndSwitch ; {file:4}{line:115}
+Switch {var239} ; {file:4}{line:117}
+Case -1 ; {file:4}{line:118}
+Case {string505}, {string506}, {string507} ; {file:4}{line:120}
+{var235}[{var237}][3] = {var239} ; {file:4}{line:121}
+Case Default ; {file:4}{line:122}
+{var235}[{var237}][3] = {var235}[0][3] ; {file:4}{line:123}
+Case Else ; {file:4}{line:124}
+Return {funcA374} ( 1 , 3 , 0 )  ; {file:4}{line:125}
+EndSwitch ; {file:4}{line:126}
+Switch {var240} ; {file:4}{line:128}
+Case -1 ; {file:4}{line:129}
+Case {string508}, {string509}, {string510}, {string511} ; {file:4}{line:131}
+{var235}[{var237}][4] = {var240} ; {file:4}{line:132}
+Case Default ; {file:4}{line:133}
+{var235}[{var237}][4] = {var235}[0][4] ; {file:4}{line:134}
+Case Else ; {file:4}{line:135}
+Return {funcA374} ( 1 , 4 , 0 )  ; {file:4}{line:136}
+EndSwitch ; {file:4}{line:137}
+Switch {var241} ; {file:4}{line:139}
+Case -1 ; {file:4}{line:140}
+Case Default ; {file:4}{line:142}
+{var235}[{var237}][5] = {var235}[0][5] ; {file:4}{line:143}
+Case Else ; {file:4}{line:144}
+If {funcA291} ( {var241} ) Then  ; {file:4}{line:145}
+{var235} [ {var237} ] [ 5 ] = {funcA279} ( {funcA1} ( {var241} ) )  ; {file:4}{line:146}
+Else ; {file:4}{line:147}
+Return {funcA374} ( 1 , 5 , 0 )  ; {file:4}{line:148}
+EndIf ; {file:4}{line:149}
+EndSwitch ; {file:4}{line:150}
+Switch {var242} ; {file:4}{line:152}
+Case -1 ; {file:4}{line:153}
+Case Default ; {file:4}{line:155}
+{var235}[{var237}][6] = {var235}[0][6] ; {file:4}{line:156}
+Case Else ; {file:4}{line:157}
+If {funcA291} ( {var242} ) Then  ; {file:4}{line:158}
+{var235} [ {var237} ] [ 6 ] = {funcA279} ( {funcA1} ( {var242} ) )  ; {file:4}{line:159}
+Else ; {file:4}{line:160}
+Return {funcA374} ( 1 , 6 , 0 )  ; {file:4}{line:161}
+EndIf ; {file:4}{line:162}
+EndSwitch ; {file:4}{line:163}
+Return 1 ; {file:4}{line:165}
+EndFunc  ; {file:4}{line:167}
+Func {funcU17} ({var237}, {var243} = Default, {var244} = Default, {var245} = Default, {var246} = Default, {var247} = Default) ; {file:4}{line:190}
+Switch {var237} ; {file:4}{line:193}
+Case 1 To {var235}[0][0] ; {file:4}{line:194}
+{var237} = {funcA279} ( {var237} )  ; {file:4}{line:195}
+Case Else ; {file:4}{line:196}
+Return {funcA374} ( 1 , 1 , 0 )  ; {file:4}{line:197}
+EndSwitch ; {file:4}{line:198}
+Switch {var243} ; {file:4}{line:200}
+Case -1 ; {file:4}{line:201}
+Case Default ; {file:4}{line:203}
+{var235}[{var237}][7] = {var235}[0][7] ; {file:4}{line:204}
+Case 0 To 3 ; {file:4}{line:205}
+{var235} [ {var237} ] [ 7 ] = {funcA279} ( {var243} )  ; {file:4}{line:206}
+Case Else ; {file:4}{line:207}
+Return {funcA374} ( 1 , 2 , 0 )  ; {file:4}{line:208}
+EndSwitch ; {file:4}{line:209}
+Switch {var244} ; {file:4}{line:211}
+Case -1 ; {file:4}{line:212}
+Case Default ; {file:4}{line:214}
+{var235}[{var237}][8] = {var235}[0][8] ; {file:4}{line:215}
+Case Else ; {file:4}{line:216}
+If {funcA307} ( {var244} ) Then  ; {file:4}{line:217}
+{var235} [ {var237} ] [ 8 ] = {funcA279} ( {funcA307} ( {var244} ) )  ; {file:4}{line:218}
+Else ; {file:4}{line:219}
+{var235}[{var237}][8] = {var244} ; {file:4}{line:220}
+EndIf ; {file:4}{line:221}
+EndSwitch ; {file:4}{line:222}
+Switch {var245} ; {file:4}{line:224}
+Case -1 ; {file:4}{line:225}
+Case Default ; {file:4}{line:227}
+{var235}[{var237}][9] = {var235}[0][9] ; {file:4}{line:228}
+Case Else ; {file:4}{line:229}
+If {funcA307} ( {var245} ) Then  ; {file:4}{line:230}
+{var235} [ {var237} ] [ 9 ] = {funcA279} ( {funcA307} ( {var245} ) )  ; {file:4}{line:231}
+Else ; {file:4}{line:232}
+{var235}[{var237}][9] = {var245} ; {file:4}{line:233}
+EndIf ; {file:4}{line:234}
+EndSwitch ; {file:4}{line:235}
+Switch {var246} ; {file:4}{line:237}
+Case -1 ; {file:4}{line:238}
+Case Default ; {file:4}{line:240}
+{var235}[{var237}][10] = {var235}[0][10] ; {file:4}{line:241}
+Case Else ; {file:4}{line:242}
+If {funcA291} ( {var246} ) Then  ; {file:4}{line:243}
+{var235} [ {var237} ] [ 10 ] = {funcA279} ( {funcA1} ( {var246} / .75 ) )  ; {file:4}{line:244}
+Else ; {file:4}{line:245}
+Return {funcA374} ( 1 , 5 , 0 )  ; {file:4}{line:246}
+EndIf ; {file:4}{line:247}
+EndSwitch ; {file:4}{line:248}
+Switch {var247} ; {file:4}{line:250}
+Case {string512} ; {file:4}{line:251}
+Case Default ; {file:4}{line:253}
+{var235}[{var237}][11] = {var235}[0][11] ; {file:4}{line:254}
+Case Else ; {file:4}{line:255}
+If {funcA294} ( {var247} ) Then  ; {file:4}{line:256}
+{var235}[{var237}][11] = {var247} ; {file:4}{line:257}
+Else ; {file:4}{line:258}
+Return {funcA374} ( 1 , 5 , 0 )  ; {file:4}{line:259}
+EndIf ; {file:4}{line:260}
+EndSwitch ; {file:4}{line:261}
+Return 1 ; {file:4}{line:263}
+EndFunc  ; {file:4}{line:265}
+Func {funcU18} ({var237}, {var248}, {var249}, {var250}, {var194}, {var193}, {var251} = {string513}) ; {file:4}{line:294}
+Switch {var237} ; {file:4}{line:297}
+Case 1 To {var235}[0][0] ; {file:4}{line:298}
+{var237} = {funcA279} ( {var237} )  ; {file:4}{line:299}
+Case Else ; {file:4}{line:300}
+Return {funcA374} ( 1 , 0 , 0 )  ; {file:4}{line:301}
+EndSwitch ; {file:4}{line:302}
+If {var235}[{var237}][1] <> {string514} Then ; {file:4}{line:305}
+Return {funcA374} ( 2 , 0 , 0 )  ; {file:4}{line:306}
+EndIf ; {file:4}{line:307}
+{var235}[{var237}][12] = {var248} ; {file:4}{line:310}
+Local {var252} = {funcA308} ( {string515} )  ; {file:4}{line:313}
+If Not {funcA292} ( {var252} ) Then  ; {file:4}{line:314}
+Return {funcA374} ( 3 , 0 , 0 )  ; {file:4}{line:315}
+Else ; {file:4}{line:316}
+{var235}[{var237}][1] = {var252} ; {file:4}{line:317}
+EndIf ; {file:4}{line:318}
+{var235} [ {var237} ] [ 0 ] = {funcA210} ( {var252} , {var249} , {var250} , {var194} , {var193} )  ; {file:4}{line:319}
+If {var235}[{var237}][0] = 0 Then ; {file:4}{line:320}
+Return {funcA374} ( 4 , 0 , 0 )  ; {file:4}{line:321}
+EndIf ; {file:4}{line:322}
+{var252}.navigate ( {string516} )  ; {file:4}{line:325}
+While {var252}.busy ; {file:4}{line:326}
+{funcA380} ( 100 )  ; {file:4}{line:327}
+WEnd ; {file:4}{line:328}
+With {var252}.document ; {file:4}{line:331}
+.write ( {string517} )  ; {file:4}{line:332}
+.write ( {string518} )  ; {file:4}{line:333}
+.writeln ( {string519} )  ; {file:4}{line:334}
+.writeln ( {string520} & {var235} [ {var237} ] [ 2 ] )  ; {file:4}{line:335}
+.writeln ( {string521} & {var235} [ {var237} ] [ 3 ] )  ; {file:4}{line:336}
+.writeln ( {string522} & {var235} [ {var237} ] [ 4 ] )  ; {file:4}{line:337}
+.writeln ( {string523} & {var235} [ {var237} ] [ 5 ] )  ; {file:4}{line:338}
+.writeln ( {string524} & {var235} [ {var237} ] [ 6 ] )  ; {file:4}{line:339}
+.write ( {string525} )  ; {file:4}{line:340}
+.write ( {var248} )  ; {file:4}{line:341}
+.body.title = {var251} ; {file:4}{line:342}
+.body.topmargin = 0 ; {file:4}{line:343}
+.body.leftmargin = 0 ; {file:4}{line:344}
+.body.scroll = {string526} ; {file:4}{line:345}
+.body.style.borderWidth = {var235}[{var237}][7] ; {file:4}{line:346}
+.body.style.color = {var235}[{var237}][8] ; {file:4}{line:347}
+.body.bgcolor = {var235}[{var237}][9] ; {file:4}{line:348}
+.body.style.fontSize = {var235}[{var237}][10] ; {file:4}{line:349}
+.body.style.fontFamily = {var235}[{var237}][11] ; {file:4}{line:350}
+EndWith ; {file:4}{line:351}
+Return 1 ; {file:4}{line:353}
+EndFunc  ; {file:4}{line:355}
+Func {funcU98} ({var237}) ; {file:4}{line:371}
+Switch {var237} ; {file:4}{line:374}
+Case 1 To {var235}[0][0] ; {file:4}{line:375}
+{var237} = {funcA279} ( {var237} )  ; {file:4}{line:376}
+Case Else ; {file:4}{line:377}
+Return {funcA374} ( 1 , 0 , 0 )  ; {file:4}{line:378}
+EndSwitch ; {file:4}{line:379}
+{funcA220} ( {var235} [ {var237} ] [ 0 ] )  ; {file:4}{line:382}
+For {var79} = {var237} To {var235}[0][0] - 1 ; {file:4}{line:383}
+For {var253} = 0 To {funcA456} ( {var235} , 2 ) - 1  ; {file:4}{line:384}
+{var235}[{var79}][{var253}] = {var235}[{var79} + 1][{var253}] ; {file:4}{line:385}
+Next ; {file:4}{line:386}
+Next ; {file:4}{line:387}
+ReDim {var235}[{var235}[0][0]][13] ; {file:4}{line:388}
+{var235}[0][0] -= 1 ; {file:4}{line:389}
+For {var79} = 1 To {var235}[0][0] ; {file:4}{line:392}
+{funcU99} ( {var79} )  ; {file:4}{line:393}
+Next ; {file:4}{line:394}
+EndFunc  ; {file:4}{line:396}
+Func {funcU99} ({var237}, {var248} = Default) ; {file:4}{line:416}
+Switch {var237} ; {file:4}{line:419}
+Case 1 To {var235}[0][0] ; {file:4}{line:420}
+{var237} = {funcA279} ( {var237} )  ; {file:4}{line:421}
+Case Else ; {file:4}{line:422}
+Return {funcA374} ( 1 , 0 , 0 )  ; {file:4}{line:423}
+EndSwitch ; {file:4}{line:424}
+{var252} = {var235}[{var237}][1] ; {file:4}{line:427}
+If Not {funcA292} ( {var252} ) Then  ; {file:4}{line:428}
+Return {funcA374} ( 2 , 0 , 0 )  ; {file:4}{line:429}
+EndIf ; {file:4}{line:430}
+If {var248} <> Default Then ; {file:4}{line:432}
+{var235}[{var237}][12] = {var248} ; {file:4}{line:433}
+EndIf ; {file:4}{line:434}
+{var252}.document.body.innerHTML = {string527} & {string528} & {string529} & {string530} & {var235}[{var237}][2] & {string531} & {var235}[{var237}][3] & {string532} & {var235}[{var237}][4] & {string533} & {var235}[{var237}][5] & {string534} & {var235}[{var237}][6] & {string535} & {var235}[{var237}][12] ; {file:4}{line:436}
+With {var252}.document ; {file:4}{line:444}
+.body.style.borderWidth = {var235}[{var237}][7] ; {file:4}{line:445}
+.body.style.color = {var235}[{var237}][8] ; {file:4}{line:446}
+.body.bgcolor = {var235}[{var237}][9] ; {file:4}{line:447}
+.body.style.fontSize = {var235}[{var237}][10] ; {file:4}{line:448}
+.body.style.fontFamily = {var235}[{var237}][11] ; {file:4}{line:449}
+EndWith ; {file:4}{line:450}
+Return 1 ; {file:4}{line:452}
+EndFunc  ; {file:4}{line:454}

@@ -1,0 +1,17 @@
+_OnExit
+_WM_NCHITTEST
+_WM_DEVICECHANGE
+__Busy_Refresh
+__EnumWindowsProc
+__EnumDefaultProc
+__EnumWindowsProc
+__EnumPageFilesProc
+__EnumDefaultProc
+__EnumResLanguagesProc
+__EnumResNamesProc
+__EnumResTypesProc
+__EnumVerValuesProc
+__EnumDisplayMonitorsProc
+__EnumFontFamiliesProc
+__EnumFontStylesProc
+_AES_Exit
